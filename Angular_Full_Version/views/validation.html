@@ -1,0 +1,179 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Validation</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Validation</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Validation example</h5>
+                </div>
+                <div class="ibox-content" ng-controller="formValidation">
+
+                    <h3>Build in AngularJS validation</h3>
+                    <p>
+                        Form and controls provide validation services, so that the user can be notified of invalid input before submitting a form. This provides a better user experience than server-side validation alone because the user gets instant feedback on how to correct the error.
+                    </p>
+
+                    <h4>Example on submit:</h4>
+                    <form role="form" name="signup_form" novalidate ng-submit="signupForm()">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Username" class="form-control" name="username" ng-model="username" ng-minlength="3" ng-maxlength="20" required>
+                            <div class="m-t-xs" ng-show="signup_form.username.$invalid && signup_form.submitted">
+                                <small class="text-danger" ng-show="signup_form.username.$error.required">Please input a username</small>
+                                <small class="text-danger" ng-show="signup_form.username.$error.minlength">Your username is required to be at least 3 characters</small>
+                                <small class="text-danger" ng-show="signup_form.username.$error.maxlength">Your username cannot be longer than 20 characters</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter email" class="form-control" name="email" ng-model="email" required>
+                            <div class="m-t-xs" ng-show="signup_form.email.$invalid && signup_form.submitted">
+                                <small class="text-danger" ng-show="signup_form.email.$error">Please input a valid email address</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Website</label>
+                            <input type="url" placeholder="Enter your website address" class="form-control" name="website" ng-model="website" required>
+                            <div class="m-t-xs" ng-show="signup_form.website.$invalid && signup_form.submitted">
+                                <small class="text-danger" ng-show="signup_form.website.$error">Please input a valid url address (http://website.com)</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="***" class="form-control" name="password" ng-model="password" required>
+                            <div class="m-t-xs" ng-show="signup_form.password.$invalid && signup_form.submitted">
+                                <small class="text-danger" ng-show="signup_form.password.$error.required">Please input a password</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Custom match (unique)</label>
+                            <input type="text" placeholder="Write some text" class="form-control" name="extras" ng-model="extras" custom-valid>
+                            <div class="m-t-xs" ng-show="signup_form.extras.$invalid && signup_form.submitted">
+                                <small class="text-danger" ng-show="signup_form.extras.$error.cvalid">Please input a valid text (only 'Inspinia' will work)</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-sm btn-primary" type="submit"><strong>Submit form</strong></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="ibox">
+                <div class="ibox-content" ng-controller="formValidation">
+
+                    <h4>Example validation while typing:</h4>
+                    <form role="form" name="signup_form2" novalidate ng-submit="signupForm2()">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Username" class="form-control" name="username2" ng-model="username2" ng-minlength="3" ng-maxlength="20" required>
+                            <div class="m-t-xs" ng-show="signup_form2.username2.$invalid && signup_form2.username2.$dirty">
+                                <small class="text-danger" ng-show="signup_form2.username2.$error.required">Please input a username</small>
+                                <small class="text-danger" ng-show="signup_form2.username2.$error.minlength">Your username is required to be at least 3 characters</small>
+                                <small class="text-danger" ng-show="signup_form2.username2.$error.maxlength">Your username cannot be longer than 20 characters</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter email" class="form-control" name="email2" ng-model="email">
+                            <div class="m-t-xs" ng-show="signup_form2.email2.$invalid && signup_form2.email2.$dirty">
+                                <small class="text-danger" ng-show="signup_form2.email2.$error">Please input a valid email address</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Website</label>
+                            <input type="url" placeholder="Enter your website address" class="form-control" name="website2" ng-model="website2">
+                            <div class="m-t-xs" ng-show="signup_form2.website2.$invalid && signup_form2.website2.$dirty">
+                                <small class="text-danger" ng-show="signup_form2.website2.$error">Please input a valid url address (http://website.com)</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="***" class="form-control" name="password" ng-model="password2" required>
+                            <div class="m-t-xs" ng-show="signup_form2.password2.$invalid && signup_form2.password2.$dirty">
+                                <small class="text-danger" ng-show="signup_form2.password2.$error.required">Please input a password</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-sm btn-primary" type="submit" ng-disabled="signup_form2.$invalid"><strong>Submit form</strong></button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Overview</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <p class="ng-scope">Angular provides basic implementation for most common HTML5 input types: (text, number, url, email, date, radio, checkbox),
+                        as well as some directives for validation (<code>required</code>, <code>pattern</code>, <code>minlength</code>, <code>maxlength</code>,
+                        <code>min</code>, <code>max</code>).</p>
+
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>required</td>
+                            <td>To validate that a form input has been filled out</td>
+                        </tr>
+                        <tr>
+                            <td>ng-minlength</td>
+                            <td>Makes the element require a given minimum length.</td>
+                        </tr>
+                        <tr>
+                            <td>ng-maxlength</td>
+                            <td>Makes the element require a given maxmimum length.</td>
+                        </tr>
+                        <tr>
+                            <td>ng-pattern</td>
+                            <td>To ensure that an input matches a regex pattern</td>
+                        </tr>
+                        <tr>
+                            <td>type="email"</td>
+                            <td>Makes the element require a valid email</td>
+                        </tr>
+                        <tr>
+                            <td>type="url"</td>
+                            <td>Makes the element require a valid url</td>
+                        </tr>
+                        <tr>
+                            <td>type="number"</td>
+                            <td> Makes the element require a decimal number.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

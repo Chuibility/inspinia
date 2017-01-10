@@ -1,0 +1,110 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Agile board</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Agile board</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight" ng-controller="agileBoard">
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <h3>To-do</h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+
+                    <div class="input-group">
+                        <input type="text" placeholder="Add new task. " class="input input-sm form-control">
+                                <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-white"> <i class="fa fa-plus"></i> Add task</button>
+                                </span>
+                    </div>
+                    <ul ui-sortable="sortableOptions" class="sortable-list connectList agile-list" ng-model="todoList">
+                        <li class="{{task.statusClass}}-element" ng-repeat="task in todoList">
+                            {{task.content}}
+                            <div class="agile-detail">
+                                <a href="#" class="pull-right btn btn-xs btn-white">{{task.tagName}}</a>
+                                <i class="fa fa-clock-o"></i> {{task.date}}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <h3>In Progress</h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+                    <ul ui-sortable="sortableOptions" class="sortable-list connectList agile-list" ng-model="inProgressList">
+                        <li class="{{task.statusClass}}-element" ng-repeat="task in inProgressList">
+                            {{task.content}}
+                            <div class="agile-detail">
+                                <a href="#" class="pull-right btn btn-xs btn-white">{{task.tagName}}</a>
+                                <i class="fa fa-clock-o"></i> {{task.date}}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <h3>Completed</h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+                    <ul ui-sortable="sortableOptions" class="sortable-list connectList agile-list" ng-model="completedList">
+                        <li class="{{task.statusClass}}-element" ng-repeat="task in completedList">
+                            {{task.content}}
+                            <div class="agile-detail">
+                                <a href="#" class="pull-right btn btn-xs btn-white">{{task.tagName}}</a>
+                                <i class="fa fa-clock-o"></i> {{task.date}}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+
+            <h4>
+                Serialised Output
+            </h4>
+
+            <div class="output p-m m white-bg">
+
+                <h3>TodDo tasks</h3>
+                {{todoList }}
+
+                <h3>In progress tasks</h3>
+                {{inProgressList }}
+
+                <h3>Completed tasks</h3>
+                {{completedList }}
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewBag.Title = "JSON Examples";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>JSON Example Page</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                Basic example how you can use JSON data
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Table example</h5>
+                </div>
+                <div class="ibox-content">
+                    <table class="table table-striped" id="ajaxTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Chart example</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="flot-chart">
+                        <div class="flot-chart-content" id="flot-bar-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-7">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Calendar example</h5>
+                </div>
+                <div class="ibox-content">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Timeline example</h5>
+                </div>
+                <div class="ibox-content inspinia-timeline">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    @Styles.Render("~/plugins/fullCalendarStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/flot")
+    @Scripts.Render("~/plugins/fullCalendar")
+
+    <script type="text/javascript">
+
+        // Creat JSON url to controller
+        var chartDataUrl = '@Url.Action("flotJsonData", "Json")';
+        var tableDataUrl = '@Url.Action("tableJsonData", "Json")';
+        var eventsDataUrl = '@Url.Action("calendarEvents", "Json")';
+        var tasksDataUrl = '@Url.Action("tasksJsonData", "Json")';
+
+        $(document).ready(function () {
+
+            // Options for bar chart
+            var barOptions = {series: {bars: {show: true,barWidth: 0.6,fill: true,fillColor: {colors: [{opacity: 0.8}, {opacity: 0.8}]}}},
+                xaxis: {tickDecimals: 0},
+                colors: ["#1ab394"],
+                grid: {color: "#999999",hoverable: true,clickable: true,tickColor: "#D4D4D4",borderWidth: 0},
+                legend: {show: true},
+                tooltip: true,
+                tooltipOpts: {content: "Item: %x, Value: %y"}
+            };
+
+            // Ajax call for chart data
+            $.ajax({
+                url: chartDataUrl,
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    $.plot($("#flot-bar-chart"), [data], barOptions);
+                }
+            });
+
+            // Ajax call for table data
+            $.ajax({
+                url: tableDataUrl,
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var div = $('#ajaxTable');
+                    $.each(data, function (i, item) {
+                        div.append(
+                            $('<tr>')
+                                .append($('<td>').html(item.Name)).append($('<td>').html(item.Position)).append($('<td>').html(item.Office)).append($('<td>').html(item.Age))
+                            );
+                    })
+                }
+            });
+
+            // Calendar with ajax data
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                editable: true,
+                // Link to JSON data
+                events: eventsDataUrl
+            });
+
+            // Ajax call for timeline data
+            $.ajax({
+                url: tasksDataUrl,
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var timelineDiv = $('.inspinia-timeline');
+                    $.each(data, function (i, item) {
+                        addTimelineTask(timelineDiv, item);
+                    })
+                }
+            });
+
+            // Simple function to append new timeline element
+            function addTimelineTask(timelineDiv, task) {
+                switch (task.Type) {
+                    case 'Call': iconType = "phone";
+                        break;
+                    case 'Meeting': iconType = "coffee";
+                        break;
+                    case 'Chat': iconType = "comments";
+                        break;
+                    case 'File': iconType = "file-text";
+                        break;
+                    default: iconType = "briefcase";
+                }
+                timelineDiv.append($('<div class="timeline-item">').html('<div class="row"> <div class="col-xs-3 date"><i class="fa fa-' + iconType + '"></i> ' + task.Time + ' <br></div> <div class="col-xs-7 content"><p class="m-b-xs"><strong>' + task.Title + '</strong></p> <p> ' + task.Desc + '</p> </div> </div>'))
+            };
+        });
+    </script>
+}
+
+

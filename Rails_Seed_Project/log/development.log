@@ -1,0 +1,1960 @@
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-12 19:42:40 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3803ms (Views: 3784.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:44 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:44 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:44 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/inspinia.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:42:45 +0200
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:42:48 +0200
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:42:49 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-12 19:45:54 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2188ms (Views: 2172.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:45:56 +0200
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:45:58 +0200
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:45:59 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/inspinia.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:55 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:46:56 +0200
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/inspinia.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:57 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/inspinia.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:46:58 +0200
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/inspinia.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/inspinia.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for 127.0.0.1 at 2015-06-12 19:47:03 +0200
+
+
+Started GET "/" for ::1 at 2015-08-24 08:40:24 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in /Users/Damian/Projects/inspinia/inspinia_v2.3/Ralis_Seed_Project/app/assets/stylesheets/style.scss)):
+     6:     <title>INSPINIA</title>
+     7: 
+     8:     <!-- Main css styles -->
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    10: 
+    11:     <!-- Main javascript files -->
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1815903595963935320_70191216289160'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 08:41:15 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in /Users/Damian/Projects/inspinia/inspinia_v2.3/Ralis_Seed_Project/app/assets/stylesheets/style.scss)):
+     6:     <title>INSPINIA</title>
+     7: 
+     8:     <!-- Main css styles -->
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    10: 
+    11:     <!-- Main javascript files -->
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1815903595963935320_70191216289160'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 08:41:16 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in /Users/Damian/Projects/inspinia/inspinia_v2.3/Ralis_Seed_Project/app/assets/stylesheets/style.scss)):
+     6:     <title>INSPINIA</title>
+     7: 
+     8:     <!-- Main css styles -->
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    10: 
+    11:     <!-- Main javascript files -->
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1815903595963935320_70191216289160'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 08:42:10 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in /Users/Damian/Projects/inspinia/inspinia_v2.3/Ralis_Seed_Project/app/assets/stylesheets/style.scss)):
+     6:     <title>INSPINIA</title>
+     7: 
+     8:     <!-- Main css styles -->
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    10: 
+    11:     <!-- Main javascript files -->
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1815903595963935320_70191216289160'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (48.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 08:42:32 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in /Users/Damian/Projects/inspinia/inspinia_v2.3/Ralis_Seed_Project/app/assets/stylesheets/style.scss)):
+     6:     <title>INSPINIA</title>
+     7: 
+     8:     <!-- Main css styles -->
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10: 
+    11:     <!-- Main javascript files -->
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1815903595963935320_70191205440040'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 08:42:33 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in /Users/Damian/Projects/inspinia/inspinia_v2.3/Ralis_Seed_Project/app/assets/stylesheets/style.scss)):
+     6:     <title>INSPINIA</title>
+     7: 
+     8:     <!-- Main css styles -->
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10: 
+    11:     <!-- Main javascript files -->
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1815903595963935320_70191205440040'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 08:42:35 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in /Users/Damian/Projects/inspinia/inspinia_v2.3/Ralis_Seed_Project/app/assets/stylesheets/style.scss)):
+     6:     <title>INSPINIA</title>
+     7: 
+     8:     <!-- Main css styles -->
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10: 
+    11:     <!-- Main javascript files -->
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1815903595963935320_70191205440040'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 08:42:35 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in /Users/Damian/Projects/inspinia/inspinia_v2.3/Ralis_Seed_Project/app/assets/stylesheets/style.scss)):
+     6:     <title>INSPINIA</title>
+     7: 
+     8:     <!-- Main css styles -->
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10: 
+    11:     <!-- Main javascript files -->
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1815903595963935320_70191205440040'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 08:44:18 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in /Users/Damian/Projects/inspinia/inspinia_v2.3/Ralis_Seed_Project/app/assets/stylesheets/style.scss)):
+     6:     <title>INSPINIA</title>
+     7: 
+     8:     <!-- Main css styles -->
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    10: 
+    11:     <!-- Main javascript files -->
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___224136889701286593_70295743384020'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 08:47:06 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3725ms (Views: 3709.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-08-24 08:47:09 +0200
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-08-24 08:47:10 +0200
+
+
+Started GET "/home/minor" for ::1 at 2015-08-24 08:47:11 +0200
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 08:47:12 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2015-08-24 08:47:13 +0200
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-20 14:20:35 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 8650ms (Views: 8633.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-2de44a3aeab1d6414b8afbb8cab613b65cb2b04f88afb9c2cff4a3e7d62f163c.css?body=1" for ::1 at 2015-12-20 14:20:43 +0100
+
+
+Started GET "/assets/application.self-0778144d1b49e448b7ba31664788157f0e9c7b6aea5563fbe16beeb155d37e17.css?body=1" for ::1 at 2015-12-20 14:20:43 +0100
+
+
+Started GET "/assets/application.self-90e7ed1c03f271c6d5d952d21e8059fdd75eece5a10b1cf1b92a994332ddc129.js?body=1" for ::1 at 2015-12-20 14:20:43 +0100
+
+
+Started GET "/assets/inspinia.self-df8a6675c9e93be406c87bac450ad1e00b70e216d26013054b9fedcbe1c0905c.js?body=1" for ::1 at 2015-12-20 14:20:43 +0100
+
+
+Started GET "/home/minor" for ::1 at 2015-12-20 14:20:45 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 63ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-20 14:20:46 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2015-12-20 14:20:46 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 107ms (Views: 106.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-20 14:20:47 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2015-12-20 14:20:51 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-20 14:20:52 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2015-12-20 14:20:52 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2015-12-20 14:22:27 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate/animate.self-570992b3ad6a262de1924aa4ecc17a6f9cf45cb8fd0daaf3cfe5a9f2f3e08e2e.css?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/font-awesome.self-2d17540bab3759939e910ca38a695f014e0c777ded3ad7a01c4658b9d3fc980d.css?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/application.self-0778144d1b49e448b7ba31664788157f0e9c7b6aea5563fbe16beeb155d37e17.css?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.self-cdd78b0dc506b751b442bb5e5298ea658af2ee55e46ccb88ba5583570ca686e2.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/style.self-2de44a3aeab1d6414b8afbb8cab613b65cb2b04f88afb9c2cff4a3e7d62f163c.css?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.self-587029531d977fc7fa10623dd670189a298bd606124c23fc2edd051da5b0c914.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.self-a2008e2992d055fbe5108d326a54c3083f843da1a30240d2b2e1f706716fa03e.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/inspinia.self-df8a6675c9e93be406c87bac450ad1e00b70e216d26013054b9fedcbe1c0905c.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/application.self-90e7ed1c03f271c6d5d952d21e8059fdd75eece5a10b1cf1b92a994332ddc129.js?body=1" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/assets/patterns/header-profile-c05909898218a521d3bd19ba09a9a43338de6de5fdf1d3fc771b0ec28ae416c5.png" for ::1 at 2015-12-20 14:22:27 +0100
+
+
+Started GET "/" for ::1 at 2015-12-20 14:22:28 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-12-20 14:22:28 +0100
+
+
+Started GET "/" for ::1 at 2015-12-20 14:22:34 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 125ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0778144d1b49e448b7ba31664788157f0e9c7b6aea5563fbe16beeb155d37e17.css?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/font-awesome.self-2d17540bab3759939e910ca38a695f014e0c777ded3ad7a01c4658b9d3fc980d.css?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.self-cdd78b0dc506b751b442bb5e5298ea658af2ee55e46ccb88ba5583570ca686e2.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/style.self-2de44a3aeab1d6414b8afbb8cab613b65cb2b04f88afb9c2cff4a3e7d62f163c.css?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/animate/animate.self-570992b3ad6a262de1924aa4ecc17a6f9cf45cb8fd0daaf3cfe5a9f2f3e08e2e.css?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.self-587029531d977fc7fa10623dd670189a298bd606124c23fc2edd051da5b0c914.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.self-a2008e2992d055fbe5108d326a54c3083f843da1a30240d2b2e1f706716fa03e.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/inspinia.self-df8a6675c9e93be406c87bac450ad1e00b70e216d26013054b9fedcbe1c0905c.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/application.self-90e7ed1c03f271c6d5d952d21e8059fdd75eece5a10b1cf1b92a994332ddc129.js?body=1" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/assets/patterns/header-profile-c05909898218a521d3bd19ba09a9a43338de6de5fdf1d3fc771b0ec28ae416c5.png" for ::1 at 2015-12-20 14:22:34 +0100
+
+
+Started GET "/" for ::1 at 2015-12-23 18:44:03 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 6202ms (Views: 6185.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-7512651d1bf0c6f0924a7479b4e8fffce2f617d157b53c9d7015c487fcca6633.css?body=1" for ::1 at 2015-12-23 18:44:09 +0100
+
+
+Started GET "/home/minor" for ::1 at 2015-12-23 18:44:11 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-23 18:44:11 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/miscellaneous/truncate" for ::1 at 2016-08-31 14:37:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/miscellaneous/truncate"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (18.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-31 14:37:29 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 7377ms (Views: 7376.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0778144d1b49e448b7ba31664788157f0e9c7b6aea5563fbe16beeb155d37e17.css?body=1" for ::1 at 2016-08-31 14:37:37 +0200
+
+
+Started GET "/assets/style.self-e65bd56c43298758bc1cbcc2b67a826bbe5eefb4fc7d5214eccc17eea5ac25db.css?body=1" for ::1 at 2016-08-31 14:37:37 +0200
+
+
+Started GET "/assets/inspinia.self-ff741bfc8a20f2b6b978ead9ae72eaeb83cd24b005f136816054ecb30f34bce9.js?body=1" for ::1 at 2016-08-31 14:37:37 +0200
+
+
+Started GET "/assets/application.self-90e7ed1c03f271c6d5d952d21e8059fdd75eece5a10b1cf1b92a994332ddc129.js?body=1" for ::1 at 2016-08-31 14:37:37 +0200
+
+
+Started GET "/home/minor" for ::1 at 2016-08-31 14:37:38 +0200
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-31 14:37:39 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-31 14:37:42 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/appviews/contacts_two" for ::1 at 2017-01-02 15:42:10 +0100
+
+ActionController::RoutingError (No route matches [GET] "/appviews/contacts_two"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (25.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.3ms)
+
+
+Started GET "/" for ::1 at 2017-01-02 15:42:12 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 8463ms (Views: 8462.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0778144d1b49e448b7ba31664788157f0e9c7b6aea5563fbe16beeb155d37e17.css?body=1" for ::1 at 2017-01-02 15:42:20 +0100
+
+
+Started GET "/assets/animate/animate.self-570992b3ad6a262de1924aa4ecc17a6f9cf45cb8fd0daaf3cfe5a9f2f3e08e2e.css?body=1" for ::1 at 2017-01-02 15:42:20 +0100
+
+
+Started GET "/assets/style.self-efebe89896bd434b5054a154ca055564538d9ddce0aa75f1bef0fdb9a7c05f16.css?body=1" for ::1 at 2017-01-02 15:42:21 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.self-cdd78b0dc506b751b442bb5e5298ea658af2ee55e46ccb88ba5583570ca686e2.js?body=1" for ::1 at 2017-01-02 15:42:21 +0100
+
+
+Started GET "/assets/inspinia.self-7bb64be2ec9f334d1c9d23bada3e3bfe1f61680bfb098c47fb4e32dd233a37bc.js?body=1" for ::1 at 2017-01-02 15:42:21 +0100
+
+
+Started GET "/assets/application.self-90e7ed1c03f271c6d5d952d21e8059fdd75eece5a10b1cf1b92a994332ddc129.js?body=1" for ::1 at 2017-01-02 15:42:21 +0100
+
+
+Started GET "/home/minor" for ::1 at 2017-01-02 15:42:22 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 67ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-02 15:42:23 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2017-01-02 15:42:23 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-02 15:42:27 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2017-01-02 15:42:27 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 119ms (Views: 118.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2017-01-02 15:44:13 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/inspinia.self-a514563535b559940b02fd8778c446d8f8fddb30065910d9657d1cda738951b0.js?body=1" for ::1 at 2017-01-02 15:44:13 +0100
+
+
+Started GET "/" for ::1 at 2017-01-02 15:44:14 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2017-01-02 15:44:15 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 114ms (Views: 113.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2017-01-02 15:44:49 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 800ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: base/badgets_labels.
+Load paths:
+  /Users/Damian/Projects/inspinia/inspinia_v2.7/Rails_Seed_Project/app/assets/images
+  /Users/Damian/Projects/inspinia/inspinia_v2.7/Rails_Seed_Project/app/assets/javascripts
+  /Users/Damian/Projects/inspinia/inspinia_v2.7/Rails_Seed_Project/app/assets/stylesheets
+  /Users/Damian/Projects/inspinia/inspinia_v2.7/Rails_Seed_Project/vendor/assets/javascripts
+  /Users/Damian/Projects/inspinia/inspinia_v2.7/Rails_Seed_Project/vendor/assets/stylesheets
+  /Library/Ruby/Gems/2.0.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Library/Ruby/Gems/2.0.0/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  /Library/Ruby/Gems/2.0.0/gems/font-awesome-rails-4.7.0.1/app/assets/fonts
+  /Library/Ruby/Gems/2.0.0/gems/font-awesome-rails-4.7.0.1/app/assets/stylesheets
+  /Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  /Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.7/assets/images
+  /Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.7/assets/stylesheets):
+     7:     <title>INSPINIA</title>
+     8: 
+     9:     <!-- Main css styles -->
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    11: 
+    12:     <!-- Main javascript files -->
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/style.scss:24
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___2601342342909927703_70349254768300'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.6ms)
+
+
+Started GET "/home/minor" for ::1 at 2017-01-02 15:45:00 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5414ms (Views: 5413.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-a3f29e33bcc2c571b2ace1a48bbedee4321a2f0a4002d7377347d1cb8864d477.css?body=1" for ::1 at 2017-01-02 15:45:06 +0100
+
+
+Started GET "/home/minor" for ::1 at 2017-01-02 15:45:57 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-02 15:46:01 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2017-01-02 15:46:02 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 122ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-02 15:46:03 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for ::1 at 2017-01-02 15:46:08 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 45.1ms | ActiveRecord: 0.0ms)

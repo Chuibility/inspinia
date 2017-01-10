@@ -1,0 +1,68 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-8">
+        <h2>Calendar</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                Extra pages
+            </li>
+            <li class="active">
+                <strong>Calendar</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content" ng-controller="CalendarCtrl">
+    <div class="row animated fadeInDown">
+        <div class="col-lg-3">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Events List</h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                    <div id='external-events'>
+                        <strong>Click, Drop or Resize event on calendar!</strong>
+                        <p>Message from functions:
+                        <br/>
+                            <div class="alert alert-warning" ng-show="alertMessage">
+                                {{alertMessage}}
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <h2>FullCalendar</h2> is a jQuery plugin that provides a full-sized, drag & drop calendar like the one below. It uses AJAX to fetch events on-the-fly for each month and is
+                    easily configured to use your own feed format (an extension is provided for Google Calendar).
+                    <p>
+                        <a href="http://arshaw.com/fullcalendar/" target="_blank">FullCalendar documentation</a>
+                    </p>
+
+                    <h2>UI Calendar</h2> is a complete AngularJS directive for the Arshaw FullCalendar
+                    <p>
+                        <a href="http://angular-ui.github.io/ui-calendar/" target="_blank">Ui Calendar documentation</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Striped Table</h5>
+                    <div ibox-tools></div>
+                </div>
+
+                <div class="ibox-content ui-calendar">
+                    <div class="btn-toolbar">
+                        <p class="lead">Angular Calendar (Ui-calendar)</p>
+                    </div>
+                    <div ui-calendar="uiConfig.calendar" calendar="myCalendar1" class="calendar" ng-model="eventSources"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

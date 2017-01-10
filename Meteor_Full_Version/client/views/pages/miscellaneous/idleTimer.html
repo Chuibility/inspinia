@@ -1,0 +1,57 @@
+<template name="idleTimer">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Idle timer' category='Miscellaneous' }}
+
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Idle Timer</h5>
+                    </div>
+
+                    <div class="ibox-content">
+                        <div class="alert alert-danger custom-alert" style="display: none">
+
+                            Your time is up. But you can move your mouse and get back to app.
+
+                        </div>
+                        <strong>Idle Timer Plugin </strong>
+                        <p>
+                            Idle plugin provides you a way to monitor user activity with a page.Idle is defined by not moving the mouse, scrolling the mouse wheel and using the keyboard.
+                        </p>
+
+                        <div class="text-center p-lg h-200">
+
+                            <h3>Please do not move the mouse for 5 seconds</h3>
+                            <i class="fa fa-hand-o-up fa-4x"></i>
+
+                        </div>
+
+                        <p>There are two ways to instantiate. Either statically, or on an element. Element bound timers
+                            will only watch for events inside of them. You may just want page-level activity, in which
+                            case you may set up your timers on <code>document</code>, <code>document.documentElement</code>, and <code>document.body</code>.
+                            Instantiate returns jQuery for chaining.</p>
+
+                        <p>Example usage</p>
+                            <pre>
+    // Set idle time
+    $( document ).idleTimer( 5000 );
+
+    $( document ).on( "idle.idleTimer", function(event, elem, obj){
+        // function you want to fire when the user goes idle
+    });
+
+    $( document ).on( "active.idleTimer", function(event, elem, obj, triggerevent){
+        // function you want to fire when the user becomes active again
+    });
+
+</pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

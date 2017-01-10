@@ -1,0 +1,131 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Loading buttons</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Loading buttons</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight" ng-controller="loadingCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Loading buttons - Ladda</h5>
+                </div>
+
+                <div class="ibox-content">
+
+                    <strong>Ladda</strong>
+                    <p>
+                        A UI concept which merges loading indicators into the action that invoked them. Primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing.
+                    </p>
+
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h4>expand-left</h4>
+                            <button ladda="loading" ng-click="runLoading()" class="ladda-button btn btn-primary"  data-style="expand-left">Submit</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>expand-right</h4>
+                            <button ladda="loading1" ng-click="runLoading1()" class="ladda-button btn btn-primary" data-style="expand-right">Submit</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>expand-up</h4>
+                            <button ladda="loading2" ng-click="runLoading2()" class="ladda-button btn btn-primary" data-style="expand-up">Submit</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>expand-down</h4>
+                            <button ladda="loading3" ng-click="runLoading3()" class="ladda-button btn btn-primary" data-style="expand-down">Submit</button>
+                        </div>
+                    </div>
+                    <div class="row m-t-md">
+                        <div class="col-sm-3">
+                            <h4>contract</h4>
+                            <button ladda="loading4" ng-click="runLoading4()" class="ladda-button btn btn-warning" data-style="contract">Submit</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>zoom-in</h4>
+                            <button ladda="loading5" ng-click="runLoading5()" class="ladda-button btn btn-warning" data-style="zoom-in">Submit</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>zoom-out</h4>
+                            <button ladda="loading6" ng-click="runLoading6()" class="ladda-button btn btn-warning" data-style="zoom-out">Submit</button>
+                        </div>
+                    </div>
+                    <div class="row m-t-md">
+                        <div class="col-sm-3">
+                            <h4>slide-left</h4>
+                            <button ladda="loading7" ng-click="runLoading7()" class="ladda-button  btn btn-info" data-style="slide-left">Submit</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>slide-right</h4>
+                            <button ladda="loading8" ng-click="runLoading8()" class="ladda-button btn btn-info" data-style="slide-right">Submit</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>slide-up</h4>
+                            <button ladda="loading9" ng-click="runLoading9()" class="ladda-button btn btn-info" data-style="slide-up">Submit</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>slide-down</h4>
+                            <button ladda="loading10" ng-click="runLoading10()" class="ladda-button btn btn-info" data-style="slide-down">Submit</button>
+                        </div>
+                    </div>
+                    <div class="row m-t-lg">
+                        <div class="col-sm-3">
+                            <section class="progress-demo">
+                                <h4>expand-right</h4>
+                                <button ladda="loading11" ng-click="runLoading11()" class="ladda-button btn btn-danger" data-style="expand-right">Submit</button>
+                            </section>
+                        </div>
+                        <div class="col-sm-3">
+                            <section class="progress-demo">
+                                <h4>contract</h4>
+                                <button ladda="loading12" ng-click="runLoading12()" class="ladda-button btn btn-danger" data-style="contract">Submit</button>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="m-t-lg">
+                        <h4 class="m-t-md">Demo how to use with api services</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <button ladda="loadingDemo" ng-click="runLoadingDemo()" class="ladda-button ladda-button-demo btn btn-primary"  data-style="zoom-in">Submit</button>
+                        </div>
+                        <div class="col-sm-9">
+<pre>
+&lt;button ladda="loadingDemo" ng-click="runLoadingDemo()" class="ladda-button ladda-button-demo btn btn-primary"  data-style="zoom-in"&gt;Submit&lt;/button&gt;
+</pre>
+<pre>
+    $scope.runLoadingDemo = function() {
+        // start loading
+        $scope.loadingDemo = true;
+
+        $timeout(function(){
+            // Simulate some service and stop loading
+            $scope.loadingDemo = false;
+        },2000)
+    };
+</pre>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

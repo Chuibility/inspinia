@@ -1,0 +1,94 @@
+<template name="notifications">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Notifications' category='UI Elements' }}
+
+    <div class="wrapper wrapper-content animated fadeIn">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Alerts Styles</h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content">
+                        <div class="alert alert-success">
+                            How quickly daft jumping zebras vex. <a class="alert-link" href="#">Alert Link</a>.
+                        </div>
+                        <div class="alert alert-info">
+                            How quickly daft jumping zebras vex. <a class="alert-link" href="#">Alert Link</a>.
+                        </div>
+                        <div class="alert alert-warning">
+                            How quickly daft jumping zebras vex. <a class="alert-link" href="#">Alert Link</a>.
+                        </div>
+                        <div class="alert alert-danger">
+                            How quickly daft jumping zebras vex. <a class="alert-link" href="#">Alert Link</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Dismissable Alerts</h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content">
+                        <div class="alert alert-success alert-dismissable">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            A wonderful serenity has taken possession. <a class="alert-link" href="#">Alert Link</a>.
+                        </div>
+                        <div class="alert alert-info alert-dismissable">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            A wonderful serenity has taken possession. <a class="alert-link" href="#">Alert Link</a>.
+                        </div>
+                        <div class="alert alert-warning alert-dismissable">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            A wonderful serenity has taken possession. <a class="alert-link" href="#">Alert Link</a>.
+                        </div>
+                        <div class="alert alert-danger alert-dismissable">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            A wonderful serenity has taken possession. <a class="alert-link" href="#">Alert Link</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Tooltips and Popovers</h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content text-center">
+                        <h4>Tooltip Demo <small>Background color more gentle.</small></h4>
+                        <div class="tooltip-demo">
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+                        </div>
+                        <br>
+                        <h4>Clickable Popover Demo</h4>
+                        <div class="tooltip-demo">
+                            <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                Popover on left
+                            </button>
+                            <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                Popover on top
+                            </button>
+                            <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                Popover on bottom
+                            </button>
+                            <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                Popover on right
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</template>

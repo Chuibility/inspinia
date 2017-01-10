@@ -1,0 +1,274 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Autocomplete</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="<%= url_for :controller => 'dashboards', :action => 'dashboard_1' %>">Home</a>
+        </li>
+        <li>
+            <a>Forms</a>
+        </li>
+        <li class="active">
+            <strong>Autocomplete</strong>
+        </li>
+    </ol>
+</div>
+<div class="col-lg-2">
+
+</div>
+        </div>
+<div class="wrapper wrapper-content animated fadeIn">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Autocomplete - Bootstrap Typehead</h5>
+
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#">Config option 1</a>
+                        </li>
+                        <li><a href="#">Config option 2</a>
+                        </li>
+                    </ul>
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <strong>Autocomplete - typehead</strong><br/>
+                The Typeahead plugin from Twitter's Bootstrap 2 ready to use with Bootstrap 3 and Bootstrap 4. Full documentation can be found: <a href="https://github.com/bassjobsen/Bootstrap-3-Typeahead" target="_blank">https://github.com/bassjobsen/Bootstrap-3-Typeahead</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Basic example - data-*</h5>
+            </div>
+            <div class="ibox-content">
+                <p>
+                    Basic example via data attributes: <span class="text-muted">(type 'item...')</span>
+                </p>
+                <input type="text" placeholder="item..." data-provide="typeahead" data-source='["item 1","item 2","item 3"]' class="form-control" />
+                            <pre class="m-t-sm">
+&lt;input type="text"
+data-provide="typeahead"
+data-source='["item 1","item 2","item 3"]'
+placeholder="item..."
+class="form-control" /&gt;</pre>
+            </div>
+        </div>
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Loading collection</h5>
+            </div>
+            <div class="ibox-content">
+                <p>
+                    Load collection from json file <span class="text-muted">(type 'Arg...')</span>
+                </p>
+                <input type="text" placeholder="item..." class="typeahead_2 form-control" />
+                            <pre class="m-t-sm">
+$.get('js/api/typehead_collection.json', function(data){
+    $(".typeahead_2").typeahead({ source:data.countries });
+},'json'); </pre>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Basic example - javascript</h5>
+            </div>
+            <div class="ibox-content">
+                <p>
+                    Basic example via javascript <span class="text-muted">(type 'item...')</span>
+                </p>
+                <input type="text" placeholder="item..." class="typeahead_1 form-control" />
+                            <pre class="m-t-sm">
+$('.typeahead_1').typeahead({
+    source: ["item 1","item 2","item 3"]
+}); </pre>
+            </div>
+        </div>
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Loading more complex object</h5>
+            </div>
+            <div class="ibox-content">
+                <p>
+                    Load json object - required 'name' attribute <span class="text-muted">(type 'Afg...')</span>
+                </p>
+                <input type="text" placeholder="item..." class="typeahead_3 form-control" />
+                            <pre class="m-t-sm">
+$('.typeahead_3').typeahead({
+    source: [
+        {"name": "Afghanistan", "code": "AF", "ccn0": "040"},
+        {"name": "Land Islands", "code": "AX", "ccn0": "050"},
+        {"name": "Albania", "code": "AL","ccn0": "060"},
+        {"name": "Algeria", "code": "DZ","ccn0": "070"}
+    ]
+}); </pre>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Options</h5>
+            </div>
+            <div class="ibox-content">
+                <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-source=""</code>.</p>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>source</td>
+                        <td>array, function</td>
+                        <td>[ ]</td>
+                        <td>The data source to query against. May be an array of strings, an array of JSON object with a name property or a function. The function accepts two arguments, the <code>query</code> value in the input field and the <code>process</code> callback. The function may be used synchronously by returning the data source directly or asynchronously via the <code>process</code> callback's single argument.</td>
+                    </tr>
+                    <tr>
+                        <td>items</td>
+                        <td>number</td>
+                        <td>8</td>
+                        <td>The max number of items to display in the dropdown. Can also be set to 'all'</td>
+                    </tr>
+                    <tr>
+                        <td>minLength</td>
+                        <td>number</td>
+                        <td>1</td>
+                        <td>The minimum character length needed before triggering autocomplete suggestions. You can set it to 0 so suggestion are shown even when there is no text when lookup function is called.</td>
+                    </tr>
+                    <tr>
+                        <td>showHintOnFocus</td>
+                        <td>boolean</td>
+                        <td>false</td>
+                        <td>If hints should be shown when applicable as soon as the input gets focus.</td>
+                    </tr>
+                    <tr>
+                        <td>scrollHeight</td>
+                        <td>number, function</td>
+                        <td>0</td>
+                        <td>Number of pixels the scrollable parent container scrolled down (scrolled out the viewport).</td>
+                    </tr>
+                    <tr>
+                        <td>matcher</td>
+                        <td>function</td>
+                        <td>case insensitive</td>
+                        <td>The method used to determine if a query matches an item. Accepts a single argument, the <code>item</code> against which to test the query. Access the current query with <code>this.query</code>. Return a boolean <code>true</code> if query is a match.</td>
+                    </tr>
+                    <tr>
+                        <td>sorter</td>
+                        <td>function</td>
+                        <td>exact match,<br> case sensitive,<br> case insensitive</td>
+                        <td>Method used to sort autocomplete results. Accepts a single argument <code>items</code> and has the scope of the typeahead instance. Reference the current query with <code>this.query</code>.</td>
+                    </tr>
+                    <tr>
+                        <td>updater</td>
+                        <td>function</td>
+                        <td>returns selected item</td>
+                        <td>The method used to return selected item. Accepts a single argument, the <code>item</code> and has the scope of the typeahead instance.</td>
+                    </tr>
+                    <tr>
+                        <td>highlighter</td>
+                        <td>function</td>
+                        <td>highlights all default matches</td>
+                        <td>Method used to highlight autocomplete results. Accepts a single argument <code>item</code> and has the scope of the typeahead instance. Should return html.</td>
+                    </tr>
+                    <tr>
+                        <td>displayText</td>
+                        <td>function</td>
+                        <td>item.name || item</td>
+                        <td>Method used to get textual representation of an item of the sources. Accepts a single argument <code>item</code> and has the scope of the typeahead instance. Should return a String.</td>
+                    </tr>
+                    <tr>
+                        <td>autoSelect</td>
+                        <td>boolean</td>
+                        <td>true</td>
+                        <td>Allows you to dictate whether or not the first suggestion is selected automatically. Turning autoselect off also means that the input won't clear if nothing is selected and <kbd>enter</kbd> or <kbd>tab</kbd> is hit.</td>
+                    </tr>
+                    <tr>
+                        <td>afterSelect</td>
+                        <td>function</td>
+                        <td>$.noop()</td>
+                        <td>Call back function to execute after selected an item. It gets the current active item in parameter if any.</td>
+                    </tr>
+                    <tr>
+                        <td>delay</td>
+                        <td>integer</td>
+                        <td>0</td>
+                        <td>Adds a delay between lookups.</td>
+                    </tr>
+                    <tr>
+                    </tr><tr>
+                        <td>addItem</td>
+                        <td>JSON object</td>
+                        <td>false</td>
+                        <td>Adds an item to the end of the list, for example "New Entry". This could be used, for example, to pop a dialog when an item is not found in the list of data. Example: <a href="http://cl.ly/image/2u170I1q1G3A/addItem.png">http://cl.ly/image/2u170I1q1G3A/addItem.png</a></td>
+                    </tr></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="footer">
+    <div class="pull-right">
+        10GB of <strong>250GB</strong> Free.
+    </div>
+    <div>
+        <strong>Copyright</strong> Example Company &copy; 2014-2015
+    </div>
+</div>
+
+</div>
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+    $('.typeahead_1').typeahead({
+        source: ["item 1","item 2","item 3"]
+    });
+
+    $.get('/api/typehead_collection.json', function(data){
+        $(".typeahead_2").typeahead({ source:data.countries });
+    },'json');
+
+    $('.typeahead_3').typeahead({
+        source: [
+            {"name": "Afghanistan", "code": "AF", "ccn0": "040"},
+            {"name": "Land Islands", "code": "AX", "ccn0": "050"},
+            {"name": "Albania", "code": "AL","ccn0": "060"},
+            {"name": "Algeria", "code": "DZ","ccn0": "070"}
+        ]
+    });
+
+});
+
+</script>
+
+<% end %>

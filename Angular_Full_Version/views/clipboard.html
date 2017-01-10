@@ -1,0 +1,106 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Copy to clipboard</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Copy to clipboard</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Copy to clipboard</h5>
+                </div>
+
+                <div class="ibox-content">
+
+
+                    <p>
+                        Modern copy to clipboard features. Just 2kb without flash!
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Copy text from another element</h3>
+
+                            <p>
+                                A pretty common use case is to copy content from another element. You can do that by adding a <code>data-clipboard-target</code> attribute in your trigger element.
+                            </p>
+                            <p>
+                                The value you include on this attribute needs to match another's element selector.
+                            </p>
+
+                            <p class="text-navy font-bold" id="copytext">Please press the button and copy me!</p>
+                            <button class="btn btn-white" ngclipboard data-clipboard-target="#copytext"><i class="fa fa-copy"></i> Copy</button>
+
+                            <div class="m-t">
+                                <strong>HTML markup</strong>
+                            </div>
+                                    <pre>
+
+&lt;p id="copytext"&gt;Please press the button and copy me!&lt;/p&gt;
+
+&lt;button class="btn btn-white" ngclipboard data-clipboard-target="#copytext"&gt;&lt;i class="fa fa-copy"&gt;&lt;/i&gt; Copy&lt;/button&gt;
+                                    </pre>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Cut text from another element</h3>
+
+                            <p>
+                                Additionally, you can define a <code>data-clipboard-action</code> attribute to specify if you want to either <code>copy</code> or <code>cut</code> content.
+                            </p>
+
+                            <textarea class="form-control" id="cuttext">This is example text that will be cuted fromt this textarea control.</textarea>
+                            <button class="btn btn-white m-t" ngclipboard data-clipboard-action="cut" data-clipboard-target="#cuttext"><i class="fa fa-cut"></i> Cut to clipboard</button>
+
+                            <div class="m-t">
+                                <strong>HTML markup</strong>
+                            </div>
+
+                                    <pre>
+
+&lt;textarea id="cuttext"&gt;This is example text that will be cuted fromt this textarea control.&lt;/textarea&gt;
+
+&lt;button class="btn btn-white" ngclipboard data-clipboard-action="cut" data-clipboard-target="#cuttext"&gt;&lt;i class="fa fa-cut"&gt;&lt;/i&gt; Cut to clipboard&lt;/button&gt;
+                                    </pre>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Playground</h5>
+                </div>
+
+                <div class="ibox-content">
+
+
+                    <strong>
+
+                        Paste and test you copied text.
+                    </strong>
+
+                            <textarea  class="form-control border-left m-t" style="height: 200px">
+
+                            </textarea>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

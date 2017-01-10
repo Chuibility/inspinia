@@ -1,0 +1,1593 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA Admin Theme Documentation</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <style>
+
+        .documentation .jumbotron .row {
+            padding-top: 60px;
+        }
+
+        .anchor {
+            padding-top: 50px;
+        }
+
+    </style>
+</head>
+<body class="documentation">
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">INSPINIA - Documentation</a>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/mvc_logo.png" alt="mvc_logo" style="width: 200px">
+
+                <h2>Inspinia ASP.NET MVC5 (MVC6 beta RC1)</h2>
+
+                <p>Thank you for purchasing INSPINIA admin theme. If you have any questions about the template, please feel free to contact us via email: <a href="mailto:support@webapplayers.com">support@webapplayers.com</a>.<br/>
+                    Thanks very much!</p>
+                <small>
+
+                    <strong>Documentation created:</strong> 10/12/2014<br/>
+                    <strong>Latest update:</strong> 06/01/2017<br/>
+                    <strong>By:</strong> WebAppLayers Team<br/>
+                    <strong>Theme version:</strong> 2.7<br/>
+
+                </small>
+                <br/>
+                <small>
+                    For HTML/CSS documentation go to: <a href="index.html">Static HTML/CSS documentation.</a><br/>
+                    For AngularJS documentation go to: <a href="angular.html">AngularJS documentation.</a><br/>
+                    For Ruby on Rails documentation go to: <a href="rails.html">RAILS documentation.</a><br/>
+                    For Meteor documentation go to: <a href="meteor.html">METEOR documentation.</a>
+                </small>
+            </div>
+            <div class="col-md-6">
+                <img src="img/preview.png" alt="screen" class="img-responsive"/>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+
+<div class="row">
+
+    <div class="col-lg-12">
+
+        <h2>
+            Table of Contents
+        </h2>
+
+        <ul>
+
+            <li><a href="#documentation">About documentation</a></li>
+            <li><a href="#mvc6">MVC6 Introduction</a></li>
+            <li><a href="#folder_structure">Technology and structure</a></li>
+            <li><a href="#layout_structure">Layout structure</a></li>
+            <li><a href="#options">Options</a>
+                <ul>
+                    <li><a href="#fixed_sidebar">Fixed sidebar</a></li>
+                    <li><a href="#fixed_navbar">Fixed navbar</a></li>
+                    <li><a href="#fixed_navbar2">Fixed navbar2</a></li>
+                    <li><a href="#fixed_footer">Fixed footer</a></li>
+                    <li><a href="#rtl_support">RTL support</a></li>
+                    <li><a href="#layout_2">Layout 2</a></li>
+                    <li><a href="#off_canvas_menu">Off canvas menu</a></li>
+                    <li><a href="#skins">Skins</a></li>
+                    <li><a href="#themeconfig">Theme config</a></li>
+                </ul>
+            </li>
+            <li><a href="#scaffolding">CodeTemplates and Scaffolding</a></li>
+            <li><a href="#seed_project">Seed Project</a></li>
+            <li><a href="#change_log">Change log v.2.6.2 -> v.2.7</a></li>
+            <li><a href="#change_log">Change log v.2.6 -> v.2.6.2</a></li>
+            <li><a href="#change_log">Change log v.2.5 -> v.2.6</a></li>
+            <li><a href="#change_log">Change log v.2.4 -> v.2.5</a></li>
+            <li><a href="#change_log">Change log v.2.3 -> v.2.4</a></li>
+            <li><a href="#change_log">Change log v.2.2 -> v.2.3</a></li>
+            <li><a href="#change_log">Change log v.2.0/2.1 -> v.2.2</a></li>
+            <li><a href="#change_log">Change log v.2.0 -> v.2.1</a></li>
+            <li><a href="#change_log">Change log v.1.9 -> v.2.0</a></li>
+            <li><a href="#change_log">Change log v.1.9 -> v.1.9.2</a></li>
+            <li><a href="#change_log">Change log v.1.8 -> v.1.9</a></li>
+            <li><a href="#contact">Contacts</a></li>
+
+
+        </ul>
+
+
+    </div>
+
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<a name="documentation" class="anchor"></a>
+
+<h3>About the documentation</h3>
+
+<p>
+    This documentation is focused on ASP.NET MVC5 version. It assumes a minimum knowledge of asp.net technology. It describe mainly files and structure in project.
+    <i>Please note that this documentation is dedicated to the main element of the template. With each version, we will try to develop it. But if you have any questions going beyond what is
+        described here don't hesitate to write to us.</i>
+</p>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <a name="folder_structure" class="anchor"></a>
+
+        <h3>Technology and structure</h3>
+
+        <p><strong>Tool and Technologies used:</strong>
+        <ul>
+            <li>
+                Visual Studio 2013
+            </li>
+            <li>
+                .Net Framework 4.5.1.
+            </li>
+            <li>
+                MVC 5
+            </li>
+            <li>
+                Bootstrap 3 UI Framework.
+            </li>
+            <li>
+                INSPINIA resources
+            </li>
+        </ul>
+        </p>
+
+        <h4>Folders and files</h4>
+
+        <p>INSPINIA ASP.NET MVC template consists project files for Visual Studio 2013 with below structure:</p>
+
+        <div><pre class="prettyprint linenums">
+<code>Inspinia_MVC5/
+    ├── <strong>App_Data/</strong>
+    ├── <strong>App_Start/</strong>
+    ├── <strong>bin/</strong>
+    ├── <strong>CodeTemplates/</strong>
+    ├── <strong>Content/</strong>
+    ├── <strong>Controllers/</strong>
+    ├── <strong>fonts/</strong>
+    ├── <strong>Helpers/</strong>
+    ├── <strong>Images/</strong>
+    ├── <strong>Models/</strong>
+    ├── <strong>obj/</strong>
+    ├── <strong>Properties/</strong>
+    ├── <strong>Scripts/</strong>
+    ├── <strong>Views/</strong>
+    ├── favicon.ico
+    ├── Global.asax
+    ├── Global.asax.cs
+    ├── Inspinia_MVC5.csproj
+    ├── Inspinia_MVC5.csproj.user
+    ├── packages.config
+    ├── Web.config
+    ├── Web.Debug.config
+    ├── Web.Release.config </code></pre>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h3>Main _Layout.cshtml</h3>
+
+        <p>Main layout are created with few main elements:</p>
+        <ol>
+            <li><code>_Navigation</code> left sidebar navigation.</li>
+            <li><code>_TopNavbar</code> top navigation with second menu.</li>
+            <li><code>@RenderBody</code> main container for page elements.</li>
+            <li><code>_Footer</code> footer element.</li>
+        </ol>
+
+        <a target="_blank" href="img/page_mvc.png"><img class="img-responsive" src="img/page_mvc.png" alt="page structure"></a>
+    </div>
+</div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <a name="mvc6" class="anchor"></a>
+
+            <h3>MVC6 Introduction</h3>
+            <p>
+                Please note that Inspinia ASP.NET MVC6 is beta version. Once ASP.NET 5 will be released official then we will provide required changes and publish final version.
+
+            </p>
+            <div class="alert alert-danger">
+                To run new MVC6 project you need to have installed ASP.NET 5 RC - https://get.asp.net/
+            </div>
+            <p>
+                Full documentation for new project will be released once final version will be finished. File structure are the same as the MVC5.
+                Please note that new MVC6 not use bundle system. In This project we use Gulp for compile SCSS style files and minify js files.
+                Additional new project use bower to download most of the plugins. Those plugins are stored in wwwrooot/lib_bower. If some of the plugins
+                don't have
+                bower package or we use changed version then this plugins are stored in wwwroot/lib folder.
+            </p>
+        </div>
+    </div>
+
+
+            <div class="row">
+<div class="col-lg-12">
+<a name="layout_structure" class="anchor"></a>
+
+<h3>Layout structure</h3>
+
+<p>Page <code>&lt;head /&gt;</code> contains Metadata and CSS bundle files for theme. We use special section <b>AddLocalStyles</b>, to import styles for specific plugins on pages that need it.</p>
+            <pre class="prettyprint linenums">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;INSPINIA | @ViewBag.Title&lt;/title&gt;
+    &lt;!-- Add local styles, mostly for plugins css file --&gt;
+    @if (IsSectionDefined("AddLocalStyles"))
+        {@RenderSection("AddLocalStyles", required: false)}
+
+    &lt;!-- Primary Inspinia style --&gt;
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/font-awesome/css")
+&lt;/head&gt;
+</pre>
+
+<hr>
+<h3>Main file structure</h3>
+
+<p>IMPORTANT - Main stucture of _Layout.cshtml file.</p>
+            <pre class="prettyprint linenums">
+&lt;!-- Skin configuration box --&gt;
+@Html.Partial("_SkinConfig")
+
+&lt;!-- Wrapper--&gt;
+&lt;!-- PageClass give you ability to specify custom style for specific view based on action --&gt;
+&lt;div id="wrapper" class="@Html.PageClass()"&gt;
+
+    &lt;!-- Navigation --&gt;
+    @Html.Partial("_Navigation")
+
+    &lt;!-- Page wraper --&gt;
+    &lt;div id="page-wrapper" class="gray-bg @ViewBag.SpecialClass"&gt;
+
+        &lt;!-- Top Navbar --&gt;
+        @Html.Partial("_TopNavbar")
+
+        &lt;!-- Main view  --&gt;
+        @RenderBody()
+
+        &lt;!-- Footer --&gt;
+        @Html.Partial("_Footer")
+
+    &lt;/div&gt;
+    &lt;!-- End page wrapper--&gt;
+
+    &lt;!-- Right Sidebar --&gt;
+    @Html.Partial("_RightSidebar")
+
+&lt;/div&gt;
+&lt;!-- End wrapper--&gt;
+            </pre>
+<hr>
+<h3>Page Script </h3>
+
+<p>On bottom of file are bundle script located. _Layout.cshtml contains all major plugin scripts and Inspinia scripts.
+    In section <b>Scripts</b>, will be import scripts for specific plugins on pages that need it.
+</p>
+            <pre class="prettyprint linenums">
+
+&lt;!-- Section for main scripts render --&gt;
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/plugins/slimScroll")
+@Scripts.Render("~/bundles/inspinia")
+
+&lt;!-- Skin config script - only for demo purpose--&gt;
+@Scripts.Render("~/bundles/skinConfig")
+
+&lt;!-- Handler for local scripts --&gt;
+@RenderSection("scripts", required: false)
+
+</pre>
+<hr>
+
+<h3>Adding Plugin (special styles file and scripts)</h3>
+
+<p>To add for example iCheck plugin (plugin for custom checkbox input) at the bottom of page (view) you have to specifie <b>Styles</b> and <b>Scripts</b> with name plugin as example below. Or if you
+    want to add it to entire app you can add it to _Layout file. </p>
+            <pre class="prettyprint linenums">
+
+@section Styles {
+    @Styles.Render("~/plugins/iCheckStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/iCheck")
+
+    &lt;script type="text/javascript"&gt;
+        $(document).ready(function () {
+
+            // Local scripts
+
+        });
+    &lt;/script&gt;
+}
+
+</pre>
+<p>
+    <strong> If you need any help with render section feel free to write me at support@webapplayers.com.</strong>
+</p>
+<hr>
+
+<h3>BundleConfig.cs</h3>
+
+<p>Bundle contains all neccesery scripts and style. You can add it to any part of your app. With convention:<br/><br/>
+
+    <b>CSS styles:</b> @Styles.Render("~/plugins/<b>{PluginName}</b>Styles")
+    <br/>
+    <b>JS scripts:</b> @Scripts.Render("~/plugins/<b>{PluginName}</b>")
+</p>
+
+<p>
+
+    Please note that some plugin have own images so path to the bundle has to be relative for example ionRangeSlider plugins.
+</p>
+<br/>
+            <pre class="prettyprint linenums">
+
+            // CSS style (bootstrap/inspinia)
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/animate.css",
+                      "~/Content/style.css"));
+
+            // Font Awesome icons
+            bundles.Add(new StyleBundle("~/font-awesome/css").Include(
+                      "~/fonts/font-awesome/css/font-awesome.min.css", new CssRewriteUrlTransform()));
+
+            // jQuery
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                      "~/Scripts/jquery-3.1.1.min.js"));
+
+            // jQueryUI CSS
+            bundles.Add(new ScriptBundle("~/Scripts/plugins/jquery-ui/jqueryuiStyles").Include(
+                        "~/Scripts/plugins/jquery-ui/jquery-ui.min.css"));
+
+            // jQueryUI
+            bundles.Add(new StyleBundle("~/bundles/jqueryui").Include(
+                        "~/Scripts/plugins/jquery-ui/jquery-ui.min.js"));
+
+            // Bootstrap
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/bootstrap.min.js"));
+
+            // Inspinia script
+            bundles.Add(new ScriptBundle("~/bundles/inspinia").Include(
+                      "~/Scripts/plugins/metisMenu/metisMenu.min.js",
+                      "~/Scripts/plugins/pace/pace.min.js",
+                      "~/Scripts/app/inspinia.min.js"));
+
+            // Inspinia skin config script
+            bundles.Add(new ScriptBundle("~/bundles/skinConfig").Include(
+                      "~/Scripts/app/skin.config.min.js"));
+
+            // SlimScroll
+            bundles.Add(new ScriptBundle("~/plugins/slimScroll").Include(
+                      "~/Scripts/plugins/slimscroll/jquery.slimscroll.min.js"));
+
+            // Peity
+            bundles.Add(new ScriptBundle("~/plugins/peity").Include(
+                      "~/Scripts/plugins/peity/jquery.peity.min.js"));
+
+            // Video responsible
+            bundles.Add(new ScriptBundle("~/plugins/videoResponsible").Include(
+                      "~/Scripts/plugins/video/responsible-video.js"));
+
+            // Lightbox gallery css styles
+            bundles.Add(new StyleBundle("~/Content/plugins/blueimp/css/").Include(
+                      "~/Content/plugins/blueimp/css/blueimp-gallery.min.css"));
+
+            // Lightbox gallery
+            bundles.Add(new ScriptBundle("~/plugins/lightboxGallery").Include(
+                      "~/Scripts/plugins/blueimp/jquery.blueimp-gallery.min.js"));
+
+            // Sparkline
+            bundles.Add(new ScriptBundle("~/plugins/sparkline").Include(
+                      "~/Scripts/plugins/sparkline/jquery.sparkline.min.js"));
+
+            // Morriss chart css styles
+            bundles.Add(new StyleBundle("~/plugins/morrisStyles").Include(
+                      "~/Content/plugins/morris/morris-0.4.3.min.css"));
+
+            // Morriss chart
+            bundles.Add(new ScriptBundle("~/plugins/morris").Include(
+                      "~/Scripts/plugins/morris/raphael-2.1.0.min.js",
+                      "~/Scripts/plugins/morris/morris.js"));
+
+            // Flot chart
+            bundles.Add(new ScriptBundle("~/plugins/flot").Include(
+                      "~/Scripts/plugins/flot/jquery.flot.js",
+                      "~/Scripts/plugins/flot/jquery.flot.tooltip.min.js",
+                      "~/Scripts/plugins/flot/jquery.flot.resize.js",
+                      "~/Scripts/plugins/flot/jquery.flot.pie.js",
+                      "~/Scripts/plugins/flot/jquery.flot.time.js",
+                      "~/Scripts/plugins/flot/jquery.flot.spline.js"));
+
+            // Rickshaw chart
+            bundles.Add(new ScriptBundle("~/plugins/rickshaw").Include(
+                      "~/Scripts/plugins/rickshaw/vendor/d3.v3.js",
+                      "~/Scripts/plugins/rickshaw/rickshaw.min.js"));
+
+            // ChartJS chart
+            bundles.Add(new ScriptBundle("~/plugins/chartJs").Include(
+                      "~/Scripts/plugins/chartjs/Chart.min.js"));
+
+            // iCheck css styles
+            bundles.Add(new StyleBundle("~/Content/plugins/iCheck/iCheckStyles").Include(
+                      "~/Content/plugins/iCheck/custom.css"));
+
+            // iCheck
+            bundles.Add(new ScriptBundle("~/plugins/iCheck").Include(
+                      "~/Scripts/plugins/iCheck/icheck.min.js"));
+
+            // dataTables css styles
+            bundles.Add(new StyleBundle("~/Content/plugins/dataTables/dataTablesStyles").Include(
+                      "~/Content/plugins/dataTables/dataTables.bootstrap.css",
+                      "~/Content/plugins/dataTables/dataTables.responsive.css",
+                      "~/Content/plugins/dataTables/dataTables.tableTools.min.css"));
+
+            // dataTables
+            bundles.Add(new ScriptBundle("~/plugins/dataTables").Include(
+                      "~/Scripts/plugins/dataTables/jquery.dataTables.js",
+                      "~/Scripts/plugins/dataTables/dataTables.bootstrap.js",
+                      "~/Scripts/plugins/dataTables/dataTables.responsive.js",
+                      "~/Scripts/plugins/dataTables/dataTables.tableTools.min.js"));
+
+            // jeditable
+            bundles.Add(new ScriptBundle("~/plugins/jeditable").Include(
+                      "~/Scripts/plugins/jeditable/jquery.jeditable.js"));
+
+            // jqGrid styles
+            bundles.Add(new StyleBundle("~/Content/plugins/jqGrid/jqGridStyles").Include(
+                      "~/Content/plugins/jqGrid/ui.jqgrid.css"));
+
+            // jqGrid
+            bundles.Add(new ScriptBundle("~/plugins/jqGrid").Include(
+                      "~/Scripts/plugins/jqGrid/i18n/grid.locale-en.js",
+                      "~/Scripts/plugins/jqGrid/jquery.jqGrid.min.js"));
+
+            // codeEditor styles
+            bundles.Add(new StyleBundle("~/plugins/codeEditorStyles").Include(
+                      "~/Content/plugins/codemirror/codemirror.css",
+                      "~/Content/plugins/codemirror/ambiance.css"));
+
+            // codeEditor
+            bundles.Add(new ScriptBundle("~/plugins/codeEditor").Include(
+                      "~/Scripts/plugins/codemirror/codemirror.js",
+                      "~/Scripts/plugins/codemirror/mode/javascript/javascript.js"));
+
+            // codeEditor
+            bundles.Add(new ScriptBundle("~/plugins/nestable").Include(
+                      "~/Scripts/plugins/nestable/jquery.nestable.js"));
+
+            // validate
+            bundles.Add(new ScriptBundle("~/plugins/validate").Include(
+                      "~/Scripts/plugins/validate/jquery.validate.min.js"));
+
+            // fullCalendar styles
+            bundles.Add(new StyleBundle("~/plugins/fullCalendarStyles").Include(
+                      "~/Content/plugins/fullcalendar/fullcalendar.css"));
+
+            // fullCalendar
+            bundles.Add(new ScriptBundle("~/plugins/fullCalendar").Include(
+                      "~/Scripts/plugins/fullcalendar/moment.min.js",
+                      "~/Scripts/plugins/fullcalendar/fullcalendar.min.js"));
+
+            // vectorMap
+            bundles.Add(new ScriptBundle("~/plugins/vectorMap").Include(
+                      "~/Scripts/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
+                      "~/Scripts/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"));
+
+            // ionRange styles
+            bundles.Add(new StyleBundle("~/Content/plugins/ionRangeSlider/ionRangeStyles").Include(
+                      "~/Content/plugins/ionRangeSlider/ion.rangeSlider.css",
+                      "~/Content/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css"));
+
+            // ionRange
+            bundles.Add(new ScriptBundle("~/plugins/ionRange").Include(
+                      "~/Scripts/plugins/ionRangeSlider/ion.rangeSlider.min.js"));
+
+            // dataPicker styles
+            bundles.Add(new StyleBundle("~/plugins/dataPickerStyles").Include(
+                      "~/Content/plugins/datapicker/datepicker3.css"));
+
+            // dataPicker
+            bundles.Add(new ScriptBundle("~/plugins/dataPicker").Include(
+                      "~/Scripts/plugins/datapicker/bootstrap-datepicker.js"));
+
+            // nouiSlider styles
+            bundles.Add(new StyleBundle("~/plugins/nouiSliderStyles").Include(
+                      "~/Content/plugins/nouslider/jquery.nouislider.css"));
+
+            // nouiSlider
+            bundles.Add(new ScriptBundle("~/plugins/nouiSlider").Include(
+                      "~/Scripts/plugins/nouslider/jquery.nouislider.min.js"));
+
+            // jasnyBootstrap styles
+            bundles.Add(new StyleBundle("~/plugins/jasnyBootstrapStyles").Include(
+                      "~/Content/plugins/jasny/jasny-bootstrap.min.css"));
+
+            // jasnyBootstrap
+            bundles.Add(new ScriptBundle("~/plugins/jasnyBootstrap").Include(
+                      "~/Scripts/plugins/jasny/jasny-bootstrap.min.js"));
+
+            // switchery styles
+            bundles.Add(new StyleBundle("~/plugins/switcheryStyles").Include(
+                      "~/Content/plugins/switchery/switchery.css"));
+
+            // switchery
+            bundles.Add(new ScriptBundle("~/plugins/switchery").Include(
+                      "~/Scripts/plugins/switchery/switchery.js"));
+
+            // chosen styles
+            bundles.Add(new StyleBundle("~/Content/plugins/chosen/chosenStyles").Include(
+                      "~/Content/plugins/chosen/chosen.css"));
+
+            // chosen
+            bundles.Add(new ScriptBundle("~/plugins/chosen").Include(
+                      "~/Scripts/plugins/chosen/chosen.jquery.js"));
+
+            // knob
+            bundles.Add(new ScriptBundle("~/plugins/knob").Include(
+                      "~/Scripts/plugins/jsKnob/jquery.knob.js"));
+
+            // wizardSteps styles
+            bundles.Add(new StyleBundle("~/plugins/wizardStepsStyles").Include(
+                      "~/Content/plugins/steps/jquery.steps.css"));
+
+            // wizardSteps
+            bundles.Add(new ScriptBundle("~/plugins/wizardSteps").Include(
+                      "~/Scripts/plugins/staps/jquery.steps.min.js"));
+
+            // dropZone styles
+            bundles.Add(new StyleBundle("~/Content/plugins/dropzone/dropZoneStyles").Include(
+                      "~/Content/plugins/dropzone/basic.css",
+                      "~/Content/plugins/dropzone/dropzone.css"));
+
+            // dropZone
+            bundles.Add(new ScriptBundle("~/plugins/dropZone").Include(
+                      "~/Scripts/plugins/dropzone/dropzone.js"));
+
+            // summernote styles
+            bundles.Add(new StyleBundle("~/plugins/summernoteStyles").Include(
+                      "~/Content/plugins/summernote/summernote.css",
+                      "~/Content/plugins/summernote/summernote-bs3.css"));
+
+            // summernote
+            bundles.Add(new ScriptBundle("~/plugins/summernote").Include(
+                      "~/Scripts/plugins/summernote/summernote.min.js"));
+
+            // toastr notification
+            bundles.Add(new ScriptBundle("~/plugins/toastr").Include(
+                      "~/Scripts/plugins/toastr/toastr.min.js"));
+
+            // toastr notification styles
+            bundles.Add(new StyleBundle("~/plugins/toastrStyles").Include(
+                      "~/Content/plugins/toastr/toastr.min.css"));
+
+            // color picker
+            bundles.Add(new ScriptBundle("~/plugins/colorpicker").Include(
+                      "~/Scripts/plugins/colorpicker/bootstrap-colorpicker.min.js"));
+
+            // color picker styles
+            bundles.Add(new StyleBundle("~/Content/plugins/colorpicker/colorpickerStyles").Include(
+                      "~/Content/plugins/colorpicker/bootstrap-colorpicker.min.css"));
+
+            // image cropper
+            bundles.Add(new ScriptBundle("~/plugins/imagecropper").Include(
+                      "~/Scripts/plugins/cropper/cropper.min.js"));
+
+            // image cropper styles
+            bundles.Add(new StyleBundle("~/plugins/imagecropperStyles").Include(
+                      "~/Content/plugins/cropper/cropper.min.css"));
+
+            // jsTree
+            bundles.Add(new ScriptBundle("~/plugins/jsTree").Include(
+                      "~/Scripts/plugins/jsTree/jstree.min.js"));
+
+            // jsTree styles
+            bundles.Add(new StyleBundle("~/Content/plugins/jsTree").Include(
+                      "~/Content/plugins/jsTree/style.css"));
+
+            // Diff
+            bundles.Add(new ScriptBundle("~/plugins/diff").Include(
+                      "~/Scripts/plugins/diff_match_patch/javascript/diff_match_patch.js",
+                      "~/Scripts/plugins/preetyTextDiff/jquery.pretty-text-diff.min.js"));
+
+            // Idle timer
+            bundles.Add(new ScriptBundle("~/plugins/idletimer").Include(
+                      "~/Scripts/plugins/idle-timer/idle-timer.min.js"));
+
+            // Tinycon
+            bundles.Add(new ScriptBundle("~/plugins/tinycon").Include(
+                      "~/Scripts/plugins/tinycon/tinycon.min.js"));
+
+</pre>
+
+
+<a name="options" class="anchor"></a>
+
+<h3>Options</h3>
+
+<p>Inspinia provide few option for you layout app. There are:
+
+<ul>
+    <li>Fixed sidebar</li>
+    <li>Fixed navbar</li>
+    <li>Fixed footer</li>
+    <li>RTL support</li>
+    <li>Layout 2 (top navigation)</li>
+    <li>Off canvas menu</li>
+    <li>Skins</li>
+</ul>
+
+</p>
+
+
+<a name="fixed_sidebar" class="anchor"></a>
+<h4>Fixed sidebar</h4>
+
+<p>
+    Fixed sidebar is a sidebar that is sticked on screen.
+
+</p>
+
+<p>
+    To add fixed sidebar you need to add .fixed-sidebar class to body.
+</p>
+
+<pre class="prettyprint linenums">
+
+    &lt;body class="fixed-sidebar"&gt;
+
+</pre>
+
+<p>
+    Next we will need to add slimScroll handle for sidebar. Go to scripts/app/inspinia.js file and find // Fixed Sidebar comment and uncomment function below it so it will look like this:
+
+</p>
+
+
+<pre class="prettyprint linenums">
+
+    // Fixed Sidebar
+    // unComment this only whe you have a fixed-sidebar
+    $(window).bind("load", function() {
+        if($("body").hasClass('fixed-sidebar')) {
+            $('.sidebar-collapse').slimScroll({
+                height: '100%',
+                railOpacity: 0.9,
+            });
+        }
+    })
+
+
+</pre>
+<p>
+    Be sure that you have included slimScroll plugin to your index.cshtml file:
+
+    <pre class="prettyprint linenums">
+
+        @Scripts.Render("~/plugins/slimScroll")
+
+    </pre>
+
+</p>
+
+<a name="fixed_navbar" class="anchor"></a>
+<h4>Fixed navbar</h4>
+
+<p>
+    Fixed navbar is a top navbar that is sticked on screen.
+
+</p>
+
+<p>
+    To add fixed sidebar you need to add .fixed-nav class to body.
+</p>
+
+<pre class="prettyprint linenums">
+
+    &lt;body class="fixed-nav"&gt;
+
+</pre>
+
+<p>
+    Next we will need to change navbar from static to fixed in Shared/_TopNavbar.cshtml file. Change .navbar-static-top class to navbar-fixed-top
+
+</p>
+
+
+<pre class="prettyprint linenums">
+
+&lt;nav class="navbar navbar-fixed-top" role="navigation"&gt;
+
+</pre>
+
+
+    <a name="fixed_navbar2" class="anchor"></a>
+    <h4>Fixed navbar 2</h4>
+
+    <p>
+        Fixed navbar 2 is a top navbar that is sticked on screen and it's width is the same as the width of wrapper
+
+    </p>
+    <p>
+        To add fixed sidebar you  need to add .fixed-nav class and .fixed-nav-basic class to body.
+    </p>
+
+<pre class="prettyprint linenums">
+
+    &lt;body class="fixed-nav fixed-nav-basic"&gt;
+
+</pre>
+
+    <p>
+        Next we will need to change navbar from static to fixed in Shared/_TopNavbar.cshtml file. Change .navbar-static-top class to navbar-fixed-top
+
+    </p>
+
+
+<pre class="prettyprint linenums">
+
+&lt;nav class="navbar navbar-fixed-top" role="navigation"&gt;
+
+</pre>
+
+
+    <p>
+        Fixed navbar 2 works only on primary layout
+
+    </p>
+
+<a name="fixed_footer" class="anchor"></a>
+<h4>Fixed footer</h4>
+
+<p>
+    Fixed footer is a bottom footer that is sticked on screen.
+
+</p>
+
+<p>
+    To add fixed bottom footer you just need to add .fixed class to footer class.
+</p>
+
+<pre class="prettyprint linenums">
+
+    &lt;div class="footer fixed"&gt;
+
+</pre>
+
+<a name="rtl_support" class="anchor"></a>
+<h4>Right-to-Left Language Support </h4>
+
+<p>
+    Adding support for language written in a Right-To-Left (RTL) direction.
+
+</p>
+
+<p>
+    To add RTL support you will need to add new .rtls class to body element
+</p>
+
+<pre class="prettyprint linenums">
+
+    &lt;body class="rtls"&gt;
+
+</pre>
+
+<p>
+    Next you will need to add new bootstrap rtl support library bootstrap-rtl. Add new link to css file just below the Content/css from bootstrap in index.cshtml page like this:
+</p>
+
+<pre class="prettyprint linenums">
+
+    @Styles.Render("~/Content/css")
+    &lt;link href="~/Content/plugins/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet"&gt;
+
+</pre>
+
+<p>
+    After that you will have RTL support similar to this:
+
+</p>
+
+<img class="img-responsive" src="img/rtl_support.png" alt="">
+
+
+<a name="layout_2" class="anchor"></a>
+<h4>Layout 2</h4>
+
+<p>
+    Layout 2 is a top navigation with centered content layout.
+
+</p>
+
+<p>
+    For layout 2 we prepared special examples files in Shared folder
+</p>
+
+<ul>
+    <li>
+        _Layout_2.cshtml
+    </li>
+    <li>
+        _TopNavbar2.cshtml
+    </li>
+</ul>
+
+<p>
+    To use layout 2 all you need to do is to specify new layout in top of the page:
+</p>
+
+<pre class="prettyprint linenums">
+
+@{
+    Layout = "~/Views/Shared/_Layout_2.cshtml";
+    ViewBag.Title = "Dashboard v.4";
+}
+
+</pre>
+
+<p>
+    Layout 2 with example code look like this:
+
+</p>
+
+<img class="img-responsive" src="img/Dashboard_4.png" alt="">
+
+    <a name="off_canvas_menu" class="anchor"></a>
+    <h4>Off canvas menu</h4>
+
+    <p>
+        Off canvas menu is a menu that not change the width of main wrapper page. It appear on top of the page.
+
+    </p>
+
+    <p>
+        To use off canvas menu you just need to use _Layout4.cshtml. The body has special <code>.canvas-manu</code> class and it include special _NavigationOffCanvas.
+
+    </p>
+
+
+<a name="skins" class="anchor"></a>
+<h4>Skins</h4>
+
+<p>Inspinai theme has 3 diferent skins</p>
+
+<p><strong>To change skin you just have to add skin class to body element.</strong></p>
+
+<p>For example: to add skin Blue skin you just need to add <code>.skin-1</code> class to body element.</p>
+
+<p>In LESS files skins.less you can find style for the skin. Below is a representation of css classes demand color skin.</p>
+<ul>
+    <li><code>.skin-1</code> - Blue Light</li>
+    <li><code>.skin-2</code> - Inspinia Ultra {for support with Inspinai Ultra please contact with support@webapplayers.com}</li>
+    <li><code>.skin-3</code> - Yellow/purple</li>
+    <li><code>.md-skin</code> - Material Design Skin (In demo Inspinia Material Design version has also fixed sidebar and fixed navbar option)</li>
+    <li>Defaut skin does not need any class</li>
+</ul>
+
+<a name="themeconfig" class="anchor"></a>
+<h4>Theme config</h4>
+
+<p>Theme config is the configuration box for setting options in live preview. It is placed in the right side of page with green icon.</p>
+
+<p>To not add html code to all pages we just add js script to append the config box. The function is located in Scripts/app/inspinia.js file with comment // Append config box / Only for demo purpose</p>
+
+<p>If you want to remove the config box all you need to do is to remove function below this comment.</p>
+
+
+<hr>
+
+<a name="scaffolding" class="anchor"></a>
+<h3>CodeTemplates and Scaffolding</h3>
+
+<p>In CodeTemplates we add special customized template for Scaffolding. If you run app and go to <b>Scaffolding</b> page then you will see a full generated code and views with customized look and feel
+    for Inspinia theme.</p>
+
+<div class="text-center">
+    <img src="img/scaffolding_page.png" alt="scaffolding" class="img-responsive">
+
+</div>
+
+
+<h3>Scaffolding Tutorial</h3>
+
+<p>In this section we will show you have to go throw scaffolding with customized template on Inspinia MVC5 SeedProject.
+</p>
+
+<p>When you open Inspinia Seed Project you will see in Solution Explorer folder <b>CodeTemplates</b>.
+    This folder contains scaffolding templates. This folder must have the CodeTemplates name.
+    Entity framework first check for this folder in solution and if he find it he will use templates from there.</p>
+
+<img src="img/scaff1.png" alt="scaffolding" class="img-responsive">
+
+<p>
+    Lets add simple model for our demo purpose.
+</p>
+<img src="img/scaff2.png" alt="scaffolding" class="img-responsive">
+
+<p> Select Empty controller </p>
+<img src="img/scaff3.png" alt="scaffolding" class="img-responsive">
+
+
+<p> Enter controller name </p>
+<img src="img/scaff4.png" alt="scaffolding" class="img-responsive">
+
+<p> Write bacis Person model with {Id, FirstName, LastName, Position} </p>
+<img src="img/scaff5.png" alt="scaffolding" class="img-responsive">
+
+<p> After save build project</p>
+<img src="img/scaff7.1.png" alt="scaffolding" class="img-responsive">
+
+<p> Next creat scaffolding controller and views</p>
+<img src="img/scaff6.png" alt="scaffolding" class="img-responsive">
+
+<p> Select MVC5 Controller with view, using Entity Framework</p>
+<img src="img/scaff7.png" alt="scaffolding" class="img-responsive">
+
+<p> Add name and use Person model </p>
+<img src="img/scaff8.png" alt="scaffolding" class="img-responsive">
+
+<p> Next click to New data context and set a name for context</p>
+<img src="img/scaff9.png" alt="scaffolding" class="img-responsive">
+
+<p> Once more build project to creat connection </p>
+<img src="img/scaff10.png" alt="scaffolding" class="img-responsive">
+
+<p> After that go to _Navigation file and add menu item to Person view as below </p>
+<img src="img/scaff11.png" alt="scaffolding" class="img-responsive">
+
+<p> When you run app go to Person menu and you will see a empty table. Click create new </p>
+<img src="img/scaff12.png" alt="scaffolding" class="img-responsive">
+
+<p> Add some example data </p>
+<img src="img/scaff13.png" alt="scaffolding" class="img-responsive">
+
+<p> After that you will have a first person in your database </p>
+<img src="img/scaff14.png" alt="scaffolding" class="img-responsive">
+
+<p>
+    <b>Using Scaffolding and Inspinia templates you can creat simple and fast basic app wtih nice look and feal writing only a model!!</b>
+</p>
+
+<hr>
+
+<a name="seed_project" class="anchor"></a>
+<h3>MVC_Seed_Project</h3>
+
+<p><strong> It is an application skeleton for a typical ASP.NET MVC5 web app. You can use it to quickly bootstrap your mvc webapp projects and dev environment for these projects.</strong></p>
+
+<p>It is a best start for new app. It has all needed scripts and style.</p>
+
+
+<a name="change_log" class="anchor"></a>
+
+
+    <h3>Change log 2.6.2 -> 2.7</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> Views/AppViews/ActivityStream.cshtml</li>
+        <li> Views/Miscellaneous/PasswordMeter.cshtml</li>
+        <li> Views/Miscellaneous/SpinnersUsage.cshtml</li>
+        <li> Views/Miscellaneous/TextSpinners.cshtml</li>
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> Views/Shared/_Navigation.cshtml - add new menu elements for new views</li>
+        <li> Views/UIElements/Icons.cshtml - update font awesome icons to new set</li>
+        <li> Views/Miscellaneous/AgileBoard.cshtml - add support for touch gestures - @Scripts.Render("~/plugins/touchPunch")</li>
+        <li> Views/UIElements/DraggablePanels.cshtml - add support for touch gestures - @Scripts.Render("~/plugins/touchPunch")</li>
+        <li> Views/UIElements/ResizeablePanels.cshtml - add support for touch gestures - @Scripts.Render("~/plugins/touchPunch")</li>
+        <li> Views/Forms/Advanced.cshtml - add new example for switchery control</li>
+        <li> Views/Miscellaneous/LoadingButtons.cshtml - update bind method for ladda example buttons</li>
+        <li> Views/UIElements/HelperClasses.cshtml - change css name in border examples</li>
+        <li> Views/Dashboards/Dashboard_3.cshtml -  update css class of sidebar</li>
+        <li> Views/Layouts/Index.cshtml - correct typos in image names and descriptions</li>
+
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> inspinia.js - update collapse-link click functions </li>
+        <li> inspinia.js - update fix_height functions </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> plugins/dropzone </li>
+        <li> plugins/fullcalendar </li>
+        <li> plugins/chartJs </li>
+        <li> plugins/summernote </li>
+        <li> content/animate.css</li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> Scripts/jquery-3.1.1.min.js</li>
+        <li> Scripts/plugins/dataTables / CSS</li>
+        <li> Scripts/plugins/switchery / CSS</li>
+        <li> Scripts/plugins/jquery-ui / CSS</li>
+        <li> Scripts/plugins/steps / CSS</li>
+        <li> Scripts/plugins/validation </li>
+        <li> fonts/font-awesome </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> Scripts/plugins/touchpunch</li>
+        <li> Scripts/plugins/pwstrength</li>
+        <li> Content/plugins/textSpinners</li>
+
+        <hr>
+        <strong>Updates Bundle</strong>
+        <li> App_start/BundleConfig.cs - Add bundle for new plugins</li>
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Fix jumping menu on landing page </li>
+        <li> Fix bg-colors </li>
+        <li> Remove rules for support old IE </li>
+        <li> Add styles for third level menu on md-skin </li>
+        <li> Improve select2 styles </li>
+        <li> Improve menu style </li>
+        <li> Clear overwrite native media-body classes </li>
+        <li> Improve few styles for IE </li>
+        <li> Improve style for summernote </li>
+        <li> Correct selected typo </li>
+        <li> Fix chat-avatar class rules </li>
+        <li> Fix typo in css preprocessor variables </li>
+
+    </ul>
+
+
+
+    <h3>Change log 2.6 -> 2.6.2</h3>
+
+    <ul>
+
+
+        <hr>
+        <strong>Updates</strong>
+        <li> Bootstrap to 3.3.7</li>
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Fix the issue with hidden href on mobile mini navbar</li>
+        <li> Fix the flickering menu</li>
+        <li> Fix Safari modal issue</li>
+        <li> Fix Summernote fullscreen mode</li>
+        <li> Fix css width helper classes</li>
+        <li> Improve content height on fixed navbar</li>
+        <li>  Improve landing page on mobile view</li>
+
+
+    </ul>
+
+    <h3>Change log 2.5 -> 2.6</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> Views/Forms/Autocomplete.cshtml</li>
+        <li> Views/Miscellaneous/Datamaps.cshtml</li>
+        <li> Views/Miscellaneous/PdfViewer.cshtml</li>
+        <li> Views/Miscellaneous/SocialButtons.cshtml</li>
+        <li> Views/UIElements/HelperClasses.cshtml</li>
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> Views/Shared/_Navigation.cshtml - add new menu elements for new views</li>
+        <li> Forms/Dashboard_1.cshtml - update script for new Chartjs version</li>
+        <li> Forms/Dashboard_3.cshtml - update script for new Chartjs version</li>
+        <li> Forms/Dashboard_4.cshtml - update script for new Chartjs version</li>
+        <li> Forms/Dashboard_4_1.cshtml - update script for new Chartjs version</li>
+        <li> Graphs/Chartjs.cshtml - update script for new Chartjs version</li>
+        <li> Forms/Advanced.cshtml - add new features: input tag, dual select</li>
+        <li> Forms/FileUpload.cshtml - add new input components, update dropzon</li>
+        <li> Tables/DataTables.cshtml - remove jeditable library</li>
+
+        <hr>
+        <strong>New Inspinia files</strong>
+        <li> pdf/example.pdf</li>
+        <li> Scripts/api/typehead_collection.json</li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> inspinia.js - update click functions </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> plugins/dropzone </li>
+        <li> plugins/fullcalendar </li>
+        <li> plugins/chartJs </li>
+        <li> plugins/summernote </li>
+        <li> content/animate.css</li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> plugins/bootstrap-taginput</li>
+        <li> plugins/dualListbox</li>
+        <li> plugins/pdfjs</li>
+        <li> plugins/topojson</li>
+        <li> plugins/typehead</li>
+        <li> plugins/bootstrapSocial</li>
+
+        <hr>
+        <strong>Updates Bundle</strong>
+        <li> App_start/BundleConfig.cs - Add bundle for new plugins</li>
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Fix menu jumping issue</li>
+        <li> Improve print mode for Firefox</li>
+        <li> Improve chosen colors</li>
+        <li> Fix boxes layout with md-skin</li>
+        <li> Improve custom swithc style</li>
+        <li> Add few new css classes - helper classes</li>
+
+    </ul>
+
+    <h3>Change log 2.4 -> 2.5</h3>
+
+    <div class="alert alert-info">
+        2.5 version fully focused on update AngularJS projects.
+        <strong>New features and views will be added to separate 2.6 version.</strong>
+    </div>
+
+    <h3>Change log 2.3 -> 2.4</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> Views/Graphs/C3charts.cshtml</li>
+        <li> Views/Ecommerce/Cart.cshtml</li>
+        <li> Views/UIElements/ResizeablePanels.cshtml</li>
+        <li> Views/Forms/Markdown.cshtml</li>
+        <li> Views/Miscellaneous/Clipboard.cshtml</li>
+        <li> Views/Miscellaneous/I18support.cshtml</li>
+        <li> Views/Miscellaneous/LoadingButtons.cshtml</li>
+        <li> Views/Miscellaneous/Tour.cshtml</li>
+        <li> Views/Miscellaneous/Truncate.cshtml</li>
+
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> Views/Shared/_Navigation.cshtml - add new menu elements for new views</li>
+        <li> Miscellaneous/AgileBoard.cshtml - add example code for serialize list</li>
+        <li> Forms/Advanced.cshtml - add new Touch spin control</li>
+        <li> Landing/Index.cshtml - update page-scroll click event to close menu on select in mobile</li>
+        <li> Shared/_SkinConfig.cshtml - add new option for fixed nav bar</li>
+        <li> Tables/DataTables.cshtml - replace old swf buttons with new button plugin (update datatables library)</li>
+        <li> UIElements/Video.cshtml - add script for handle full screen video option</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> locales/en.json</li>
+        <li> locales/es.json</li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> inspinia.js - update fix_height function </li>
+        <li> inspinia.js - update SmoothlyMenu function </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> plugins/bootstrap - update to 3.3.6 </li>
+        <li> plugins/dataTables - create on compact datatables generate in official builder: https://datatables.net/download/index </li>
+        <li> plugins/pace - update to 1.0.2 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> plugins/c3 (with css files)</li>
+        <li> plugins/bootstrap-markdow (with css files)</li>
+        <li> plugins/d3 </li>
+        <li> plugins/clipboard </li>
+        <li> plugins/dotdotdot </li>
+        <li> plugins/i18next </li>
+        <li> plugins/ladda (with css files)</li>
+        <li> plugins/touchspin (with css files)</li>
+        <li> plugins/bootstrapTour (with css files)</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> Images/flags- Set of flags images</li>
+
+        <hr>
+        <strong>Updates Bundle</strong>
+        <li> App_start/BundleConfig.cs - Add bundle for new plugins</li>
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Fix buttons shadow on Chrome </li>
+        <li> Fix dropdown text colour on md-skin </li>
+        <li> Fix pace.js on fixed navbar option </li>
+        <li> Fix few glitch animation effect </li>
+        <li> Improve nav-tabs on mobile devices </li>
+        <li> Fix second level menu on md-skin </li>
+        <li> Improve RTL mode </li>
+        <li> Add new fixed navbar option </li>
+        <li> Ipmore print mode </li>
+
+    </ul>
+
+    <h3>Change log 2.0/2.1 -> 2.2</h3>
+
+    <h3>Change log 2.2 -> 2.3</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> Views/AppViews/Contacts2.cshtml</li>
+        <li> Views/AppViews/Profile2.cshtml</li>
+        <li> Views/AppViews/VoteList.cshtml</li>
+        <li> Views/Miscellaneous/Masonry.cshtml</li>
+        <li> Views/Ecommerce/ProductDetail.cshtml</li>
+        <li> Views/Ecommerce/Payments.cshtml</li>
+        <li> Views/Gallery/SlickCarusela.cshtml</li>
+        <li> Views/Dashboards/Dashboard_5.cshtml</li>
+
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> Views/Shared/_Navigation.cshtml - add new menu elements for new views</li>
+        <li> Views/UIElements/TablesPanels.cshtml - add example of fullscreen panel and slim scroll panel </li>
+        <li> Views/Forms/Advanced.cshtml -  Add select2 examples</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> Scripts/app/inspinia.js - Add function for handle full screen ibox  </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> Bootstrap - update to 3.3.5 </li>
+        <li> Scripts/plugins/dataTables - update to 1.10.8 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> Scripts/plugins/slick (with css files)</li>
+        <li> Scripts/plugins/select2 (with css files)</li>
+        <li> Scripts/plugins/masonry </li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> Content/patterns- Add images for header in Material Design skin</li>
+
+        <hr>
+        <strong>New Controllers</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Update Controllers</strong>
+        <li> Controllers/AppViews.csController - add new pages for views</li>
+        <li> Controllers/MiscellaneousController.cs - add new pages for views</li>
+        <li> Controllers/EcommerceController.cs - add new pages for views</li>
+        <li> Controllers/DashboardsController.cs - add new pages for views</li>
+
+        <hr>
+        <strong>Updates Bundle</strong>
+        <li> App_start/BundleConfig.cs - Add bundle for new plugins</li>
+
+        <hr>
+        <strong>CSS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Add new md-skin styles </li>
+        <li> Fix ibox-tools when title is large</li>
+        <li> Fix landing page menu on small devices</li>
+        <li> Fix modal open backdrop with animate.css effect</li>
+        <li> Fix dropdown orientation under ibox</li>
+        <li> Fix profile menu on fixed sidebar</li>
+
+    </ul>
+
+    <h3>Change log 2.0/2.1 -> 2.2</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> Views/Graphs/Chartist.cshtml </li>
+        <li> Views/Metrics/Index.cshtml</li>
+        <li> Views/AppViews/SocialFeed.cshtml</li>
+        <li> Views/Miscellaneous/SweetAlert.cshtml</li>
+        <li> Views/Tables/FooTables.cshtml</li>
+        <li> Views/UIElements/Tabs.cshtml</li>
+        <li> Views/Landing/Index.cshtml (incorporate to admin)</li>
+        <li> Views/Ecommerce/Orders.cshtml</li>
+        <li> Views/Ecommerce/ProductEdit.cshtml</li>
+        <li> Views/Ecommerce/ProductsGrid.cshtml</li>
+        <li> Views/Ecommerce/ProductsList.cshtml</li>
+
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> Views/Shared/_Navigation.cshtml - add new menu elements for new views</li>
+        <li> Views/Shared/_Navigation.cshtml - added ".metismenu" class to nav element id="side-menu" (new version of metisMenu)</li>
+        <li> Views/UIElements/TablesPanels.cshtml - add example of footer to panel and initial collapsed panel </li>
+        <li> Views/Miscellaneous/Chat_view.cshtml - Add left/right class to chat panels </li>
+        <li> Views/AppViews/Article.cshtml - Add example of comments section</li>
+        <li> Views/Landing/Index.cshtml - Add new sections: timeline and comments</li>
+        <li> Views/Forms/Advanced.cshtml - Add new new plugins</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> Scripts/app/inspinia.js - Update fix_height for handle height wrapper on fixed-nav  </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> Scripts/plugins/metisMenu - update to 2.0.2 </li>
+        <li> Scripts/plugins/slimscrol - update to 1.3.6 </li>
+        <li> Scripts/plugins/jvectormap - update to 2.0.2 </li>
+        <li> Scripts/plugins/fullcalendar/moment.min.js - update to 2.9.0 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> Scripts/plugins/clockpicker (with css files)</li>
+        <li> Scripts/plugins/daterangepicker (with css files)</li>
+        <li> Scripts/plugins/footable (with css files)</li>
+        <li> Scripts/plugins/sweetalert (with css files)</li>
+        <li> Scripts/plugins/chartist</li>
+        <li> Content/plugins/awesome-bootstrap-checkbox</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> Content/landing - Full folder of images used in landing page</li>
+
+        <hr>
+        <strong>New Controllers</strong>
+        <li> Controllers/LandingController.cs</li>
+        <li> Controllers/EcommerceController.cs</li>
+        <li> Controllers/MetricsController.cs</li>
+
+        <hr>
+        <strong>Update Controllers</strong>
+        <li> Controllers/AppViews.cs - add new pages for views</li>
+        <li> Controllers/Graphs.cs - add new pages for views</li>
+        <li> Controllers/Miscellaneous.cs - add new pages for views</li>
+        <li> Controllers/Tables.cs - add new pages for views</li>
+        <li> Controllers/UIElements.cs - add new pages for views</li>
+
+        <hr>
+        <strong>Updates Bundle</strong>
+        <li> App_start/BundleConfig.cs - Add bundle for new plugins</li>
+
+        <hr>
+        <strong>CSS</strong>
+        <li> Add styles for new pages </li>
+        <li> Add new metisMenu style </li>
+        <li> Add landing page styles </li>
+        <li> Add chat-discussion left/right class</li>
+        <li> Fix z-index of modal-dialog</li>
+        <li> Fix margins on wrapper when fixed-nav is enabled</li>
+
+    </ul>
+
+    <h3>Change log 2.0 - 2.1</h3>
+
+    <strong>Version 2.1 is mainly focused on MeteorJS to provide Meteor version.</strong>
+    <p>Please stay tuned for 2.2 version to get new features for ASP.NET MVC5 version.</p>
+
+    <h3>Change log 1.9 -> 2.0</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> Views/AppViews/Article.cshtml </li>
+        <li> Views/AppViews/Blog.cshtml </li>
+        <li> Views/AppViews/Clients.cshtml </li>
+        <li> Views/AppViews/IssueTracker.cshtml </li>
+        <li> Views/AppViews/OutlookView.cshtml </li>
+        <li> Views/AppViews/TeamsBoard.cshtml </li>
+        <li> Views/Layouts/OffCanvas.cshtml </li>
+        <li> Views/Miscellaneous/AgileBoard.cshtml </li>
+        <li> Views/Miscellaneous/Diff.cshtml </li>
+        <li> Views/Miscellaneous/IdleTimer.cshtml </li>
+        <li> Views/Miscellaneous/LiveFavicon.cshtml </li>
+        <li> Views/Miscellaneous/Spinners.cshtml </li>
+        <li> Views/Pages/ForgotPassword.cshtml </li>
+        <li> Views/Shared/_Layout_3.cshtml </li>
+        <li> Views/Shared/_Layout_4.cshtml </li>
+        <li> Views/Shared/_NavigationOffCanvas.cshtml </li>
+        <li> Views/Shared/_RightSidebar.cshtml </li>
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> Views/Shared/_Layout.cshtml  - Add new right sidebar (@Html.Partial("_RightSidebar"))</li>
+        <li> Views/Shared/_Navigation.cshtml  - Add new menu elements</li>
+        <li> Views/Shared/_TopNavbar.cshtml - Add new menu element for right sidebar</li>
+        <li> Views/Dashboards/Dashboard_1.cshtml - Add small-chat element</li>
+        <li> Views/Dashboards/Dashboard_2.cshtml - Add small-chat element</li>
+        <li> Views/Dashboards/Dashboard_3.cshtml - Add small-chat element</li>
+        <li> Views/Dashboards/Dashboard_4_1.cshtml - Add small-chat element</li>
+        <li> Views/AppViews/Faq.cshtml - Fix the collapse effect - Create new div element <code>.faq-answer</code> before <code>p</code> answer. </li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> inspinia.js - Update fix_height function, add local storage handler, add functions for small-chat and right-sidebar  </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> Scripts/plugins/pace - update Pace to 1.0 </li>
+        <li> Scripts/morris/morris.js - update to 0.5 </li>
+        <li> bootstrap - update to 3.3.4 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> Scripts/plugins/diff_match_patch - Google algorithm for diff functionality </li>
+        <li> Scripts/plugins/preetyTextDiff - jQuery plugin for dif</li>
+        <li> Scripts/plugins/idle_timer</li>
+        <li> Scripts/plugins/tinycon</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> img/full_height.jpg</li>
+        <li> img/off_canvas.jpg</li>
+
+        <hr>
+        <strong>CSS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Improve btn-link </li>
+        <li> Add colapsed class for initial collapsed ibox </li>
+        <li> Fix margins for footer with sidebar fixed  </li>
+        <li> Fix responsive in login page   </li>
+
+        <hr>
+        <strong>New Controllers</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Update Controllers</strong>
+        <li> Controllers/AppViews.cs - add new pages for views</li>
+        <li> Controllers/Pages.cs - add new pages for views</li>
+        <li> Controllers/Miscellaneous.cs - add new pages for views</li>
+        <li> Controllers/Layouts.cs - add new pages for views</li>
+
+        <hr>
+        <strong>Updates Bundle</strong>
+        <li> App_start/BundleConfig.cs - Add bundle for new plugins, Update Font Awesome bundle</li>
+
+    </ul>
+
+
+<h3>Change log 1.9 -> 1.9.2</h3>
+
+<strong>Version 1.9.2 is mainly focused on Ruby on Rails to provide Rails version.</strong>
+<p>Please stay tuned for 2.0 version to get new features for Angular version.</p>
+
+<h3>Change log 1.8 -> 1.9</h3>
+
+
+<ul>
+
+    <strong>New view files</strong>
+    <li> Views/Miscellaneous/Chat_view.cshtml </li>
+    <li> Views/Dashboard/Dashboard_4.cshtml </li>
+    <li> Views/Dashboard/Dashboard_4_1.cshtml </li>
+    <li> Views/Layouts/Index.cshtml </li>
+    <li> Views/Pages/Login_2.cshtml </li>
+    <li> Views/Miscellaneous/Tree_view.cshtml </li>
+    <li> Views/Shared/_Layout_2.cshtml </li>
+    <li> Views/Shared/_TopNavbar2.cshtml </li>
+
+    <hr>
+    <strong>Changed views files</strong>
+    <li> Views/Shared/_Navigation.cshtml  - Changed to add  new menu items</li>
+    <li> Views/Gallery/BasciGallery.html - Replace old plugin with new blueimp lightbox gallery</li>
+
+    <hr>
+    <strong>New js files</strong>
+    <li> <span class="text-muted">No new files</span> </li>
+
+    <hr>
+    <strong>Changed js files</strong>
+    <li> <span class="text-muted">No changes</span> </li>
+
+    <hr>
+    <strong>Updates</strong>
+    <li> Scripts/plugins/flot - update Flot chart library to version 0.8.3</li>
+    <li> font-awesome - update Font awesome to version 4.3.0</li>
+
+    <hr>
+    <strong>New plugins</strong>
+    <li> Scripts//plugins/blueimp - new plugin for lightbox gallery</li>
+    <li> Scripts//plugins/jsTree - new plugin for tree view</li>
+
+    <hr>
+    <strong>New images</strong>
+    <li> Images/gallery - new set of images for lightbox gallery page</li>
+    <li> Images/dashbbard4_1.jpg</li>
+    <li> Images/dashbbard4_2.jpg</li>
+
+    <hr>
+    <strong>New Controllers</strong>
+    <li> Controllers/LayoutsController.cs - new controller for layout view</li>
+
+    <hr>
+    <strong>Update Controllers</strong>
+    <li> Controllers/MiscellaneousController.cs - add new pages for views</li>
+    <li> Controllers/PagesController.cs - add new pages for views</li>
+
+    <hr>
+    <strong>Updates Bundle</strong>
+    <li> App_start/BundleConfig.cs - Some plugin have own images so path to the bundle has to be relative</li>
+
+</ul>
+
+
+<a name="contact" class="anchor"></a>
+<h3>Contact</h3>
+<p>Contact as with email: <a href="mailto:support@webapplayers.com">support@webapplayers.com</a></p>
+<hr>
+</div>
+</div>
+</div>
+
+<footer>
+    <p>&copy; WebAppLayers 2015 | INSPINIA Admin Theme</p>
+</footer>
+</div>
+</div>
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/google-code-prettify/prettify.js"></script>
+
+<script>
+    $(function () {
+        window.prettyPrint && prettyPrint();
+    })
+</script>
+
+</body>
+</html>

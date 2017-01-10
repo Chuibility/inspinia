@@ -1,0 +1,95 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Bootstrap Tour</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Bootstrap Tour</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight" tour ng-controller="tourCtrl">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Bootstrap Tour</h5>
+                </div>
+
+                <div class="ibox-content">
+                    <p>
+                        Quick and easy way to build your product tours with Bootstrap Popovers.
+                    </p>
+
+                    <div class=" m-t-sm">
+
+                        <a href class="btn btn-primary startTour" ng-click="tour.restart(true)"><i class="fa fa-play"></i> Start Tour</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Tour steps</h5>
+                </div>
+                <div class="ibox-content text-center" id="step1" tour-step order="1" title="Tour title" content="This is a 3 step on our tour. You can easy set a placement of tour tooltip." placement="top">
+                    <div class="p-sm">
+                        <h3>Step 1</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Tour steps</h5>
+                </div>
+                <div class="ibox-content text-center" id="step2" tour-step order="2" title="Tour title" backdrop="true"  on-Hidden="clearbody(tour)" on-Shown="preparebody(tour)" backdropContainer="#wrapper" content="This is a 3 step on our tour. You can easy set a placement of tour tooltip." placement="top">
+                    <div class="p-sm">
+                        <h3>Step 2</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Tour steps</h5>
+                </div>
+                <div class="ibox-content text-center" id="step3" tour-step order="3" title="Tour title" content="This is a 3 step on our tour. You can easy set a placement of tour tooltip." placement="bottom">
+                    <div class="p-sm">
+                        <h3>Step 3</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Tour steps</h5>
+                </div>
+                <div class="ibox-content text-center" id="step4" tour-step order="4" title="Tour title" content="This is a 3 step on our tour. You can easy set a placement of tour tooltip." placement="top">
+                    <div class="p-xl">
+                        <h3>Step 4</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

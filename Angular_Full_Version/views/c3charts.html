@@ -1,0 +1,155 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>c3.js</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Graphs</a>
+            </li>
+            <li class="active">
+                <strong>c3.js</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Line Chart Example
+                        <small>With custom colors.</small>
+                    </h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <c3chart bindto-id="chart1">
+                            <chart-column column-id="data 1"
+                                          column-values="30, 200, 100, 400, 150, 250"
+                                          column-type="line" column-color="#1ab394"/>
+                            <chart-column column-id="data 2"
+                                          column-values="50, 20, 10, 40, 15, 25"
+                                          column-type="line" column-color="#BABABA" />
+                        </c3chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Bar Chart Example</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <c3chart bindto-id="chart2">
+                            <chart-column column-id="data 1"
+                                          column-values="30, 200, 100, 400, 150, 250"
+                                          column-type="spline" column-color="#1ab394"/>
+                            <chart-column column-id="data 2"
+                                          column-values="130, 100, 140, 200, 150, 50"
+                                          column-type="spline" column-color="#BABABA" />
+                        </c3chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Polar Area</h5>
+
+                </div>
+                <div class="ibox-content">
+                    <div class="text-center">
+                        <c3chart bindto-id="scatter-plot2-chart">
+                            <chart-column column-id="Data 1 x"
+                                          column-values="3.2, 3.2, 3.1, 2.3, 2.8, 2.8, 3.3, 2.4, 2.9, 2.7, 2.0, 3.0, 2.2, 2.9, 2.9, 3.1, 3.0, 2.7, 2.2, 2.5, 3.2, 2.8, 2.5, 2.8, 2.9, 3.0, 2.8, 3.0, 2.9, 2.6, 2.4, 2.4, 2.7, 2.7, 3.0, 3.4, 3.1, 2.3, 3.0, 2.5, 2.6, 3.0, 2.6, 2.3, 2.7, 3.0, 2.9, 2.9, 2.5, 2.8" />
+                            <chart-column column-id="Data 2 x"
+                                          column-values="3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6, 3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2, 3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0, 2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1, 3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0" />
+                            <chart-column column-id="Data 1" column-color="#1ab394"
+                                          column-values="1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3"
+                                          column-type="scatter"/>
+                            <chart-column column-id="Data 2" column-color="#BABABA"
+                                          column-values="2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8"
+                                          column-type="scatter"/>
+                            <chart-axes values-xs="Data 1:Data 1 x,Data 2:Data 2 x" />
+                        </c3chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Pie </h5>
+
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <c3chart bindto-id="stacked-bar-plot1-chart">
+                            <chart-column column-id="data 1"
+                                          column-name="Data 1"
+                                          column-values="30,200,100,400,150,250"
+                                          column-type="bar" column-color="#1ab394"/>
+                            <chart-column column-id="data 2"
+                                          column-name="Data 2"
+                                          column-values="50,20,10,40,15,25"
+                                          column-type="bar" column-color="#BABABA"/>
+                            <chart-group group-values="data 1,data 2"/>
+                        </c3chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Radar Chart Example</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <c3chart bindto-id="gauge-plot1-chart">
+                            <chart-column column-id="Data 1" column-color="#1ab394"
+                                          column-values="80"
+                                          column-type="gauge"/>
+                            <chart-gauge min="50"
+                                         max="100"
+                                         units=" hours"
+                                         width="39"/>
+                        </c3chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Radar Chart Example</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <c3chart bindto-id="pie-plot1-chart">
+                            <chart-column column-id="Data 1"
+                                          column-values="30" column-color="#1ab394"
+                                          column-type="pie"/>
+                            <chart-column column-id="Data 2"
+                                          column-values="120" column-color="#BABABA"
+                                          column-type="pie"/>
+                            <chart-pie expand="true"/>
+                        </c3chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

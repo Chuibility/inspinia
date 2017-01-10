@@ -1,0 +1,41 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Settings</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a href="/">Home</a>
+      </li>
+
+    </ol>
+  </div>
+</div>
+<div class="wrapper wrapper-content" ng-controller="SettingsController">
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="ibox">
+        <div class="ibox-content">
+          <a ui-sref-active="active" ui-sref="settings.profile" class="btn btn-default btn-block">Edit Profile</a>
+          <a ui-sref-active="active" ui-sref="settings.picture" class="btn btn-default btn-block">Change Profile Picture</a>
+          <a ui-sref-active="active" ui-sref="settings.password" ng-show="user.provider === 'local'" class="btn btn-default btn-block">Change Password</a>
+          <a ui-sref-active="active" ui-sref="settings.accounts" class="btn btn-default btn-block">Manage Social Accounts</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-8">
+
+      <div class="ibox">
+        <div class="ibox-content">
+          <div ui-view></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</div>

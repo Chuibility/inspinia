@@ -1,0 +1,159 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Spinners usage</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Spinners usage</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Spinners usage examples</h5>
+                </div>
+
+                <div class="ibox-content">
+
+                    <p>
+                        To use spinners in div.ibox-contnet place the spinner code in div and add <code>sk-loading</code> css class. This class will enable/disable spinner so you can easily build own simple function to manage it.
+                    </p>
+
+                    <button id="toggleSpinners" class="btn btn-primary">Enable/disable spinners on below panels</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox" id="ibox1">
+                <div class="ibox-title">
+                    <h5>Example ibox panel</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="sk-spinner sk-spinner-double-bounce">
+                        <div class="sk-double-bounce1"></div>
+                        <div class="sk-double-bounce2"></div>
+                    </div>
+                    <ul class="sortable-list connectList agile-list ui-sortable" id="todo">
+                        <li class="warning-element" id="task1">
+                            Simply dummy text of the printing and typesetting industry.
+                            <div class="agile-detail">
+                                <a href="#" class="pull-right btn btn-xs btn-white">Tag</a>
+                                <i class="fa fa-clock-o"></i> 12.10.2015
+                            </div>
+                        </li>
+                        <li class="success-element" id="task2">
+                            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default.
+                            <div class="agile-detail">
+                                <a href="#" class="pull-right btn btn-xs btn-white">Mark</a>
+                                <i class="fa fa-clock-o"></i> 05.04.2015
+                            </div>
+                        </li>
+                        <li class="info-element" id="task3">
+                            Sometimes by accident, sometimes on purpose (injected humour and the like).
+                            <div class="agile-detail">
+                                <a href="#" class="pull-right btn btn-xs btn-white">Mark</a>
+                                <i class="fa fa-clock-o"></i> 16.11.2015
+                            </div>
+                        </li>
+                        <li class="danger-element" id="task4">
+                            All the Lorem Ipsum generators
+                            <div class="agile-detail">
+                                <a href="#" class="pull-right btn btn-xs btn-primary">Done</a>
+                                <i class="fa fa-clock-o"></i> 06.10.2015
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="ibox" id="ibox2">
+                <div class="ibox-title">
+                    <h5>Example ibox panel</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
+                    </p>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Tom</td>
+                            <td>Bortec</td>
+                            <td>@mader</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // Local script for demo purpose only
+    $(document).ready(function(){
+        $('#toggleSpinners').on('click', function(){
+
+            $('#ibox1').children('.ibox-content').toggleClass('sk-loading');
+            $('#ibox2').children('.ibox-content').toggleClass('sk-loading');
+
+        })
+    });
+</script>

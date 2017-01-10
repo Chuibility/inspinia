@@ -1,0 +1,54 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>PDF viewer</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Forms</a>
+            </li>
+            <li class="active">
+                <strong>PDF viewer</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeIn">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-content border-sbottom">
+                    <h4>PDF.js</h4>
+                    <p>
+                        PDF.js is a Portable Document Format (PDF) viewer that is built with HTML5.
+                        PDF.js is community-driven and supported by Mozilla Labs. The goal is to create a general-purpose, web standards-based platform for parsing and rendering PDFs.
+                        Full documentation for angular directive: <a href="https://github.com/sayanee/angularjs-pdf" target="_blank">https://github.com/sayanee/angularjs-pdf</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <div class="wrapper" ng-controller="pdfCtrl">
+            <ng-pdf template-url="./views/common/pdf_viewer.html" scale="page-fit"></ng-pdf>
+            <canvas class=" m-t-md" id="pdf-canvas"></canvas>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="pull-right">
+            10GB of <strong>250GB</strong> Free.
+        </div>
+        <div>
+            <strong>Copyright</strong> Example Company &copy; 2014-2015
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,35 @@
+<nav class="navbar-default navbar-static-side" role="navigation" data-ng-controller="HeaderController">
+  <div class="sidebar-collapse">
+    <ul side-navigation class="nav metismenu" id="side-menu">
+      <li class="nav-header">
+        <div class="profile-element">
+          <!-- Picture of user -->
+          <!--<img alt="image" class="img-circle" src="img/profile_small.jpg"/>-->
+          <a href>
+            <span class="clear">
+                <span class="block m-t-xs">
+                    <strong class="font-bold">User</strong>
+             </span>
+                <span class="text-muted text-xs block">Example</span>
+            </span>
+          </a>
+        </div>
+        <div class="logo-element">
+          IN+
+        </div>
+      </li>
+      <li ng-class="{active: $uiRoute}" ui-route="/" >
+        <a href="/#!/"><i class="fa fa-laptop"></i> <span class="nav-label">Index</span></a>
+      </li>
+      <li ng-repeat="item in menu.items | orderBy: 'position'" ng-if="item.shouldRender(authentication.user);" ng-switch="item.type" ui-route="{{item.uiRoute}}" ng-class="{active: $state.includes(item.state)}" class="{{item.class}}">
+        <a href ng-switch-when="dropdown"><i class="fa {{item.iconClass}}"></i> <span class="nav-label">{{item.title}} </span> <span ng-show="item.items" class="fa arrow"></span></a>
+        <ul class="nav nav-second-level" ng-class="{in: $state.includes(item.state)}">
+          <li ng-repeat="subitem in item.items | orderBy: 'position'" ng-if="subitem.shouldRender(authentication.user);" ui-route="{{subitem.uiRoute}}" ng-class="{active: $state.includes(subitem.state)}">
+            <a role="menuitem" tabindex="-1" ui-sref="{{subitem.state}}" ng-bind="subitem.title"></a>
+          </li>
+        </ul>
+        <a ng-switch-default ui-sref="{{item.state}}"><span class="nav-label">{{item.title}} </span></a>
+      </li>
+    </ul>
+  </div>
+</nav>

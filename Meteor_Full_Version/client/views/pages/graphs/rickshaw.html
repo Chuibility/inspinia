@@ -1,0 +1,101 @@
+<template name="graphRickshaw">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Rickshaw charts' category='Graphs' }}
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Simple area example <small>With custom colors.</small></h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content">
+                        <div id="chart" class="rickshaw_graph"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Multiple Area</h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content">
+                        <div id="rickshaw_multi" class="rickshaw_graph"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>One line Example</h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content">
+                        <div id="rickshaw_line" class="rickshaw_graph"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Multiple Line Example</h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content">
+                        <div id="rickshaw_multi_line" class="rickshaw_graph"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Bars</h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content">
+                        <div id="rickshaw_bars" class="rickshaw_graph"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Stacked Bars</h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content">
+                        <div id="rickshaw_bars_stacked" class="rickshaw_graph"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Scatterplot</h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content">
+                        <div id="rickshaw_scatterplot" class="rickshaw_graph"></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</template>

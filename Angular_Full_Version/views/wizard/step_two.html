@@ -1,0 +1,28 @@
+<fieldset>
+    <h2>Profile Information</h2>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>First name *</label>
+                <input id="name" name="name" ng-model="formData.name" type="text" class="form-control required">
+            </div>
+            <div class="form-group">
+                <label>Last name *</label>
+                <input id="surname" name="surname" ng-model="formData.lastName" type="text" class="form-control required">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Email *</label>
+                <input id="email" name="email" type="text" ng-model="formData.email" class="form-control required email">
+            </div>
+            <div class="form-group">
+                <label>Address *</label>
+                <input id="address" name="address" type="text" ng-model="formData.address" class="form-control">
+            </div>
+        </div>
+    </div>
+    <a ui-sref="forms.wizard.step_one" class="btn btn-default">Previous</a>
+    <a ui-sref="forms.wizard.step_three" class="btn btn-primary">Next</a>
+</fieldset>

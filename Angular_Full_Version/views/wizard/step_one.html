@@ -1,0 +1,29 @@
+<fieldset>
+    <h2>Account Information</h2>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="form-group">
+                <label>Username *</label>
+                <input id="userName" ng-model="formData.username" name="username" type="text" class="form-control" ng-minlength="8">
+                <p ng-show="signupForm.username.$error.minlength" class="help-block">Example of validation - Username is too short (min 8 signs)</p>
+            </div>
+            <div class="form-group">
+                <label>Password *</label>
+                <input id="password" ng-model="formData.password" name="password" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Confirm Password *</label>
+                <input id="confirm" name="confirm" type="text" class="form-control required">
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <div style="margin-top: 20px">
+                    <i class="fa fa-sign-in" style="font-size: 180px;color: #e5e5e5 "></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a ui-sref="forms.wizard.step_two" class="btn btn-primary">Next</a>
+</fieldset>

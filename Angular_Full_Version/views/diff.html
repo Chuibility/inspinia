@@ -1,0 +1,83 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Diff</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Diff</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight" ng-controller="diff">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Diff plugin</h5>
+                </div>
+
+                <div class="ibox-content">
+
+                    <strong>angular-diff</strong>
+                    <p>
+                        Diff filter for angular.js. Show inline text diff in your page
+                        <br/>
+                        Angular diff is a filter , you use it in your html like this:
+                        <code>&lt;div ng-bind-html="oldText|diff:newText"&gt;&lt;/div&gt; </code> This will show the diff between oldText and newText. See example below.
+                    </p>
+
+                    <div class="well">
+                        <h3 class="m-t-lg">Standard example</h3>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Oryginal text</h4>
+
+                                <div>{{oldText}}
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Changed text</h4>
+
+                                <div>{{newText}}
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Diff results</h4>
+                                <div semantic-diff left-obj="oldText" right-obj="newText"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="m-t-lg">In texarea</h3>
+                    <p>
+                        Diff will use ng-model from textarea. So feel free to play with it to see Diff results.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Oryginal text</h4>
+                                    <textarea class="form-control" rows="6" ng-model="oldText1"> </textarea>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Diff results</h4>
+                            <div semantic-diff left-obj="oldText1" right-obj="newText1"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>New text</h4>
+                                    <textarea class="form-control" rows="6" ng-model="newText1"> </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

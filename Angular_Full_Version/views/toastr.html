@@ -1,0 +1,94 @@
+<toaster-container></toaster-container>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Toastr notification</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                Miscellaneous
+            </li>
+            <li class="active">
+                <strong>Toastr notification</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="toastrCtrl">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Toastr notification</h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+
+                    <p>
+                        AngularJS Toaster is an AngularJS port of the toastr library.
+                        <strong>toastr</strong> is a Javascript library for non-blocking notifications. jQuery is required. The goal is to create a simple core library that can be customized and extended.
+                    </p>
+                    <p>
+                        Unlike toastr, this library relies on ngAnimate and CSS3 transformations for optional animations. To include and use animations, add a reference to angular-animate.min.js and add ngAnimate as a dependency alongside toaster.
+                    </p>
+
+                    <h4>Basic example</h4>
+
+                    <div class="row">
+
+
+                        <div class="col-lg-3">
+                            <p>Display a success toast, with no title</p>
+                            <button class="btn btn-primary" ng-click="demo1()">Success</button>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>Display a warning toast with title</p>
+                            <button class="btn btn-warning" ng-click="demo2()">Success</button>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>Display a info toast with close button</p>
+                            <button class="btn btn-info" ng-click="demo3()">Success</button>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>Display a error toast with close button and timeout set to 600 ms</p>
+                            <button class="btn btn-danger" ng-click="demo4()">Success</button>
+                        </div>
+
+                    </div>
+
+                    <h4>Example usage</h4>
+
+                    <p>Add toaster container directive:</p>
+
+                    <pre class="p-m">
+
+&lt;toaster-container&gt;&lt;/toaster-container&gt;
+                    </pre>
+
+                    <p>
+                        Prepare the call of toaster method:
+                    </p>
+                    <pre class="p-m">
+$scope.demo4 = function(){
+        toaster.pop({
+            type: 'error',
+            title: 'Title example',
+            body: 'This is example of Toastr notification box.',
+            showCloseButton: true,
+            timeout: 600
+        });
+    };
+                    </pre>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

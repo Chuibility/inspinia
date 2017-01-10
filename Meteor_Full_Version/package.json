@@ -1,0 +1,13 @@
+{
+  "name": "inspinia",
+  "version": "2.7.0",
+  "description": "Admin Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WebAppLayers",
+  "dependencies": {
+    "babel-runtime": "^6.20.0"
+  }
+}

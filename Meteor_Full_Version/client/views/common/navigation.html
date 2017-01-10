@@ -1,0 +1,238 @@
+<template name="navigation">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+
+            <!-- Close canvas menu used only on OffCanvas page -->
+            <!-- You can remove this tag if you dont use offCanvas menu -->
+            <a class="close-canvas-menu"><i class="fa fa-times"></i></a>
+            <!-- End offCanvas menu toggle -->
+
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile">Profile</a></li>
+                            <li><a href="contacts">Contacts</a></li>
+                            <li><a href="mailbox">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="{{isActivePath regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5'}}">
+                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label" data-i18n="nav.dashboard">Dashboards</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActivePath regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5' className='in'}}">
+                        <li class="{{isActivePath regex='/dashboard1'}}"><a href="dashboard1">Dashboard v.1</a></li>
+                        <li class="{{isActivePath regex='/dashboard2'}}"><a href="dashboard2">Dashboard v.2</a></li>
+                        <li class="{{isActivePath regex='/dashboard3'}}"><a href="dashboard3">Dashboard v.3</a></li>
+                        <li class="{{isActivePath regex='/dashboard4l'}}"><a href="dashboard4l">Dashboard v.4</a></li>
+                        <li class="{{isActivePath regex='/dashboard5'}}"><a href="dashboard5">Dashboard v.5 </a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='/layouts'}}">
+                    <a href="layouts"><i class="fa fa-diamond"></i> <span class="nav-label" data-i18n="nav.layouts">Layouts</span> </a>
+                </li>
+                <li class="{{isActivePath regex='c3charts|graphFlot|graphMorris|graphRickshaw|graphChartJs|graphPeity|graphSparkline|graphChartist'}}">
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label" data-i18n="nav.graphs">Graphs</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActivePath regex='c3charts|graphFlot|graphMorris|graphRickshaw|graphChartJs|graphPeity|graphSparkline|graphChartist' className='in'}}">
+                        <li class="{{isActivePath regex='/graphFlot'}}"><a href="graphFlot">Flot Charts</a></li>
+                        <li class="{{isActivePath regex='/graphRickshaw'}}"><a href="graphRickshaw">Rickshaw Charts</a></li>
+                        <li class="{{isActivePath regex='/graphChartJs'}}"><a href="graphChartJs">Chart.js</a></li>
+                        <li class="{{isActivePath regex='/graphChartist'}}"><a href="graphChartist">Chartist</a></li>
+                        <li class="{{isActivePath regex='/c3charts'}}"><a href="c3charts">c3 charts</a></li>
+                        <li class="{{isActivePath regex='/graphPeity'}}"><a href="graphPeity">Peity Charts</a></li>
+                        <li class="{{isActivePath regex='/graphSparkline'}}"><a href="graphSparkline">Sparkline Charts</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='mailbox|emailView|emailCompose|emailTemplates'}}">
+                    <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label" data-i18n="nav.mailbox">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
+                    <ul class="nav nav-second-level collapse {{isActivePath regex='mailbox|emailView|emailCompose|emailTemplates' className='in'}}">
+                        <li class="{{isActivePath regex='/mailbox'}}"><a href="mailbox">Inbox</a></li>
+                        <li class="{{isActivePath regex='/emailView'}}"><a href="emailView">Email view</a></li>
+                        <li class="{{isActivePath regex='/emailCompose'}}"><a href="emailCompose">Compose email</a></li>
+                        <li class="{{isActivePath regex='/emailTemplates'}}"><a href="emailTemplates">Email templates</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='metrics'}}">
+                    <a href="metrics"><i class="fa fa-pie-chart"></i> <span class="nav-label" data-i18n="nav.metrics">Metrics</span> </a>
+                </li>
+                <li class="{{isActivePath regex='widgets'}}">
+                    <a href="widgets"><i class="fa fa-flask"></i> <span class="nav-label" data-i18n="nav.widgets">Widgets</span> </a>
+                </li>
+                <li class="{{isActivePath regex='autocomplete|markdown|formBasic|formAdvanced|formWizard|formUpload|textEditor'}}">
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label" data-i18n="nav.forms">Forms</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActivePath regex='autocomplete|markdown|formBasic|formAdvanced|formWizard|formUpload|textEditor' className='in'}}">
+                        <li class="{{isActivePath regex='/formBasic'}}"><a href="formBasic">Basic form</a></li>
+                        <li class="{{isActivePath regex='/formAdvanced'}}"><a href="formAdvanced">Advanced Plugins</a></li>
+                        <li class="{{isActivePath regex='/formWizard'}}"><a href="formWizard">Wizard</a></li>
+                        <li class="{{isActivePath regex='/formUpload'}}"><a href="formUpload">File Upload</a></li>
+                        <li class="{{isActivePath regex='/textEditor'}}"><a href="textEditor">Text Editor</a></li>
+                        <li class="{{isActivePath regex='/autocomplete'}}"><a href="autocomplete">Autocomplete</a></li>
+                        <li class="{{isActivePath regex='/markdown'}}"><a href="markdown">Markdown</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='activityStream|contacts2|profile2|voteList|contacts|profile|projects|projectDetail|teamsBoard|clients|fullHeight|fileManager|calendar|issueTracker|blog|article|faq|timelineOne|pinBoard|socialFeed'}}">
+                    <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label" data-i18n="nav.appviews">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
+                    <ul class="nav nav-second-level collapse {{isActivePath regex='activityStream|contacts2|profile2|voteList|contacts|profile|projects|projectDetail|teamsBoard|clients|fullHeight|fileManager|Calendar|issueTracker|blog|article|faq|timelineOne|pinBoard|socialFeed' className='in'}}">
+                        <li class="{{isActivePath regex='/contacts'}}"><a href="contacts">Contacts</a></li>
+                        <li class="{{isActivePath regex='/profile'}}"><a href="profile">Profile</a></li>
+                        <li class="{{isActivePath regex='/profile2'}}"><a href="profile2">Profile 2</a></li>
+                        <li class="{{isActivePath regex='/contacts2'}}"><a href="contacts2">Contact 2</a></li>
+                        <li class="{{isActivePath regex='/projects'}}"><a href="projects">Projects</a></li>
+                        <li class="{{isActivePath regex='/projectDetail'}}"><a href="projectDetail">Project detail</a></li>
+                        <li class="{{isActivePath regex='/activityStream'}}"><a href="activityStream">Activity stream</a></li>
+                        <li class="{{isActivePath regex='/teamsBoard'}}"><a href="teamsBoard">Teams board</a></li>
+                        <li class="{{isActivePath regex='/socialFeed'}}"><a href="socialFeed">Social feed</a></li>
+                        <li class="{{isActivePath regex='/clients'}}"><a href="clients">Clients</a></li>
+                        <li class="{{isActivePath regex='/fullHeight'}}"><a href="fullHeight">Outlook view</a></li>
+                        <li class="{{isActivePath regex='/voteList'}}"><a href="voteList">Vote list</a></li>
+                        <li class="{{isActivePath regex='/fileManager'}}"><a href="fileManager">File manager</a></li>
+                        <li class="{{isActivePath regex='/calendar'}}"><a href="calendar">Calendar</a></li>
+                        <li class="{{isActivePath regex='/issueTracker'}}"><a href="issueTracker">Issue tracker</a></li>
+                        <li class="{{isActivePath regex='/blog'}}"><a href="blog">Blog</a></li>
+                        <li class="{{isActivePath regex='/article'}}"><a href="article">Article</a></li>
+                        <li class="{{isActivePath regex='/faq'}}"><a href="faq">FAQ</a></li>
+                        <li class="{{isActivePath regex='/timelineOne'}}"><a href="timelineOne">Timeline</a></li>
+                        <li class="{{isActivePath regex='/pinBoard'}}"><a href="pinBoard">Pin board</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='searchResult|invoice|emptyPage'}}">
+                    <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label" data-i18n="nav.otherpages">Other Pages</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActivePath regex='searchResult|invoice|emptyPage' className='in'}}">
+                        <li class="{{isActivePath regex='/searchResult'}}"><a href="searchResult'}}">Search results</a></li>
+                        <li><a href="lockScreen">Lockscreen</a></li>
+                        <li class="{{isActivePath regex='/invoice'}}"><a href="invoice">Invoice</a></li>
+                        <li><a href="login">Login</a></li>
+                        <li><a href="loginTwo">Login v.2</a></li>
+                        <li><a href="forgotPassword">Forgot password</a></li>
+                        <li><a href="register">Register</a></li>
+                        <li><a href="errorOne">404 Page</a></li>
+                        <li><a href="errorTwo">500 Page</a></li>
+                        <li class="{{isActivePath regex='/emptyPage'}}"><a href="emptyPage">Empty page</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='spinnersUsage|textSpinners|passwordMeter|pdfViewer|socialButtons|datamaps|clipboard|i18support|tour|truncate|loadingButtons|masonry|toastrNotification|nestableList|agileBoard|timelineTwo|diff|idleTimer|spinners|liveFavicon|googleMaps|codeEditor|modalWindow|forumView|validation|treeView|chatView|sweetAlert'}}">
+                    <a href="#"><i class="fa fa-globe"></i> <span class="nav-label" data-i18n="nav.miscellaneous">Miscellaneous</span><span class="label label-info pull-right">NEW</span></a>
+                    <ul class="nav nav-second-level collapse {{isActivePath regex='spinnersUsage|textSpinners|passwordMeter|pdfViewer|socialButtons|datamaps|clipboard|i18support|tour|truncate|loadingButtons|masonry|toastrNotification|nestableList|agileBoard|timelineTwo|diff|idleTimer|spinners|liveFavicon|googleMaps|codeEditor|modalWindow|forumView|validation|treeView|chatView|sweetAlert' className='in'}}">
+                        <li class="{{isActivePath regex='/toastrNotification'}}"><a href="toastrNotification">Notification</a></li>
+                        <li class="{{isActivePath regex='/nestableList'}}"><a href="nestableList">Nestable list</a></li>
+                        <li class="{{isActivePath regex='/agileBoard'}}"><a href="agileBoard">Agile board</a></li>
+                        <li class="{{isActivePath regex='/timelineTwo'}}"><a href="timelineTwo">Timeline v.2</a></li>
+                        <li class="{{isActivePath regex='/diff'}}"><a href="diff">Diff</a></li>
+                        <li class="{{isActivePath regex='/pdfViewer'}}"><a href="pdfViewer">PDF Viewer</a></li>
+                        <li class="{{isActivePath regex='/i18support'}}"><a href="i18support">i18 support</a></li>
+                        <li class="{{isActivePath regex='/sweetAlert'}}"><a href="sweetAlert">Sweet alert</a></li>
+                        <li class="{{isActivePath regex='/idleTimer'}}"><a href="idleTimer">Idle timer</a></li>
+                        <li class="{{isActivePath regex='/truncate'}}"><a href="truncate">Truncate</a></li>
+                        <li class="{{isActivePath regex='/passwordMeter'}}"><a href="passwordMeter">Password meter</a></li>
+                        <li class="{{isActivePath regex='/spinners'}}"><a href="spinners">Spinners</a></li>
+                        <li class="{{isActivePath regex='/spinnersUsage'}}"><a href="spinnersUsage">Spinners usage</a></li>
+                        <li class="{{isActivePath regex='/liveFavicon'}}"><a href="liveFavicon">Live favicon</a></li>
+                        <li class="{{isActivePath regex='/googleMaps'}}"><a href="googleMaps">Google maps</a></li>
+                        <li class="{{isActivePath regex='/datamaps'}}"><a href="datamaps">Datamaps</a></li>
+                        <li class="{{isActivePath regex='/socialButtons'}}"><a href="socialButtons">Social buttons</a></li>
+                        <li class="{{isActivePath regex='/codeEditor'}}"><a href="codeEditor">Code editor</a></li>
+                        <li class="{{isActivePath regex='/modalWindow'}}"><a href="modalWindow">Modal window</a></li>
+                        <li class="{{isActivePath regex='/clipboard'}}"><a href="clipboard">Clipboard</a></li>
+                        <li class="{{isActivePath regex='/textSpinners'}}"><a href="textSpinners">Text spinners</a></li>
+                        <li class="{{isActivePath regex='/forumView'}}"><a href="forumView">Forum view</a></li>
+                        <li class="{{isActivePath regex='/validation'}}"><a href="validation">Validation</a></li>
+                        <li class="{{isActivePath regex='/treeView'}}"><a href="treeView">Tree view</a></li>
+                        <li class="{{isActivePath regex='/loadingButtons'}}"><a href="loadingButtons">Loading buttons</a></li>
+                        <li class="{{isActivePath regex='/chatView'}}"><a href="chatView">Chat view</a></li>
+                        <li class="{{isActivePath regex='/masonry'}}"><a href="masonry">Masonry</a></li>
+                        <li class="{{isActivePath regex='/tour'}}"><a href="tour">Tour</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='helperClasses|resizeablePanels|typography|icons|draggablePanels|buttons|video|tabsPanels|notifications|badgesLabels|tabs'}}">
+                    <a href="#"><i class="fa fa-flask"></i> <span class="nav-label" data-i18n="nav.uielements">UI Elements</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActivePath regex='helperClasses|resizeablePanels|typography|icons|draggablePanels|buttons|video|tabsPanels|notifications|badgesLabels|tabs' className='in'}}">
+                        <li class="{{isActivePath regex='/typography'}}"><a href="typography">Typography</a></li>
+                        <li class="{{isActivePath regex='/icons'}}"><a href="icons">Icons</a></li>
+                        <li class="{{isActivePath regex='/draggablePanels'}}"><a href="draggablePanels">Draggable Panels</a></li>
+                        <li class="{{isActivePath regex='/resizeablePanels'}}"><a href="resizeablePanels">Resizeable Panels</a></li>
+                        <li class="{{isActivePath regex='/buttons'}}"><a href="buttons">Buttons</a></li>
+                        <li class="{{isActivePath regex='/video'}}"><a href="video">Video</a></li>
+                        <li class="{{isActivePath regex='/tabsPanels'}}"><a href="tabsPanels">Panels</a></li>
+                        <li class="{{isActivePath regex='/tabs'}}"><a href="tabs">Tabs</a></li>
+                        <li class="{{isActivePath regex='/notifications'}}"><a href="notifications">Notifications & Tooltips</a></li>
+                        <li class="{{isActivePath regex='/helperClasses'}}"><a href="helperClasses">Helper css classes</a></li>
+                        <li class="{{isActivePath regex='/badgesLabels'}}"><a href="badgesLabels">Badges, Labels, Progress</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='gridOptions'}}">
+                    <a href="gridOptions"><i class="fa fa-laptop"></i> <span class="nav-label" data-i18n="nav.gridoptions">Grid options</span></a>
+                </li>
+                <li class="{{isActivePath regex='tableStatic|dataTables|fooTables'}}">
+                    <a href="#"><i class="fa fa-table"></i> <span class="nav-label" data-i18n="nav.tables">Tables</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActivePath regex='tableStatic|dataTables|fooTables' className='in'}}">
+                        <li class="{{isActivePath regex='/tableStatic'}}"><a href="tableStatic">Static Tables</a></li>
+                        <li class="{{isActivePath regex='/fooTables'}}"><a href="fooTables">Foo tables</a></li>
+                        <li class="{{isActivePath regex='/dataTables'}}"><a href="dataTables">Data Tables</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='shopingCart|productDetail|payments|productsGrid|productsList|productEdit|orders'}}">
+                    <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label" data-i18n="nav.ecommerce">E-commerce</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level {{isActivePath regex='shopingCart|productDetail|payments|productsGrid|productsList|productEdit|orders' className='in'}}">
+                        <li class="{{isActivePath regex='/productsGrid'}}"><a href="productsGrid">Products grid</a></li>
+                        <li class="{{isActivePath regex='/productsList'}}"><a href="productsList">Product list</a></li>
+                        <li class="{{isActivePath regex='/productEdit'}}"><a href="productEdit">Product edit</a></li>
+                        <li class="{{isActivePath regex='/productDetail'}}"><a href="productDetail">Product Detail</a></li>
+                        <li class="{{isActivePath regex='/shopingCart'}}"><a href="shopingCart">Cart</a></li>
+                        <li class="{{isActivePath regex='/orders'}}"><a href="orders">Orders</a></li>
+                        <li class="{{isActivePath regex='/payments'}}"><a href="payments">Credit Card form</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='slick|gallery|carusela'}}">
+                    <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label" data-i18n="nav.gallery">Gallery</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActivePath regex='slick|gallery|carusela' className='in'}}">
+                        <li class="{{isActivePath regex='/gallery'}}"><a href="gallery">Lightbox Gallery</a></li>
+                        <li class="{{isActivePath regex='/carusela'}}"><a href="carusela">Bootstrap Carousel</a></li>
+                        <li class="{{isActivePath regex='/slick'}}"><a href="slick">Slick Carousel</a></li>
+
+                    </ul>
+                </li>
+                <li >
+                    <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label" data-i18n="nav.menulevels">Menu Levels </span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#">Third Level <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Item</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Second Level Item</a></li>
+                        <li>
+                            <a href="#">Second Level Item</a></li>
+                        <li>
+                            <a href="#">Second Level Item</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='cssAnimations'}}">
+                    <a href="cssAnimations"><i class="fa fa-magic"></i> <span class="nav-label" data-i18n="nav.animations">CSS Animations </span><span class="label label-info pull-right">62</span></a>
+                </li>
+                <li class="special_link">
+                    <a href="landing"><i class="fa fa-database"></i> <span class="nav-label" data-i18n="nav.landing">Landing page</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</template>

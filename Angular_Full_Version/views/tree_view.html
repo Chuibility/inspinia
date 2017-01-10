@@ -1,0 +1,56 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Tree view</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Tree view</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="jstreeCtrl">
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <strong>jsTree / ngJsTree</strong> is jquery plugin, that provides interactive trees. It is absolutely free, open source and distributed under the MIT license. jsTree is easily extendable, themable and configurable, it supports HTML & JSON data sources and AJAX loading.
+                    Get more info on: <a href="http://www.jstree.com/" target="_blank">http://www.jstree.com/</a> and check documentation angular directive <a href="https://github.com/ezraroi/ngJsTree" target="_blank">https://github.com/ezraroi/ngJsTree</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Basic example <small>with custom Font Awesome icons.</small></h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div js-tree="treeConfig" ng-model="treeData" tree="treeInstance"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

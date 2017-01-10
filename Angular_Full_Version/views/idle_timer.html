@@ -1,0 +1,80 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Idle timer</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Idle timer</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight" ng-controller="idleTimer">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Ng-Idle</h5>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="alert alert-danger" ng-show="customAlert">
+
+                        Your time is up. But you can move your mouse and get back to app.
+
+                    </div>
+                    <strong>Idle Timer Plugin </strong>
+                    <p>
+                        ng-Idle plugin provides you a way to monitor user activity with a page. Idle is defined by not moving the mouse, scrolling the mouse wheel and using the keyboard.
+                    </p>
+
+                    <div class="text-center p-lg h-200">
+
+                        <h3>Please do not move the mouse for 5 seconds</h3>
+                        <i class="fa fa-hand-o-up fa-4x"></i>
+
+                    </div>
+
+                    <p>Idle timer is very easy to use. All you have to do is to specify idle Time in Config <code>IdleProvider.idle(5)</code> and run/watch idle time in your controller.</p>
+
+                    <p>Example usage</p>
+                            <pre>
+// Start watching idle
+    Idle.watch();
+
+// function you want to fire when the user goes idle
+$scope.$on('IdleStart', function () {
+    notify({
+        message: 'Idle time - You can call any function after idle timeout.',
+        classes: 'alert-warning',
+        templateUrl: 'views/common/notify.html'
+    });
+    $scope.customAlert = true;
+
+});
+
+// function you want to fire when the user becomes active again
+$scope.$on('IdleEnd', function () {
+    notify({
+        message: 'You are back, Great that you decided to move a mouse.',
+        classes: 'alert-success',
+        templateUrl: 'views/common/notify.html'
+    });
+    $scope.customAlert = false;
+});
+
+</pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

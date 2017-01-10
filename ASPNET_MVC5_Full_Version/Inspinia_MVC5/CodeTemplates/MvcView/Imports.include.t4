@@ -1,0 +1,19 @@
+﻿<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Data.Entity" #>
+<#@ assembly name="System.Data.Linq" #>
+<#@ ScaffoldingAssembly Processor="ScaffoldingAssemblyLoader" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Data.Linq.Mapping" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Microsoft.AspNet.Scaffolding.Core.Metadata" #>
+<#@ parameter type="System.String" name="ViewDataTypeName" #>
+<#@ parameter type="System.String" name="ViewDataTypeShortName" #>
+<#@ parameter type="System.Boolean" name="IsPartialView" #>
+<#@ parameter type="System.Boolean" name="IsLayoutPageSelected" #>
+<#@ parameter type="System.Boolean" name="ReferenceScriptLibraries" #>
+<#@ parameter type="System.Boolean" name="IsBundleConfigPresent" #>
+<#@ parameter type="System.String" name="ViewName" #>
+<#@ parameter type="System.String" name="LayoutPageFile" #>
+<#@ parameter type="System.String" name="JQueryVersion" #>
+<#@ parameter type="Microsoft.AspNet.Scaffolding.Core.Metadata.ModelMetadata" name="ModelMetadata" #>

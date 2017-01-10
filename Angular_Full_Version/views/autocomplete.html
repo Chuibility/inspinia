@@ -1,0 +1,110 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Basic Form</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Forms</a>
+            </li>
+            <li class="active">
+                <strong>Basic Form</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeIn">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Autocomplete - Bootstrap Typehead</h5>
+
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#">Config option 1</a>
+                            </li>
+                            <li><a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <strong>Autocomplete - typehead</strong><br/>
+                    Typeahead is a AngularJS version of Bootstrap v2's typeahead plugin. This directive can be used to quickly create elegant typeaheads with any form text input.    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Basic example</h5>
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        Basic example via data attributes: <span class="text-muted">(type 'Alas...')</span>
+                    </p>
+                    <pre>Model: {{selected | json}}</pre>
+                    <input type="text" ng-model="selected" uib-typeahead="state for state in main.states | filter:$viewValue | limitTo:8" class="form-control">
+                            <pre class="m-t-sm">
+&lt;input type="text"
+ng-model="selected"
+uib-typeahead="state for state in main.states
+| filter:$viewValue | limitTo:8"
+class="form-control"
+/&gt;</pre>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Basic example - Asynchronous results</h5>
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        Basic asynchronous results example  <span class="text-muted">(type 'item...')</span>
+                    </p>
+                    <pre>Model: {{asyncSelected | json}}</pre>
+                    <input type="text" ng-model="asyncSelected" placeholder="Locations loaded via $http" uib-typeahead="address for address in main.getLocation($viewValue)" typeahead-loading="loadingLocations" typeahead-no-results="noResults" class="form-control">
+                            <pre class="m-t-sm">
+&lt;input type="text"
+ng-model="asyncSelected"
+placeholder="Locations loaded via $http"
+uib-typeahead="address for address in main.getLocation($viewValue)"
+typeahead-loading="loadingLocations"
+typeahead-no-results="noResults"
+class="form-control"
+/&gt;</pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="pull-right">
+            10GB of <strong>250GB</strong> Free.
+        </div>
+        <div>
+            <strong>Copyright</strong> Example Company &copy; 2014-2015
+        </div>
+    </div>
+
+</div>

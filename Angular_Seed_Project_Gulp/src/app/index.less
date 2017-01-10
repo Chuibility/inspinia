@@ -1,0 +1,50 @@
+/**
+ *  Do not remove this comments bellow. It's the markers used by wiredep to inject
+ *  less dependencies when defined in the bower.json of your dependencies
+ */
+// bower:less
+// endbower
+
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap/less/variables.less
+ */
+@navbar-inverse-link-color: #5AADBB;
+
+/**
+ *  Font-Awesome support
+ *  Source: https://github.com/Swiip/generator-gulp-angular/issues/337
+ */
+
+@import "../../bower_components/fontawesome/less/font-awesome.less";
+@fa-font-path: "../../bower_components/fontawesome/fonts";
+
+@import '../../bower_components/bootstrap/less/bootstrap.less';
+@icon-font-path: '../../bower_components/bootstrap/fonts/';
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+@nav-profile-pattern: url("../assets/images/patterns/header-profile.png") no-repeat;
+@import "less/style";
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+ *  all your less files automatically
+ */
+// injector
+// endinjector
+
+

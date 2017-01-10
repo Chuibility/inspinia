@@ -1,0 +1,205 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Maps</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Forms</a>
+            </li>
+            <li class="active">
+                <strong>Maps</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeIn" ng-controller="datamapsCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Datamaps</h5>
+
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#">Config option 1</a>
+                            </li>
+                            <li><a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <strong>Datamaps</strong>
+                    <p>
+                        Interactive maps for data visualizations. Bundled into a single Javascript file.
+                    </p>
+                    <p>
+                        Datamaps is intended to provide some data visualizations based on geographical data. It's SVG-based, can scale to any screen size, and includes everything inside of 1 script file. It heavily relies on the amazing D3.js library.
+                        Full documentation can be found: <a href="https://github.com/markmarkoh/datamaps" target="_blank">https://github.com/markmarkoh/datamaps</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Basic example</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <datamap map="mapObject1"></datamap>
+
+                            <pre>
+ $scope.mapObject1 = {
+        scope: 'world',
+        responsive: true,
+        fills: {
+            defaultFill: "#DBDAD6"
+        },
+        geographyConfig: {
+            highlightFillColor: '#1C977A',
+            highlightBorderWidth: 0,
+        },
+    } </pre>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>With selected regions</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <datamap map="mapObject2"></datamap>
+
+                            <pre>
+$scope.mapObject2 = {
+        scope: 'world',
+        responsive: true,
+        fills: {
+            defaultFill: "#DBDAD6",
+            active: "#2BA587"
+        },
+        geographyConfig: {
+            highlightFillColor: '#1C977A',
+            highlightBorderWidth: 0,
+        },
+        data: {
+            USA: { fillKey: "active" },
+            RUS: { fillKey: "active" },
+            DEU: { fillKey: "active" },
+            BRA: { fillKey: "active" }
+        }
+    } </pre>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>USA scope</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <datamap map="mapObject3"></datamap>
+
+                            <pre>
+$scope.mapObject3 = {
+        responsive: true,
+        scope: 'usa',
+        fills: {
+            defaultFill: "#DBDAD6",
+            active: "#2BA587"
+        },
+        geographyConfig: {
+            highlightFillColor: '#1C977A',
+            highlightBorderWidth: 0
+        },
+        data: {
+            NE: { fillKey: "active" },
+            CA: { fillKey: "active" },
+            NY: { fillKey: "active" },
+        }
+    }
+</pre>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Map with arc</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <datamap map="mapObject4" plugins="mapPlugins" plugin-data="mapPluginData"></datamap>
+
+                            <pre>
+$scope.mapObject4 = {
+        scope: 'world',
+        responsive: true,
+        fills: {
+            defaultFill: "#F2F2F0",
+            active: "#DBDAD6",
+            usa: "#269479"
+        },
+        geographyConfig: {
+            highlightFillColor: '#1C977A',
+            highlightBorderWidth: 0
+        },
+        data: {
+            USA: {fillKey: "usa"},
+            RUS: {fillKey: "active"},
+            DEU: {fillKey: "active"},
+            POL: {fillKey: "active"},
+            JAP: {fillKey: "active"},
+            AUS: {fillKey: "active"},
+            BRA: {fillKey: "active"}
+        }
+    };</pre>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="pull-right">
+            10GB of <strong>250GB</strong> Free.
+        </div>
+        <div>
+            <strong>Copyright</strong> Example Company &copy; 2014-2015
+        </div>
+    </div>
+
+</div>

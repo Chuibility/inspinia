@@ -1,0 +1,411 @@
+<div class="wrapper wrapper-content animated fadeIn" ng-controller="dashboardFive as chart">
+
+    <div class="p-w-md m-t-sm">
+        <div class="row">
+
+            <div class="col-sm-4">
+                <h1 class="m-b-xs">
+                    26,900
+                </h1>
+                <small>
+                    Sales in current month
+                </small>
+                <div class="m-b-sm">
+                    <div sparkline spark-data="chart.sparkline1" spark-options="chart.sparkline1Options"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <small class="stats-label">Pages / Visit</small>
+                        <h4>236 321.80</h4>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <small class="stats-label">% New Visits</small>
+                        <h4>46.11%</h4>
+                    </div>
+                    <div class="col-xs-4">
+                        <small class="stats-label">Last week</small>
+                        <h4>432.021</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <h1 class="m-b-xs">
+                    98,100
+                </h1>
+                <small>
+                    Sales in last 24h
+                </small>
+                <div class="m-b-sm">
+                    <div sparkline spark-data="chart.sparkline2" spark-options="chart.sparkline2Options"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <small class="stats-label">Pages / Visit</small>
+                        <h4>166 781.80</h4>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <small class="stats-label">% New Visits</small>
+                        <h4>22.45%</h4>
+                    </div>
+                    <div class="col-xs-4">
+                        <small class="stats-label">Last week</small>
+                        <h4>862.044</h4>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm-4">
+
+                <div class="row m-t-xs">
+                    <div class="col-xs-6">
+                        <h5 class="m-b-xs">Income last month</h5>
+                        <h1 class="no-margins">160,000</h1>
+                        <div class="font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <h5 class="m-b-xs">Sals current year</h5>
+                        <h1 class="no-margins">42,120</h1>
+                        <div class="font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                    </div>
+                </div>
+
+
+                <table class="table small m-t-sm">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <strong>142</strong> Projects
+
+                        </td>
+                        <td>
+                            <strong>22</strong> Messages
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>61</strong> Comments
+                        </td>
+                        <td>
+                            <strong>54</strong> Articles
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>154</strong> Companies
+                        </td>
+                        <td>
+                            <strong>32</strong> Clients
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="small pull-left col-md-3 m-l-lg m-t-md">
+                    <strong>Sales char</strong> have evolved over the years sometimes.
+                </div>
+                <div class="small pull-right col-md-3 m-t-md text-right">
+                    <strong>There are many</strong> variations of passages of Lorem Ipsum available, but the majority have suffered.
+                </div>
+                <div class="flot-chart m-b-xl">
+
+                    <div class="flot-chart m-b-xl">
+                        <div flot class="flot-chart-content" dataset="chart.flotData" options="chart.flotOptions"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox">
+
+
+
+                    <div class="ibox-content">
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="product_name">Project Name</label>
+                                    <input type="text" id="product_name" name="product_name" value="" placeholder="Project Name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label class="control-label" for="price">Name</label>
+                                    <input type="text" id="price" name="price" value="" placeholder="Name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label class="control-label" for="quantity">Company</label>
+                                    <input type="text" id="quantity" name="quantity" value="" placeholder="Company" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="status">Status</label>
+                                    <select name="status" id="status" class="form-control">
+                                        <option value="1" selected="">Completed</option>
+                                        <option value="0">Pending</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Master project</td>
+                                    <td>Patrick Smith</td>
+                                    <td>$892,074</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><strong>20%</strong></td>
+                                    <td>Jul 14, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>$963,486</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><strong>40%</strong></td>
+                                    <td>Jul 16, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Betha project</td>
+                                    <td>John Smith</td>
+                                    <td>$996,824</td>
+                                    <td>Erat Volutpat</td>
+                                    <td><strong>75%</strong></td>
+                                    <td>Jul 18, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>$105,192</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><strong>18%</strong></td>
+                                    <td>Jul 22, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>$674,803</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><strong>40%</strong></td>
+                                    <td>Jul 16, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Master project</td>
+                                    <td>Patrick Smith</td>
+                                    <td>$174,729</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><strong>20%</strong></td>
+                                    <td>Jul 14, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>$823,198</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><strong>18%</strong></td>
+                                    <td>Jul 22, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Project <small>This is example of project</small></td>
+                                    <td>Patrick Smith</td>
+                                    <td>$778,696</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><strong>20%</strong></td>
+                                    <td>Jul 14, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>$861,063</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><strong>40%</strong></td>
+                                    <td>Jul 16, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Betha project</td>
+                                    <td>John Smith</td>
+                                    <td>$109,125</td>
+                                    <td>Erat Volutpat</td>
+                                    <td><strong>75%</strong></td>
+                                    <td>Jul 18, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>$600,978</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><strong>18%</strong></td>
+                                    <td>Jul 22, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>$150,161</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><strong>40%</strong></td>
+                                    <td>Jul 16, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Project <small>This is example of project</small></td>
+                                    <td>Patrick Smith</td>
+                                    <td>$160,586</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><strong>20%</strong></td>
+                                    <td>Jul 14, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>$110,612</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><strong>18%</strong></td>
+                                    <td>Jul 22, 2015</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="small-chat-box ng-small-chat fadeInRight animated" ng-show="openChat">
+
+    <div class="heading" draggable="true">
+        <small class="chat-date pull-right">
+            02.19.2015
+        </small>
+        Small chat
+    </div>
+
+    <div class="content" chat-slim-scroll>
+
+        <div class="left">
+            <div class="author-name">
+                Monica Jackson <small class="chat-date">
+                10:02 am
+            </small>
+            </div>
+            <div class="chat-message active">
+                Lorem Ipsum is simply dummy text input.
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="author-name">
+                Mick Smith
+                <small class="chat-date">
+                    11:24 am
+                </small>
+            </div>
+            <div class="chat-message">
+                Lorem Ipsum is simpl.
+            </div>
+        </div>
+        <div class="left">
+            <div class="author-name">
+                Alice Novak
+                <small class="chat-date">
+                    08:45 pm
+                </small>
+            </div>
+            <div class="chat-message active">
+                Check this stock char.
+            </div>
+        </div>
+        <div class="right">
+            <div class="author-name">
+                Anna Lamson
+                <small class="chat-date">
+                    11:24 am
+                </small>
+            </div>
+            <div class="chat-message">
+                The standard chunk of Lorem Ipsum
+            </div>
+        </div>
+        <div class="left">
+            <div class="author-name">
+                Mick Lane
+                <small class="chat-date">
+                    08:45 pm
+                </small>
+            </div>
+            <div class="chat-message active">
+                I belive that. Lorem Ipsum is simply dummy text.
+            </div>
+        </div>
+
+
+    </div>
+    <div class="form-chat">
+        <div class="input-group input-group-sm"><input type="text" class="form-control"> <span class="input-group-btn"> <button
+                class="btn btn-primary" type="button">Send
+        </button> </span></div>
+    </div>
+
+</div>
+<div id="small-chat" ng-click="openChat = !openChat">
+
+    <span class="badge badge-warning pull-right">5</span>
+    <a class="open-small-chat">
+        <i class="fa fa-comments"></i>
+
+    </a>
+</div>

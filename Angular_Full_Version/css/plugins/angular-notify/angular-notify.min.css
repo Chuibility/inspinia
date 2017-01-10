@@ -1,0 +1,66 @@
+.cg-notify-message {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    z-index: 9999;
+    max-width: 400px;
+    text-align: center;
+    background-color: #d9edf7;
+    color: #31708f;
+    padding: 15px;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+    -webkit-transition: top .5s ease-out, opacity .2s ease-out;
+    -moz-transition: top .5s ease-out, opacity .2s ease-out;
+    -o-transition: top .5s ease-out, opacity .2s ease-out;
+    transition: top .5s ease-out, opacity .2s ease-out;
+    visibility: hidden;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+}
+
+.cg-notify-message a {
+    font-weight: 700;
+    color: inherit
+}
+
+.cg-notify-message a:hover {
+    color: inherit
+}
+
+.cg-notify-close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    font-size: 21px;
+    font-weight: 700;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    line-height: 15px
+}
+
+.cg-notify-close:focus, .cg-notify-close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+
+.cg-notify-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}

@@ -1,0 +1,156 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Bootstrap Tour</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Bootstrap Tour</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+<div class="wrapper wrapper-content  animated fadeInRight">
+<div class="row">
+    <div class="col-md-6">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Bootstrap Tour</h5>
+            </div>
+
+            <div class="ibox-content">
+                <p>
+                    Quick and easy way to build your product tours with Bootstrap Popovers.
+                </p>
+
+                <div class=" m-t-sm">
+
+                    <a href="#" class="btn btn-primary startTour"><i class="fa fa-play"></i> Start Tour</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Tour steps</h5>
+            </div>
+            <div class="ibox-content text-center" id="step1">
+                <div class="p-sm">
+                    <h3>Step 1</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Tour steps</h5>
+            </div>
+            <div class="ibox-content text-center" id="step2">
+                <div class="p-sm">
+                    <h3>Step 2</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Tour steps</h5>
+            </div>
+            <div class="ibox-content text-center" id="step3">
+                <div class="p-sm">
+                    <h3>Step 3</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Tour steps</h5>
+            </div>
+            <div class="ibox-content text-center" id="step4">
+                <div class="p-xl">
+                    <h3>Step 4</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+    $(function() {
+
+        // Instance the tour
+        var tour = new Tour({
+            steps: [{
+
+                element: "#step1",
+                title: "Title of my step",
+                content: "Introduce new users to your product by walking them through it step by step.",
+                placement: "top"
+            },
+                {
+                    element: "#step2",
+                    title: "Title of my step",
+                    content: "Content of my step",
+                    placement: "top",
+                    backdrop: true,
+                    backdropContainer: '#wrapper',
+                    onShown: function (tour){
+                        $('body').addClass('tour-open')
+                    },
+                    onHidden: function (tour){
+                        $('body').removeClass('tour-close')
+                    }
+                },
+                {
+                    element: "#step3",
+                    title: "Title of my step",
+                    content: "Introduce new users to your product by walking them through it step by step.",
+                    placement: "bottom"
+                },
+                {
+                    element: "#step4",
+                    title: "Title of my step",
+                    content: "Introduce new users to your product by walking them through it step by step.",
+                    placement: "top"
+                }
+            ]});
+
+        // Initialize the tour
+        tour.init();
+
+        $('.startTour').click(function(){
+            tour.restart();
+
+            // Start the tour
+            // tour.start();
+        })
+
+    });
+
+</script>
+
+<% end %>

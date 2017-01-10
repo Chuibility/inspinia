@@ -1,0 +1,104 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-12">
+        <h2>Badges, Labels, Progress</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>UI Elements</a>
+            </li>
+            <li class="active">
+                <strong>Badges, Labels, Progress</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Badges</h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        To add a badge style You have to add <code>.badge</code>class to element. To change a color od badge you can add extra class like <code>.badge-primary</code>.
+                    </p>
+
+                    <p><span class="badge">Plain</span></p>
+
+                    <p><span class="badge badge-primary">Primary</span></p>
+
+                    <p><span class="badge badge-info">Information</span></p>
+
+                    <p><span class="badge badge-success">Success</span></p>
+
+                    <p><span class="badge badge-warning">Warning</span></p>
+
+                    <p><span class="badge badge-danger">Danger</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Labels</h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        Analogic to badge. To add a label style You have to add <code>.label</code>class to element. To change a color od label you can add extra class like <code>.label-primary</code>.
+                    </p>
+
+                    <p><span class="label">Plain</span></p>
+
+                    <p><span class="label label-primary">Primary</span></p>
+
+                    <p><span class="label label-info">Information</span></p>
+
+                    <p><span class="label label-success">Success</span></p>
+
+                    <p><span class="label label-warning">Warning</span></p>
+
+                    <p><span class="label label-danger">Danger</span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Progress Bars</h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                    <h5>Basic ProgressBars</h5>
+
+                    <uib-progressbar value="15" ></uib-progressbar>
+                    <uib-progressbar value="55" type="warning"></uib-progressbar>
+                    <uib-progressbar value="68" type="success"></uib-progressbar>
+
+                    <h5>Striped Progressbars</h5>
+
+                    <uib-progressbar value="40" type="warning" class="progress-striped"></uib-progressbar>
+
+                    <h5>Active Progressbars</h5>
+
+                    <uib-progressbar value="40" type="danger" class="progress-striped active"></uib-progressbar>
+
+                    <h5>Stacked Progressbars</h5>
+                    <button class="btn btn-sm btn-sm btn-white" type="button" ng-click="main.randomStacked()">Randomize</button>
+                    <uib-progress><uib-bar ng-repeat="bar in main.stacked track by $index" value="bar.value" type="{{bar.type}}">
+                        <span ng-hide="bar.value < 3">{{bar.value}}%</span>
+                    </uib-bar></uib-progress>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

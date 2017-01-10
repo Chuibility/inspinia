@@ -1,0 +1,88 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Chartist</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Graphs</a>
+            </li>
+            <li class="active">
+                <strong>Chartist</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="chartistCtrl as chart">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Simple line chart
+                    </h5>
+                </div>
+                <div class="ibox-content">
+                    <chartist class="ct-chart ct-perfect-fourth" chartist-data="chart.lineData" chartist-chart-options="chart.lineOptions" chartist-chart-type="Line"></chartist>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Line scatter diagram</h5>
+                </div>
+                <div class="ibox-content">
+                    <chartist class="ct-chart ct-perfect-fourth" chartist-data="chart.scatterData" chartist-chart-options="chart.scatterOptions" chartist-chart-type="Line"></chartist>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Stacked bar chart</h5>
+                </div>
+                <div class="ibox-content">
+                    <chartist class="ct-chart ct-perfect-fourth" chartist-data="chart.stackedData" chartist-chart-options="chart.stackedOptions" chartist-chart-type="Bar"></chartist>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Horizontal bar chart </h5>
+                </div>
+                <div class="ibox-content">
+                    <chartist class="ct-chart ct-perfect-fourth" chartist-data="chart.horizontalData" chartist-chart-options="chart.horizontalOptions" chartist-chart-type="Bar"></chartist>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Simple pie chart</h5>
+                </div>
+                <div class="ibox-content">
+                    <chartist class="ct-chart ct-perfect-fourth" chartist-data="chart.pieData" chartist-chart-options="chart.pieOptions" chartist-chart-type="Pie"></chartist>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Gauge chart </h5>
+                </div>
+                <div class="ibox-content">
+                    <chartist class="ct-chart ct-perfect-fourth" chartist-data="chart.gaugeData" chartist-chart-options="chart.gaugeOptions" chartist-chart-type="Pie"></chartist>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

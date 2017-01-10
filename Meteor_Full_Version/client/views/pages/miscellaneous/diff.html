@@ -1,0 +1,72 @@
+<template name="diff">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Diff' category='Miscellaneous' }}
+
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Diff plugin</h5>
+                    </div>
+
+                    <div class="ibox-content">
+
+                        <strong>jQuery.PrettyTextDiff</strong>
+                        <p>
+                            A wrapper around Google's diff_match_patch library.
+                            <br/>
+                            You can run diff on existing text by adding class <code>original</code> and <code>changed</code> and add element that compares text. Or you can pass text as a param of function. See example below.
+                        </p>
+
+                        <div class="well">
+                            <h3 class="m-t-lg">Standard example</h3>
+
+                            <div class="row diff-wrapper">
+                                <div class="col-md-4">
+                                    <h4>Oryginal text</h4>
+
+                                    <div class="original">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only centuries, but also the leap into electronic typesetting.</div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Changed text</h4>
+
+                                    <div class="changed">Lorem Ipsum is simply typesetting dummy text of the printing and has been the industry's typesetting. Lorem Ipsum has been the industry's standard dummy text ever the 1500s, when an printer took a galley of type and simply it to make a type. It has survived not only five centuries, but survived not also the leap into electronic typesetting.</div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Diff results</h4>
+
+                                    <div class="diff1"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="m-t-lg">As a function param</h3>
+                        <p>
+                            Diff will run after textarea will change. So feel free to play with it to see Diff results.
+                        </p>
+                        <div class="row diff-wrapper2">
+                            <div class="col-md-4">
+                                <h4>Oryginal text</h4>
+                                    <textarea class="form-control diff-textarea" id="original" rows="6">
+Lorem Ipsum is simply printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eve
+                                    </textarea>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Diff results</h4>
+                                <div class="diff2"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>New text</h4>
+                                    <textarea class="form-control diff-textarea" id="changed" rows="6">
+Ting dummy text of the printing and has been the industry's typesetting. Lorem Ipsum has been the industry's
+                                    </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

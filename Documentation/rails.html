@@ -1,0 +1,1088 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA Admin Theme Documentation</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <style>
+
+        .documentation .jumbotron .row {
+            padding-top: 60px;
+        }
+
+        .anchor {
+            padding-top: 50px;
+        }
+
+    </style>
+</head>
+<body class="documentation">
+
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">INSPINIA - Documentation</a>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <img src="img/rails_logo.png" alt="rails_logo" style="width: 100px">
+
+                <h2>Inspinia RAILS</h2>
+
+                <p>Thank you for purchasing INSPINIA admin theme. If you have any questions about the template, please feel free to contact us via email: <a href="mailto:support@webapplayers.com">support@webapplayers.com</a>.<br/>
+                    Thanks very much!</p>
+                <small>
+
+                    <strong>Documentation created:</strong> 10/02/2015<br/>
+                    <strong>Latest update:</strong> 06/01/2017<br/>
+                    <strong>By:</strong> WebAppLayers Team<br/>
+                    <strong>Theme version</strong> 2.7<br/>
+
+                </small>
+                <br/>
+                <small>
+                    For HTML/CSS documentation go to: <a href="index.html">Static HTML/CSS documentation.</a><br/>
+                    For AngularJS documentation go to: <a href="angular.html">AngularJS documentation.</a><br/>
+                    For ASP.NET MVC documentation go to: <a href="asp.net.mvc.html">ASP.NET MVC documentation.</a><br/>
+                    For Meteor documentation go to: <a href="meteor.html">METEOR documentation.</a>
+                </small>
+            </div>
+            <div class="col-md-6">
+                <img src="img/preview.png" alt="screen" class="img-responsive"/>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+
+<div class="row">
+
+    <div class="col-lg-12">
+
+        <h2>
+            Table of Contents
+        </h2>
+
+        <ul>
+
+            <li><a href="#documentation">About documentation</a></li>
+            <li><a href="#folder_structure">Technology and structure</a></li>
+            <li><a href="#layout_structure">Layout structure</a></li>
+            <li><a href="#options">Options</a>
+                <ul>
+                    <li><a href="#fixed_sidebar">Fixed sidebar</a></li>
+                    <li><a href="#fixed_navbar">Fixed navbar</a></li>
+                    <li><a href="#fixed_navbar2">Fixed navbar v.2</a></li>
+                    <li><a href="#fixed_footer">Fixed footer</a></li>
+                    <li><a href="#rtl_support">RTL support</a></li>
+                    <li><a href="#layout_2">Layout 2</a></li>
+                    <li><a href="#off_canvas_menu">Off canvas menu</a></li>
+                    <li><a href="#skins">Skins</a></li>
+                    <li><a href="#themeconfig">Theme config</a></li>
+                </ul>
+            </li>
+            <li><a href="#seed_project">Seed Project</a></li>
+            <li><a href="#change_log">Change log v.2.6.2 -> v.2.7</a></li>
+            <li><a href="#change_log">Change log v.2.6 -> v.2.6.2</a></li>
+            <li><a href="#change_log">Change log v.2.5 -> v.2.6</a></li>
+            <li><a href="#change_log">Change log v.2.4 -> v.2.5</a></li>
+            <li><a href="#change_log">Change log v.2.3 -> v.2.4</a></li>
+            <li><a href="#change_log">Change log v.2.2 -> v.2.3</a></li>
+            <li><a href="#change_log">Change log v.2.0/2.1 -> v.2.2</a></li>
+            <li><a href="#change_log">Change log v.2.0 -> v.2.1</a></li>
+            <li><a href="#change_log">Change log v.1.9.2 -> v.2.0</a></li>
+            <li><a href="#change_log">Change log v.1.9.2</a></li>
+            <li><a href="#contact">Contacts</a></li>
+
+
+        </ul>
+
+
+    </div>
+
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<a name="documentation" class="anchor"></a>
+
+<h3>About the documentation</h3>
+
+<p>
+    This documentation is focused on Ruby on Rails version. It assumes a minimum knowledge of Ruby technology and Rails framework. It describe mainly files and structure in project.
+    <i>Please note that this documentation is dedicated to the main element of the template. With each version, we will try to develop it. But if you have any questions going beyond what is
+        described here don't hesitate to write to us.</i>
+</p>
+
+    <h1>First run</h1>
+
+<p>
+
+    To run Rails version you will need Ruby language version 2.0 or newer and RubyGems packaging system which is installed with Ruby versions 1.9 and later.
+
+</p>
+<p>
+    Firstly you will need to install all dependencies. Go to app folder and run.
+</p>
+<pre class="prettyprint linenums">
+
+bundle install
+
+</pre>
+<p>
+    Next you can run a simple server
+</p>
+<pre class="prettyprint linenums">
+
+rails s
+
+</pre>
+
+<p>
+    And after that go to localhost:3000 to browse the app.
+</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <a name="folder_structure" class="anchor"></a>
+
+        <h3>Technology and structure</h3>
+
+        <p><strong>Tool and Technologies used:</strong>
+        <ul>
+            <li>
+                Ruby 2.1.3
+            </li>
+            <li>
+                Rails 4.0.2
+            </li>
+            <li>
+                Bootstrap 3 UI Framework.
+            </li>
+            <li>
+                INSPINIA resources
+            </li>
+        </ul>
+        </p>
+
+        <h4>Folders and files</h4>
+
+        <p>INSPINIA Ruby on Rails template consists project files for Visual Studio 2013 with below structure:</p>
+
+        <div><pre class="prettyprint linenums">
+<code>Rails_Full_Version/
+    ├── <strong>app/</strong>
+    ├── <strong>bin/</strong>
+    ├── <strong>config/</strong>
+    ├── <strong>db/</strong>
+    ├── <strong>lib/</strong>
+    ├── <strong>log/</strong>
+    ├── <strong>public/</strong>
+    ├── <strong>test/</strong>
+    ├── <strong>tmp/</strong>
+    ├── <strong>vendor/</strong>
+    ├── config.ru
+    ├── Gamefile
+    ├── Gamefile.lock
+    ├── Rakefile</code></pre>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h3>Main _Layout.cshtml</h3>
+
+        <p>Main layout are created with few main elements:</p>
+        <ol>
+            <li><code>_navigation</code> left sidebar navigation.</li>
+            <li><code>_topnavbar</code> top navigation with second menu.</li>
+            <li><code>yield</code> main container for page elements.</li>
+            <li><code>_footer</code> footer element.</li>
+        </ol>
+
+        <a target="_blank" href="img/page_rails.png"><img class="img-responsive" src="img/page_rails.png" alt="page structure"></a>
+    </div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<a name="layout_structure" class="anchor"></a>
+
+<h3>Layout structure</h3>
+
+<p>Page <code>&lt;head /&gt;</code> contains Metadata and CSS files for theme. We use special section <b>stylesheet_link_tag params[:controller]</b>, to import styles for specific vendor plugins on pages that need it based on controller name.</p>
+            <pre class="prettyprint linenums">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;INSPINIA | Responsive admin theme&lt;/title&gt;
+
+    &lt;!-- Include style per-controller - vendor plugins --&gt;
+    &lt;%= stylesheet_link_tag params[:controller] if ::Rails.application.assets.find_asset("#{params[:controller]}.css") %&gt;
+
+    &lt;!-- Main css styles --&gt;
+    &lt;%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' =&gt; true %&gt;
+
+    &lt;!-- Main javascript files --&gt;
+    &lt;%= javascript_include_tag 'application', 'data-turbolinks-track' =&gt; true %&gt;
+    &lt;%= csrf_meta_tags %&gt;
+
+&lt;/head&gt;
+</pre>
+
+<hr>
+<h3>Main file structure</h3>
+
+<p>IMPORTANT - Main stucture of application.html.erb file.</p>
+            <pre class="prettyprint linenums">
+&lt;!-- Skin configuration box --&gt;
+&lt;%= render 'layouts/skinconfig' %&gt;
+
+    &lt;!-- Wrapper--&gt;
+    &lt;div id="wrapper" class="&lt;%= params[:controller] %&gt;.&lt;%= params[:action] %&gt;"&gt;
+
+        &lt;!-- Navigation --&gt;
+        &lt;%= render 'layouts/navigation' %&gt;
+
+        &lt;!-- Page wraper --&gt;
+        &lt;div id="page-wrapper" class="gray-bg &lt;%= @extra_class %&gt;"&gt;
+
+            &lt;!-- Page wrapper --&gt;
+            &lt;%= render 'layouts/topnavbar' %&gt;
+
+            &lt;!-- Main view  --&gt;
+            &lt;%= yield %&gt;
+
+            &lt;!-- Footer --&gt;
+            &lt;%= render 'layouts/footer' %&gt;
+
+        &lt;/div&gt;
+        &lt;!-- End page wrapper--&gt;
+
+        &lt;!-- Right sidebar --&gt;
+        &lt;%= render 'layouts/rightsidebar' %&gt;
+
+    &lt;/div&gt;
+    &lt;!-- End wrapper--&gt;
+            </pre>
+<hr>
+<h3>Page Script </h3>
+
+<p>On bottom of file are script located. application.js contains all major plugin scripts and Inspinia scripts.
+    In section <b>yield :javascript</b>, will be import scripts for specific plugins on pages that need it and in section javascript_include_tag params[:controller] will be import specific vendor scripts on pages that need it based on controller name.
+</p>
+            <pre class="prettyprint linenums">
+
+&lt;!-- Include javascript per-controller - vendor plugins --&gt;
+&lt;%= javascript_include_tag params[:controller] if ::Rails.application.assets.find_asset("#{params[:controller]}.js") %&gt;
+
+&lt;!-- Include javascript per-view --&gt;
+&lt;!-- For demo purpose we include javascript in view but you can easily start SeedProject and organize it with Rails asset pipeline as you want --&gt;
+&lt;%= yield :javascript %&gt;
+
+</pre>
+<hr>
+
+
+<a name="options" class="anchor"></a>
+
+<h3>Options</h3>
+
+<p>Inspinia provide few option for you layout app. There are:
+
+<ul>
+    <li>Fixed sidebar</li>
+    <li>Fixed navbar</li>
+    <li>Fixed footer</li>
+    <li>RTL support</li>
+    <li>Layout 2 (top navigation)</li>
+    <li>Off canvas menu</li>
+    <li>Skins</li>
+</ul>
+
+</p>
+
+
+<a name="fixed_sidebar" class="anchor"></a>
+<h4>Fixed sidebar</h4>
+
+<p>
+    Fixed sidebar is a sidebar that is sticked on screen.
+
+</p>
+
+<p>
+    To add fixed sidebar you need to add .fixed-sidebar class to body.
+</p>
+
+<pre class="prettyprint linenums">
+
+    &lt;body class="fixed-sidebar"&gt;
+
+</pre>
+
+<p>
+    Next we will need to add slimScroll handle for sidebar. Go to app/assets/javascripts/inspinia.js file and find // Fixed Sidebar comment and uncomment function below it so it will look like this:
+
+</p>
+
+
+<pre class="prettyprint linenums">
+
+    // Fixed Sidebar
+    // unComment this only whe you have a fixed-sidebar
+    $(window).bind("load", function() {
+        if($("body").hasClass('fixed-sidebar')) {
+            $('.sidebar-collapse').slimScroll({
+                height: '100%',
+                railOpacity: 0.9,
+            });
+        }
+    })
+
+
+</pre>
+
+<a name="fixed_navbar" class="anchor"></a>
+<h4>Fixed navbar</h4>
+
+<p>
+    Fixed navbar is a top navbar that is sticked on screen.
+
+</p>
+
+<p>
+    To add fixed sidebar you need to add .fixed-nav class to body.
+</p>
+
+<pre class="prettyprint linenums">
+
+    &lt;body class="fixed-nav"&gt;
+
+</pre>
+
+<p>
+    Next we will need to change navbar from static to fixed in app/views/layouts/_topnavbar.html.erb file. Change .navbar-static-top class to navbar-fixed-top
+
+</p>
+
+
+<pre class="prettyprint linenums">
+
+&lt;nav class="navbar navbar-fixed-top" role="navigation"&gt;
+
+</pre>
+
+
+    <a name="fixed_navbar2" class="anchor"></a>
+    <h4>Fixed navbar 2</h4>
+
+    <p>
+        Fixed navbar 2 is a top navbar that is sticked on screen and it's width is the same as the width of wrapper
+
+    </p>
+    <p>
+        To add fixed sidebar you  need to add .fixed-nav class and .fixed-nav-basic class to body.
+    </p>
+
+<pre class="prettyprint linenums">
+
+    &lt;body class="fixed-nav fixed-nav-basic"&gt;
+
+</pre>
+
+    <p>
+        Next we will need to change navbar from static to fixed in app/views/layouts/_topnavbar.html.erb file. Change .navbar-static-top class to navbar-fixed-top
+
+    </p>
+
+
+<pre class="prettyprint linenums">
+
+&lt;nav class="navbar navbar-fixed-top" role="navigation"&gt;
+
+</pre>
+
+
+    <p>
+        Fixed navbar 2 works only on primary layout
+
+    </p>
+
+
+
+    <a name="fixed_footer" class="anchor"></a>
+<h4>Fixed footer</h4>
+
+<p>
+    Fixed footer is a bottom footer that is sticked on screen.
+
+</p>
+
+<p>
+    To add fixed bottom footer you just need to add .fixed class to footer class.
+</p>
+
+<pre class="prettyprint linenums">
+
+    &lt;div class="footer fixed"&gt;
+
+</pre>
+
+<a name="rtl_support" class="anchor"></a>
+<h4>Right-to-Left Language Support </h4>
+
+<p>
+    Adding support for language written in a Right-To-Left (RTL) direction.
+
+</p>
+
+<p>
+    To add RTL support you will need to add new .rtls class to body element
+</p>
+
+<pre class="prettyprint linenums">
+
+    &lt;body class="rtls"&gt;
+
+</pre>
+
+<p>
+    Next you will need to add new bootstrap rtl support library bootstrap-rtl.
+    Add new link to css file just below the <code>*= require style</code> in app/assets/stylesheets/application.css.scss page like this:
+</p>
+
+<pre class="prettyprint linenums">
+
+     *= require bootstrap-rtl/bootstrap-rtl.css
+
+</pre>
+
+<p>
+    After that you will have RTL support similar to this:
+
+</p>
+
+<img class="img-responsive" src="img/rtl_support.png" alt="">
+
+
+<a name="layout_2" class="anchor"></a>
+<h4>Layout 2</h4>
+
+<p>
+    Layout 2 is a top navigation with centered content layout.
+
+</p>
+
+<p>
+    For layout 2 we prepared special examples files in Shared folder
+</p>
+
+<ul>
+    <li>
+        layout_2.html.erb
+    </li>
+    <li>
+        _topnavbar_2.html.erb
+    </li>
+</ul>
+
+<p>
+    To use layout 2 all you need to do is to specify new layout in your controller like this:
+</p>
+
+<pre class="prettyprint linenums">
+
+  def dashboard_4
+    render :layout => "layout_2"
+  end
+
+</pre>
+
+<p>
+    Layout 2 with example code look like this:
+
+</p>
+
+<img class="img-responsive" src="img/Dashboard_4.png" alt="">
+
+    <a name="off_canvas_menu" class="anchor"></a>
+    <h4>Off canvas menu</h4>
+
+    <p>
+        Off canvas menu is a menu that not change the width of main wrapper page. It appear on top of the page.
+
+    </p>
+
+    <p>
+        To use off canvas menu you just need to use layout_4.html.erb. The body has special <code>.canvas-manu</code> class and it include special _navigationoffcnavas.
+
+    </p>
+
+
+<a name="skins" class="anchor"></a>
+<h4>Skins</h4>
+
+<p>Inspinai theme has 3 diferent skins</p>
+
+<p><strong>To change skin you just have to add skin class to body element.</strong></p>
+
+<p>For example: to add skin Blue skin you just need to add <code>.skin-1</code> class to body element.</p>
+
+<p>In SCSS files skins.scss you can find style for the skin. Below is a representation of css classes demand color skin.</p>
+<ul>
+    <li><code>.skin-1</code> - Blue Light</li>
+    <li><code>.skin-2</code> - Inspinia Ultra {for support with Inspinai Ultra please contact with support@webapplayers.com}</li>
+    <li><code>.skin-3</code> - Yellow/purple</li>
+    <li><code>.md-skin</code> - Material Design Skin (In demo Inspinia Material Design version has also fixed sidebar and fixed navbar option)</li>
+    <li>Defaut skin does not need any class</li>
+</ul>
+
+<a name="themeconfig" class="anchor"></a>
+<h4>Theme config</h4>
+
+<p>Theme config is the configuration box for setting options in live preview. It is placed in the right side of page with green icon.</p>
+
+<p>If you want to remove the config box all you need to do is to remove <code>&lt;%= render 'layouts/skinconfig' %&gt;</code> from application.html.erb file</p>
+
+
+<hr>
+
+<a name="seed_project" class="anchor"></a>
+<h3>Rails_Seed_Project</h3>
+
+<p><strong> It is an application skeleton for a typical Ruby on Rails web app. You can use it to quickly bootstrap your rails webapp projects and dev environment for these projects.</strong></p>
+
+<p>It is a best start for new app. It has all needed scripts and style.</p>
+
+
+<a name="change_log" class="anchor"></a>
+
+
+    <h3>Change log 2.6.2 -> 2.7</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> views/appviews/activity_stream.html.erb</li>
+        <li> views/miscellaneous/password_meter.html.erb</li>
+        <li> views/miscellaneous/spinners_usage.html.erb</li>
+        <li> views/miscellaneous/text_spinners.html.erb</li>
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/dashboards/dashboard_3.html.erb - update css class of sidebar </li>
+        <li> views/forms/advanced.html.erb - add new example for switchery control </li>
+        <li> views/landing/index.html.erb - add WOW initialise script </li>
+        <li> views/layouts/_navigation.html.erb - update is_active_controller helper on secend level menu</li>
+        <li> views/layouts/_skinconfig.html.erb - update css clas name of skin-settings</li>
+        <li> views/layouts/empty.html.erb - add IE compatibile mode meta tag</li>
+        <li> views/layouts/layout_2.html.erb - add IE compatibile mode meta tag</li>
+        <li> views/layouts/layout_3.html.erb - add IE compatibile mode meta tag</li>
+        <li> views/layouts/layout_4.html.erb - add IE compatibile mode meta tag</li>
+        <li> views/miscellaneous/landing_buttons.html.erb - update bind method for ladda example buttons</li>
+        <li> views/layoutsoptions/index.html.erb - correct typos in image names and descriptions </li>
+        <li> views/mailbox/email_view.html.erb - acorrect typo in class name</li>
+        <li> views/uielements/helper_classes.html.erb - change css name in border examples</li>
+        <li> views/uielements/icons.html.erb - update font awesome icons to new set</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> app/assets/javascript/landing.js - add WOW library to landing page </li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> app/assets/javascript/inspinia.js - update collapse-link and fix_height functions </li>
+        <li> app/assets/javascript/application.js - update link to jquery </li>
+        <li> app/assets/javascript/appviews.js -  update link to jquery-ui</li>
+        <li> app/assets/javascript/forms.js - correct typo in steps folder</li>
+        <li> app/assets/javascript/miscellaneous.js - add new libraries: touchpunch and pwstrength</li>
+        <li> app/assets/javascript/uielemenets.js - update link to jquery-ui, add touchpunch library</li>
+        <li> app/assets/javascript/widgets.js - add touchpunch library</li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> app/helpers/application_helper.rb - handle special css class</li>
+        <li> vendor/assets/javascript/dataTables </li>
+        <li> vendor/assets/stylesheets/dataTables </li>
+        <li> vendor/assets/javascript/jquery </li>
+        <li> vendor/assets/javascript/jquery-ui </li>
+        <li> vendor/assets/javascript/steps </li>
+        <li> vendor/stylesheets/javascript/steps </li>
+        <li> vendor/assets/javascript/switchery </li>
+        <li> vendor/stylesheets/javascript/switchery </li>
+        <li> vendor/assets/javascript/validate </li>
+        <li> Gemefile - set latest Font Awesome version 4.7.0  </li>
+        <li> config/application.rb - add new landing.js file to precompile</li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> vendor/assets/stylesheets/textSpinners</li>
+        <li> vendor/assets/javascript/wow</li>
+        <li> vendor/assets/javascript/touchpunch</li>
+        <li> vendor/assets/javascript/pwstrength</li>
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Fix jumping menu on landing page </li>
+        <li> Fix bg-colors </li>
+        <li> Remove rules for support old IE </li>
+        <li> Add styles for third level menu on md-skin </li>
+        <li> Improve select2 styles </li>
+        <li> Improve menu style </li>
+        <li> Clear overwrite native media-body classes </li>
+        <li> Improve few styles for IE </li>
+        <li> Improve style for summernote </li>
+        <li> Correct selected typo </li>
+        <li> Fix chat-avatar class rules </li>
+        <li> Fix typo in css preprocessor variables </li>
+
+    </ul>
+
+
+    <h3>Change log 2.6 -> 2.6.2</h3>
+
+    <ul>
+
+
+        <hr>
+        <strong>Updates</strong>
+        <li> Bootstrap to 3.3.7</li>
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Fix the issue with hidden href on mobile mini navbar</li>
+        <li> Fix the flickering menu</li>
+        <li> Fix Safari modal issue</li>
+        <li> Fix Summernote fullscreen mode</li>
+        <li> Fix css width helper classes</li>
+        <li> Improve content height on fixed navbar</li>
+        <li>  Improve landing page on mobile view</li>
+
+
+    </ul>
+
+    <h3>Change log 2.5 -> 2.6</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> views/forms/autocomplete.html.erb</li>
+        <li> views/miscellaneous/datamaps.html.erb</li>
+        <li> views/miscellaneous/pdf_viewer.html.erb</li>
+        <li> views/miscellaneous/social_buttons.html.erb</li>
+        <li> views/uielements/helper_classes.html.erb</li>
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/dashboard/dashboard_1.html.erb - update script for new Chartjs version</li>
+        <li> views/dashboard/dashboard_3.html.erb - update script for new Chartjs version</li>
+        <li> views/dashboard/dashboard_4.html.erb - update script for new Chartjs version</li>
+        <li> views/dashboard/dashboard_4_1.html.erb - update script for new Chartjs version</li>
+        <li> forms/advanced.html.erb - add new features: input tag, dual select</li>
+        <li> forms/file_upload.html.erb - add new input components, update dropzone</li>
+        <li> graphs/chartjs.html.erb - update script for new Chartjs version</li>
+        <li> tables/data_tables.html.erb - remove jeditable library</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> public/pdf/example.pdf</li>
+        <li> public/api/typehead_collection.json</li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> inspinia.js - update click functions </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> vendor/assets/javascript/dropzone </li>
+        <li> vendor/assets/javascript/fullcalendar </li>
+        <li> vendor/assets/javascript/chartJs </li>
+        <li> vendor/assets/javascript/summernote </li>
+        <li> vendor/assets/stylesheets/animate.css</li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> vendor/assets/javascript/bootstrap-taginput</li>
+        <li> vendor/assets/javascript/dualListbox</li>
+        <li> vendor/assets/javascript/pdfjs</li>
+        <li> vendor/assets/javascript/topojson</li>
+        <li> vendor/assets/javascript/typehead</li>
+        <li> vendor/assets/stylesheets/bootstrapSocial</li>
+
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Fix menu jumping issue</li>
+        <li> Improve print mode for Firefox</li>
+        <li> Improve chosen colors</li>
+        <li> Fix boxes layout with md-skin</li>
+        <li> Improve custom swithc style</li>
+        <li> Add few new css classes - helper classes</li>
+
+    </ul>
+
+    <h3>Change log 2.4 -> 2.5</h3>
+
+    <div class="alert alert-info">
+        2.5 version fully focused on update AngularJS projects.
+        <strong>New features and views will be added to separate 2.6 version.</strong>
+    </div>
+
+    <h3>Change log 2.3 -> 2.4</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> views/graphs/c3charts.html.erb</li>
+        <li> views/miscellaneous/clipboard.html.erb</li>
+        <li> views/miscellaneous/i18support.html.erb</li>
+        <li> views/miscellaneous/loading_buttons.html.erb</li>
+        <li> views/miscellaneous/tour.html.erb</li>
+        <li> views/miscellaneous/truncate.html.erb</li>
+        <li> views/commerce/cart.html.erb</li>
+        <li> views/forms/markdown.html.erb</li>
+        <li> views/uielements/resizable_panels.html.erb</li>
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/layouts/_navigation.html.erb - add new menu elements for new views</li>
+        <li> miscellaneous/agile_board.html.erb - add example code for serialize list</li>
+        <li> forms/advanced.html.erb - add new Touch spin control</li>
+        <li> landing/index.html.erb - update page-scroll click event to close menu on select in mobile</li>
+        <li> layouts/_skinconfig.html.erb - add new option for fixed nav bar</li>
+        <li> tables/data_tables..html.erb - replace old swf buttons with new button plugin (update datatables library)</li>
+        <li> uielements/video.html.erb - add script for handle full screen video option</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> public/locales/en.json</li>
+        <li> public/locales/es.json</li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> inspinia.js - update fix_height function </li>
+        <li> inspinia.js - update SmoothlyMenu function </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> bootstrap - update to 3.3.6 </li>
+        <li> dataTables - create on compact datatables generate in official builder: https://datatables.net/download/index </li>
+        <li> pace - update to 1.0.2 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> vendor/assets/javascript/c3</li>
+        <li> vendor/assets/stylesheets/c3</li>
+        <li> vendor/assets/javascript/bootstrap-markdow</li>
+        <li> vendor/assets/stylesheets/bootstrap-markdow</li>
+        <li> vendor/assets/javascript/d3 </li>
+        <li> vendor/assets/javascript/clipboard</li>
+        <li> vendor/assets/javascript/dotdotdot</li>
+        <li> vendor/assets/javascript/i18next </li>
+        <li> vendor/assets/javascript/ladda </li>
+        <li> vendor/assets/stylesheets/ladda</li>
+        <li> vendor/assets/javascript/touchspin</li>
+        <li> vendor/assets/stylesheets/touchspin</li>
+        <li> vendor/assets/javascript/bootstrapTour</li>
+        <li> vendor/assets/stylesheets/bootstrapTour</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> app/assets/images/flags- Set of flags images</li>
+
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Fix buttons shadow on Chrome </li>
+        <li> Fix dropdown text colour on md-skin </li>
+        <li> Fix pace.js on fixed navbar option </li>
+        <li> Fix few glitch animation effect </li>
+        <li> Improve nav-tabs on mobile devices </li>
+        <li> Fix second level menu on md-skin </li>
+        <li> Improve RTL mode </li>
+        <li> Add new fixed navbar option </li>
+        <li> Ipmore print mode </li>
+
+    </ul>
+
+    <h3>Change log 2.0/2.1 -> 2.2</h3>
+
+
+
+    <h3>Change log 2.2 -> 2.3</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> views/appviews/contacts_two.html.erb</li>
+        <li> views/appviews/profile_two.html.erb</li>
+        <li> views/appviews/vote_list.html.erb</li>
+        <li> views/miscellaneous/masonry.html.erb</li>
+        <li> views/ecommerce/product_detail.html.erb </li>
+        <li> views/ecommerce/payments.html.erb </li>
+        <li> views/dashboards/dashboard_5.html.erb </li>
+        <li> views/gallery/slick_carusela.html.erb </li>
+
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/layouts/_navigation.html.erb - add new menu elements for new views</li>
+        <li> views/forms/advanced.html.erb - Add select2 examples</li>
+        <li> views/uielements/tabs_panels.html.erb - add example of fullscreen panel and slim scroll panel </li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> inspinia.js - Add function for handle full screen ibox </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> vendor/assets/javascripts/dataTables - update to 1.10.8 </li>
+        <li> bootstrap - update to 3.3.5 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> vendor/assets/javascripts/slick (with css files)</li>
+        <li> vendor/assets/javascripts/select2 (with css files)</li>
+        <li> vendor/assets/javascripts/masonry</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> images/landing - Full folder of images used in landing page</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> css/patterns- Add images for header in Material Design skin</li>
+
+        <hr>
+        <strong>CSS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Add new md-skin styles </li>
+        <li> Fix ibox-tools when title is large</li>
+        <li> Fix landing page menu on small devices</li>
+        <li> Fix modal open backdrop with animate.css effect</li>
+        <li> Fix dropdown orientation under ibox</li>
+        <li> Fix profile menu on fixed sidebar</li>
+
+    </ul>
+
+    <h3>Change log 2.0/2.1 -> 2.2</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> views/graphs/chartist.html.erb </li>
+        <li> views/metrics/index.html.erb</li>
+        <li> views/appviews/social_feed.html.erb</li>
+        <li> views/miscellaneous/sweet_alert.html.erb</li>
+        <li> views/tables/foo_tables.html.erb</li>
+        <li> views/uielements/tabs.html.erb</li>
+        <li> views/landing/index.html.erb (incorporate to admin)</li>
+        <li> views/ecommerce/orders.html.erb </li>
+        <li> views/ecommerce/product_edit.html.erb </li>
+        <li> views/ecommerce/products_grid.html.erb </li>
+        <li> views/ecommerce/products_list.html.erb </li>
+
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/layouts/_navigation.html.erb - add new menu elements for new views</li>
+        <li> views/layouts/_navigation.html.erb - added ".metismenu" class to nav element id="side-menu" (new version of metisMenu)</li>
+        <li> views/appviews/article.html.erb - Add example of comments section</li>
+        <li> views/forms/advanced.html.erb - Add new new plugins</li>
+        <li> views/uielements/tabs_panels.html.erb - add example of footer to panel and initial collapsed panel </li>
+        <li> views/miscellaneous/chat_view.html.erb - Add left/right class to chat panels </li>
+        <li> views/landing/index.html.erb - Add new sections: timeline and comments</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> inspinia.js - Update fix_height for handle height wrapper on fixed-nav  </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> vendor/assets/javascripts/metisMenu - update to 2.0.2 </li>
+        <li> vendor/assets/javascripts/slimscrol - update to 1.3.6 </li>
+        <li> vendor/assets/javascripts/jvectormap - update to 2.0.2 </li>
+        <li> vendor/assets/javascripts/fullcalendar/moment.min.js - update to 2.9.0 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> vendor/assets/javascripts/clockpicker (with css files)</li>
+        <li> vendor/assets/javascripts/daterangepicker (with css files)</li>
+        <li> vendor/assets/javascripts/footable (with css files)</li>
+        <li> vendor/assets/javascripts/sweetalert (with css files)</li>
+        <li> vendor/assets/javascripts/chartist</li>
+        <li> vendor/assets/stylesheets/awesome-bootstrap-checkbox</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> images/landing - Full folder of images used in landing page</li>
+
+        <hr>
+        <strong>CSS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Add new metisMenu style </li>
+        <li> Add landing page styles </li>
+        <li> Add chat-discussion left/right class</li>
+        <li> Fix z-index of modal-dialog</li>
+        <li> Fix margins on wrapper when fixed-nav is enabled</li>
+
+    </ul>
+
+    <h3>Change log 2.0 - 2.1</h3>
+
+    <strong>Version 2.1 is mainly focused on MeteorJS to provide Meteor version.</strong>
+    <p>Please stay tuned for 2.2 version to get new features for Ruby on Rails version.</p>
+
+    <h3>Change log 1.9 -> 2.0</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> views/appviews/article.html.erb</li>
+        <li> views/appviews/blog.html.erb </li>
+        <li> views/appviews/clients.html.erb </li>
+        <li> views/appviews/issue_tracker.html.erb </li>
+        <li> views/appviews/outlook_view.html.erb </li>
+        <li> views/appviews/teams_board.html.erb </li>
+        <li> views/layoutoptions/off_canvas.html.erb  </li>
+        <li> views/miscellaneous/agile_board.html.erb  </li>
+        <li> views/miscellaneous/diff.html.erb  </li>
+        <li> views/miscellaneous/idle_timer.html.erb  </li>
+        <li> views/miscellaneous/live_favicon.html.erb  </li>
+        <li> views/miscellaneous/spinners.html.erb  </li>
+        <li> views/pages/forgot_password.html.erb  </li>
+        <li> views/layouts/_navigationoffcanvas.html.erb  </li>
+        <li> views/layouts/_rightsidebar.html.erb  </li>
+        <li> views/layouts/_layout_3.html.erb  </li>
+        <li> views/layouts/_layout_4.html.erb  </li>
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/layouts/application.html.erb  - Add new right sidebar</li>
+        <li> views/layouts/_navigation.html.erb  - Add new menu elements</li>
+        <li> views/layouts/_topnavbar.html.erb  - Add new menu element for right sidebar</li>
+        <li> views/miscellaneous/chat_view.html.erb  - Add small-chat element</li>
+        <li> views/appviews/faq.html.erb - Fix the collapse effect - Create new div element <code>.faq-answer</code> before <code>p</code> answer. </li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> app/assets/javascripts/inspinia.js - Update fix_height function, add local storage handler, add functions for small-chat and right-sidebar  </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> vendor/assets/javascripts/pace - update Pace to 1.0 </li>
+        <li> vendor/assets/javascripts/morris/morris.js - update to 0.5 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> vendor/assets/javascripts/diff_match_patch - Google algorithm for diff functionality </li>
+        <li> vendor/assets/javascripts/preetyTextDiff - jQuery plugin for dif</li>
+        <li> vendor/assets/javascripts/idle_timer</li>
+        <li> vendor/assets/javascripts/tinycon</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> app/assets/images/full_height.jpg</li>
+        <li> app/assets/images/off_canvas.jpg</li>
+
+        <hr>
+        <strong>CSS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Improve btn-link </li>
+        <li> variables.scss - change url to image-url helper </li>
+        <li> Add colapsed class for initial collapsed ibox </li>
+        <li> Fix margins for footer with sidebar fixed  </li>
+        <li> Fix responsive in login page   </li>
+
+        <hr>
+        <strong>New Controllers</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Update Controllers</strong>
+        <li> app/controllers/appviews.rb - add new pages for views</li>
+        <li> app/controllers/pages.rb - add new pages for views</li>
+        <li> app/controllers/miscellaneous.rb - add new pages for views</li>
+        <li> app/controllers/layoutsoptions.rb - add new pages for views</li>
+
+        <hr>
+        <strong>Updates .rb files</strong>
+        <li> config/routes.rb - add new routes</li>
+
+        <hr>
+        <strong>New public files</strong>
+        <li> public/favicon.ico</li>
+
+    </ul>
+
+<h3>Change log 1.9.2</h3>
+
+<strong>First version of Inspinai Ruby on Rails - Initial released.</strong>
+<p>Please stay tuned for 2.0 version to get new features and improvements.</p>
+
+
+<a name="contact" class="anchor"></a>
+<h3>Contact</h3>
+<p>Contact as with email: <a href="mailto:support@webapplayers.com">support@webapplayers.com</a></p>
+<hr>
+</div>
+</div>
+</div>
+
+<footer>
+    <p>&copy; WebAppLayers 2015 | INSPINIA Admin Theme</p>
+</footer>
+</div>
+</div>
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/google-code-prettify/prettify.js"></script>
+
+<script>
+    $(function () {
+        window.prettyPrint && prettyPrint();
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Modal Window</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Modal Window</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="modalDemoCtrl">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Inspinia modal window</h5>
+
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.
+                    </p>
+                    <p>
+                        Creating custom modals is straightforward: create a partial view, its controller and reference them when using the service.
+                    </p>
+                    <div class="text-center">
+                        <button class="btn btn-primary" ng-click="open1()">Launch demo modal</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Optional sizes</h5>
+
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        Modals have two optional sizes, available via parameter to be placed on function <code>open('lg')</code>
+                    </p>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary" ng-click="open3('lg')">Large Modal</button>
+                        <button class="btn btn-primary" ng-click="open3('sm')">Small Modal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>
+                        Data binding
+                    </h5>
+                </div>
+                <div class="ibox-content">
+
+                    <p>
+                        You can add any animation effect to your modal window. Just pick up some of the effect from animation page and add it to modalInstance<code>windowClass: "animated fadeInY"</code> extra class.
+                    </p>
+                    <button class="btn btn-primary" ng-click="open4()">FlipInY effect</button>
+                    <button class="btn btn-primary" ng-click="open2()">Basic fadeIn effect</button>
+                </div>
+        </div>
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>
+                        Options
+                    </h5>
+                </div>
+                <div class="ibox-content">
+
+                    <p>
+                        The $modal service has only one method: open(options) where available options are like follows:
+                    </p>
+
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th style="width: 100px;">Name</th>
+                                <th>Description</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr>
+                                <td>
+                                    templateUrl
+                                </td>
+                                <td>
+                                    a path to a template representing modal's content
+                                </td>
+                            </tr>
+
+                            <tr><td>template </td><td>inline template representing the modal's content</td></tr>
+                            <tr><td>scope  </td><td> a scope instance to be used for the modal's content (actually the $modal service is going to create a child scope of a provided scope). Defaults to $rootScope</td></tr>
+                            <tr><td>controller </td><td> a controller for a modal instance - it can initialize scope used by modal. Accepts the "controller-as" syntax in the form 'SomeCtrl as myctrl'; can be injected with $modalInstance</td></tr>
+                            <tr><td>controllerAs </td><td>an alternative to the controller-as syntax, matching the API of directive definitions. Requires the controller option to be provided as well </td></tr>
+                            <tr><td>resolve </td><td> members that will be resolved and passed to the controller as locals; it is equivalent of the resolve property for AngularJS routes</td></tr>
+                            <tr><td>backdrop  </td><td> controls presence of a backdrop. Allowed values: true (default), false (no backdrop), 'static' - backdrop is present but modal window is not closed when clicking outside of the modal window.</td></tr>
+                            <tr><td>keyboard </td><td> indicates whether the dialog should be closable by hitting the ESC key, defaults to true</td></tr>
+                            <tr><td>backdropClass </td><td> additional CSS class(es) to be added to a modal backdrop template</td></tr>
+                            <tr><td>windowClass </td><td> additional CSS class(es) to be added to a modal window template </td></tr>
+                            <tr><td>windowTemplateUrl </td><td> a path to a template overriding modal's window template</td></tr>
+                            <tr><td>size </td><td> optional size of modal window. Allowed values: 'sm' (small) or 'lg' (large). Requires Bootstrap 3.1.0 or later</td></tr>
+
+                            </tbody>
+                            </table>
+                        </div>
+                </div>
+            </div>
+    </div>
+</div>

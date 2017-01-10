@@ -1,0 +1,399 @@
+<!-- Wrapper-->
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <div ng-include="'views/common/navigation.html'"></div>
+
+    <!-- Page wraper -->
+    <!-- ng-class with current state name give you the ability to extended customization your view -->
+    <div id="page-wrapper" class="gray-bg {{$state.current.name}}">
+
+        <!-- Page wrapper -->
+        <div ng-include="'views/common/topnavbar.html'"></div>
+
+        <div class="wrapper wrapper-content animated fadeInRight" ng-controller="metricsCtrl as spark">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5 class="m-b-md">Server status Q12</h5>
+                            <h2 class="text-navy">
+                                <i class="fa fa-play fa-rotate-270"></i> Up
+                            </h2>
+                            <small>Last down 42 days ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content ">
+                            <h5 class="m-b-md">Server status Q13</h5>
+                            <h2 class="text-navy">
+                                <i class="fa fa-play fa-rotate-270"></i> Up
+                            </h2>
+                            <small>Last down 42 days ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5 class="m-b-md">Server status Q42</h5>
+                            <h2 class="text-danger">
+                                <i class="fa fa-play fa-rotate-90"></i> Down
+                            </h2>
+                            <small>Server down since 4 days</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5 class="m-b-md">Server status Q43</h5>
+                            <h2 class="text-danger">
+                                <i class="fa fa-play fa-rotate-90"></i> Down
+                            </h2>
+                            <small>Server down since 4:32 pm.</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Visits in last 24h</h5>
+                            <h2>198 009</h2>
+                            <div sparkline spark-data="spark.demo1Data" spark-options="spark.demo1Options"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Visits week</h5>
+                            <h2>65 000</h2>
+                            <div sparkline spark-data="spark.demo2Data" spark-options="spark.demo2Options"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Last month</h5>
+                            <h2>680 900</h2>
+                            <div sparkline spark-data="spark.demo3Data" spark-options="spark.demo3Options"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Avarage time</h5>
+                            <h2>00:06:40</h2>
+                            <div sparkline spark-data="spark.demo4Data" spark-options="spark.demo4Options"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Usage</h5>
+                            <h2>65%</h2>
+                            <div class="progress progress-mini">
+                                <div style="width: 68%;" class="progress-bar"></div>
+                            </div>
+
+                            <div class="m-t-sm small">Server down since 4:32 pm.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Usage</h5>
+                            <h2>50%</h2>
+                            <div class="progress progress-mini">
+                                <div style="width: 78%;" class="progress-bar"></div>
+                            </div>
+
+                            <div class="m-t-sm small">Server down since 4:32 pm.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Usage</h5>
+                            <h2>14%</h2>
+                            <div class="progress progress-mini">
+                                <div style="width: 38%;" class="progress-bar progress-bar-danger"></div>
+                            </div>
+
+                            <div class="m-t-sm small">Server down since 4:32 pm.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Usage</h5>
+                            <h2>20%</h2>
+                            <div class="progress progress-mini">
+                                <div style="width: 28%;" class="progress-bar progress-bar-danger"></div>
+                            </div>
+
+                            <div class="m-t-sm small">Server down since 4:32 pm.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Percentage distribution</h5>
+                            <h2>42/20</h2>
+                            <div class="text-center">
+                                <div sparkline spark-data="spark.demo5Data" spark-options="spark.demo5Options"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Percentage division</h5>
+                            <h2>100/54</h2>
+                            <div class="text-center">
+                                <div sparkline spark-data="spark.demo6Data" spark-options="spark.demo6Options"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Percentage distribution</h5>
+                            <h2>685/211</h2>
+                            <div class="text-center">
+                                <div sparkline spark-data="spark.demo7Data" spark-options="spark.demo7Options"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Percentage division</h5>
+                            <h2>240/32</h2>
+                            <div class="text-center">
+                                <div sparkline spark-data="spark.demo8Data" spark-options="spark.demo8Options"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Income</h5>
+                            <h1 class="no-margins">886,200</h1>
+                            <div class="stat-percent font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                            <small>Total income</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Income last month</h5>
+                            <h1 class="no-margins">1 738,200</h1>
+                            <div class="stat-percent font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                            <small>Total income</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Income last day</h5>
+                            <h1 class="no-margins">-200,100</h1>
+                            <div class="stat-percent font-bold text-danger">12% <i class="fa fa-level-down"></i></div>
+                            <small>Total income</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Income all</h5>
+                            <h1 class="no-margins">54,200</h1>
+                            <div class="stat-percent font-bold text-danger">24% <i class="fa fa-level-down"></i></div>
+                            <small>Total income</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>All new alerts</h5>
+                            <table class="table table-stripped small m-t-md">
+                                <tbody>
+                                <tr>
+                                    <td class="no-borders">
+                                        <i class="fa fa-circle text-navy"></i>
+                                    </td>
+                                    <td  class="no-borders">
+                                        Example element 1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-navy"></i>
+                                    </td>
+                                    <td>
+                                        Example element 2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-navy"></i>
+                                    </td>
+                                    <td>
+                                        Example element 3
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Alerts</h5>
+                            <table class="table table-stripped small m-t-md">
+                                <tbody>
+                                <tr>
+                                    <td class="no-borders">
+                                        <i class="fa fa-circle text-navy"></i>
+                                    </td>
+                                    <td  class="no-borders">
+                                        Example element 1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-navy"></i>
+                                    </td>
+                                    <td>
+                                        Example element 2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-navy"></i>
+                                    </td>
+                                    <td>
+                                        Example element 3
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>All messages</h5>
+                            <table class="table table-stripped small m-t-md">
+                                <tbody>
+                                <tr>
+                                    <td class="no-borders">
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td  class="no-borders">
+                                        Example element 1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td>
+                                        Example element 2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td>
+                                        Example element 3
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Last notification</h5>
+                            <table class="table table-stripped small m-t-md">
+                                <tbody>
+                                <tr>
+                                    <td class="no-borders">
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td  class="no-borders">
+                                        Example element 1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td>
+                                        Example element 2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td>
+                                        Example element 3
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    <!-- Footer -->
+    <div ng-include="'views/common/footer.html'"></div>
+
+</div>
+<!-- End page wrapper-->
+
+</div>
+<!-- End wrapper-->

@@ -1,0 +1,92 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Notifications</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>UI Elements</a>
+            </li>
+            <li class="active">
+                <strong>Notifications</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeIn">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Alerts Styles</h5>
+
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                    <div class="alert alert-success">
+                        How quickly daft jumping zebras vex. <a class="alert-link" href="">Alert Link</a>.
+                    </div>
+                    <div class="alert alert-info">
+                        How quickly daft jumping zebras vex. <a class="alert-link" href="">Alert Link</a>.
+                    </div>
+                    <div class="alert alert-warning">
+                        How quickly daft jumping zebras vex. <a class="alert-link" href="">Alert Link</a>.
+                    </div>
+                    <div class="alert alert-danger">
+                        How quickly daft jumping zebras vex. <a class="alert-link" href="">Alert Link</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Dynamic Alert</h5>
+
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <uib-alert ng-repeat="alert in main.alerts" type="{{alert.type}}" close="main.closeAlert($index)">{{alert.msg}}</uib-alert>
+                        <button class='btn btn-white' ng-click="main.addAlert()">Add Alert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Tooltips and Popovers</h5>
+
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content text-center">
+                    <h4>Tooltip Demo
+                        <small>Background color more gentle.</small>
+                    </h4>
+                    <div class="tooltip-demo">
+                        <button type="button" class="btn btn-default" tooltip-placement="left" uib-tooltip="On the Left!">Tooltip on left</button>
+                        <button type="button" class="btn btn-default" tooltip-placement="top" uib-tooltip="On the Top!">Tooltip on top</button>
+                        <button type="button" class="btn btn-default" tooltip-placement="bottom" uib-tooltip="On the Bottom!">Tooltip on bottom</button>
+                        <button type="button" class="btn btn-default" tooltip-placement="right" uib-tooltip="On the Right!">Tooltip on right</button>
+                    </div>
+                    <br>
+                    <h4>Clickable Popover Demo</h4>
+                    <div class="tooltip-demo">
+                        <button popover-placement="left" uib-popover="On the Left!" class="btn btn-primary">Popover on left</button>
+                        <button popover-placement="top" uib-popover="On the Top!" class="btn btn-primary">Popover on top</button>
+                        <button popover-placement="bottom" uib-popover="On the Bottom!" class="btn btn-primary">Popover on bottom</button>
+                        <button popover-placement="right" uib-popover="On the Right!" class="btn btn-primary">Popover on right</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

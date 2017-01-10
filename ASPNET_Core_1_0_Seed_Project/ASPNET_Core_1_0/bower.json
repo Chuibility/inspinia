@@ -1,0 +1,16 @@
+{
+  "name": "Inspinia",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery-validation": "1.14.0",
+    "jquery-validation-unobtrusive": "3.2.6",
+    "font-awesome": "4.7.0",
+    "metisMenu": "~2.2.0",
+    "pace": "~1.0.2",
+    "slimScroll": "~1.3.7"
+  },
+  "resolutions": {
+    "jquery": ">=1.6.2"
+  }
+}

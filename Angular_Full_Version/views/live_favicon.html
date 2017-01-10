@@ -1,0 +1,79 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Favicon</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Life favicon</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight" ng-controller="liveFavicon">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Tinycon</h5>
+                </div>
+
+                <div class="ibox-content">
+
+                    <strong>A small library for manipulating the favicon</strong>
+                    <p>
+                        Tinycon allows the addition of alert bubbles and changing the favicon image. Tinycon gracefully falls back to a number in title approach for browsers that don't support canvas or dynamic favicons.
+                    </p>
+
+                    <p>
+                        Alerts in the favicon allow users to pin a tab and easily see if their attention is needed.
+                    </p>
+
+                    <div class="text-center p-lg">
+
+                        <a class="btn btn-white" ng-click="example1()">Set icon to 1</a>
+                        <a class="btn btn-white" ng-click="example2()">Set icon to 1000</a>
+                        <a class="btn btn-white" ng-click="example3()">Set icon to string 'In'</a>
+                        <a class="btn btn-primary" ng-click="example4()">Set icon with custom color</a>
+
+                    </div>
+
+                    <h3>
+                        <a aria-hidden="true" href="#options" class="anchor" id="user-content-options"><span class="octicon octicon-link"></span></a>Options</h3>
+                    <p>Tinycon can take a range of options to customise the look</p>
+                    <ul class="task-list">
+                        <li>width: the width of the alert bubble</li>
+                        <li>height: the height of the alert bubble</li>
+                        <li>font: a css string to use for the fontface (recommended to leave this)</li>
+                        <li>colour: the foreground font colour</li>
+                        <li>background: the alert bubble background colour</li>
+                        <li>fallback: should we fallback to a number in brackets for browsers that don't support canvas/dynamic favicons? Boolean, or use the string 'force' to ensure a title update even in supported browsers.</li>
+                        <li>abbreviate: should tinycon shrink large numbers such as 1000 to an abbreviated version (1k). Boolean, defaults to true</li>
+                    </ul>
+
+                    <p><strong>Example usage</strong></p>
+                            <pre>
+Tinycon.setBubble(6);
+
+Tinycon.setOptions({
+    width: 7,
+    height: 9,
+    font: '10px arial',
+    colour: '#ffffff',
+    background: '#549A2F',
+    fallback: true
+});
+                            </pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

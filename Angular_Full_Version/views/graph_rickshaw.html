@@ -1,0 +1,119 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Rickshaw Charts</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Graphs</a>
+            </li>
+            <li class="active">
+                <strong>Rickshaw Charts</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="rickshawChartCtrl as chart">
+<div class="row">
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Simple area example
+                    <small>With custom colors.</small>
+                </h5>
+                <div ibox-tools></div>
+            </div>
+            <div class="ibox-content">
+                <rickshaw rickshaw-options="chart.simpleOptions" rickshaw-series="chart.simpleSeries"></rickshaw>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Multiple Area</h5>
+
+                <div ibox-tools></div>
+            </div>
+            <div class="ibox-content">
+                <rickshaw rickshaw-options="chart.multiAreaOptions" rickshaw-series="chart.multiAreaSeries"></rickshaw>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>One line Example</h5>
+
+                <div ibox-tools></div>
+            </div>
+            <div class="ibox-content">
+                <rickshaw rickshaw-options="chart.oneLineOptions" rickshaw-features="" rickshaw-series="chart.oneLineSeries"></rickshaw>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Multiple Line Example</h5>
+
+                <div ibox-tools></div>
+            </div>
+            <div class="ibox-content">
+                <rickshaw rickshaw-options="chart.multiLineOptions" rickshaw-features="" rickshaw-series="chart.multiLineSeries"></rickshaw>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Bars</h5>
+
+                <div ibox-tools></div>
+            </div>
+            <div class="ibox-content">
+                <rickshaw rickshaw-options="chart.barsOptions" rickshaw-features="" rickshaw-series="chart.barsSeries"></rickshaw>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Stacked Bars</h5>
+
+                <div ibox-tools></div>
+            </div>
+            <div class="ibox-content">
+                <rickshaw rickshaw-options="chart.stackedOptions" rickshaw-features="" rickshaw-series="chart.stackedSeries"></rickshaw>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Scatterplot</h5>
+
+                <div ibox-tools></div>
+            </div>
+            <div class="ibox-content">
+                <rickshaw rickshaw-options="chart.scatterplotOptions" rickshaw-features="" rickshaw-series="chart.scatterplotSeries"></rickshaw>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>

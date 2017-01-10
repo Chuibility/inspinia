@@ -1,0 +1,146 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>File upload</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Forms</a>
+            </li>
+            <li class="active">
+                <strong>File upload</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeIn">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>File inputs example</h5>
+                </div>
+                <div class="ibox-content">
+                    The file input feature by Jasny allows you to create a visually appealing file or image input widgets based on the Bootstrap style. Additional dropzone.js library gives you drag’n’drop file uploads option.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Input group example</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#">Config option 1</a>
+                            </li>
+                            <li><a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                        <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                        <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                    </div>
+                    <p>
+                        HTML markup code for abowe example:
+                    </p>
+<pre id="code1">
+&lt;div class="fileinput fileinput-new input-group" data-provides="fileinput"&gt;
+    &lt;div class="form-control" data-trigger="fileinput"&gt;
+        &lt;i class="glyphicon glyphicon-file fileinput-exists">&lt;/i&gt;
+    &lt;span class="fileinput-filename"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class="input-group-addon btn btn-default btn-file"&gt;
+        &lt;span class="fileinput-new"&gt;Select file&lt;/span&gt;
+        &lt;span class="fileinput-exists"&gt;Change&lt;/span&gt;
+        &lt;input type="file" name="..."/&gt;
+    &lt;/span&gt;
+    &lt;a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove&lt;/a&gt;
+&lt;/div&gt; </pre>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Button example</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#">Config option 1</a>
+                            </li>
+                            <li><a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                        <span class="btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                        <span class="fileinput-filename"></span>
+                        <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                    </div>
+                    <p>
+                        HTML markup code for abowe example:
+                    </p>
+<pre id="code2">
+&lt;div class="fileinput fileinput-new" data-provides="fileinput"&gt;
+    &lt;span class="btn btn-default btn-file"&gt;&lt;span class="fileinput-new"&gt;Select file&lt;/span&gt;
+    &lt;span class="fileinput-exists"&gt;Change&lt;/span&gt;&lt;input type="file" name="..."/&gt;&lt;/span&gt;
+    &lt;span class="fileinput-filename"&gt;&lt;/span&gt;
+    &lt;a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;&lt;/a&gt;
+&lt;/div&gt; </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Dropzone Area</h5>
+
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                    <form action="#" class="dropzone dz-clickable" dropzone="" id="dropzone">
+                        <div class="dz-default dz-message"><span><strong>Drop files here or click to upload. </strong><br> (This is just a demo dropzone. Selected files are not actually uploaded.)</span></div>
+                        </form>
+                    <div class="m text-right">
+                        <small>DropzoneJS is an open source library that provides drag'n'drop file uploads with image previews: <a href="https://github.com/enyo/dropzone" target="_blank">https://github.com/enyo/dropzone</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

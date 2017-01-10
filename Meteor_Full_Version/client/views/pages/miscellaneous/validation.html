@@ -1,0 +1,129 @@
+<template name="validation">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Validation' category='Miscellaneous' }}
+
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Validation</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h2>
+                            jQuery Validation Plugin - Form validation made easy
+                        </h2>
+                        <p>
+                            The jQuery Validation Plugin provides drop-in validation for your existing forms, while making all kinds of customizations to fit your application really easy.
+                        </p>
+
+                        <p class="font-bold">Example form with custom validation on each form control</p>
+                        <form role="form" id="form">
+                            <div class="form-group"><label>Email</label> <input type="email" placeholder="Enter email" class="form-control" required name="email"></div>
+                            <div class="form-group"><label>Password</label> <input type="password" placeholder="Password" class="form-control" name="password"></div>
+                            <div class="form-group"><label>Url</label> <input type="text" placeholder="Enter email" class="form-control" name="url"></div>
+                            <div class="form-group"><label>Number</label> <input type="text" placeholder="Enter email" class="form-control" name="number"></div>
+                            <div class="form-group"><label>MinLength</label> <input type="text" placeholder="Enter email" class="form-control" name="min"></div>
+                            <div class="form-group"><label>MaxLength</label> <input type="text" placeholder="Enter email" class="form-control" name="max"></div>
+                            <div>
+                                <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Submit</strong></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-6">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Methods</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h2>
+                            List of built-in Validation methods
+                        </h2>
+                        <p>
+                            A set of standard validation methods is provided:
+                        </p>
+
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>remote</td>
+                                <td>Requests a resource to check the element for validity.</td>
+                            </tr>
+                            <tr>
+                                <td>minlength</td>
+                                <td>Makes the element require a given minimum length.</td>
+                            </tr>
+                            <tr>
+                                <td>   maxlength</td>
+                                <td>Makes the element require a given maxmimum length.</td>
+                            </tr>
+                            <tr>
+                                <td> rangelength</td>
+                                <td> Makes the element require a given value range.</td>
+                            </tr>
+                            <tr>
+                                <td>  min</td>
+                                <td>  Makes the element require a given minimum.</td>
+                            </tr>
+                            <tr>
+                                <td>   max</td>
+                                <td> Makes the element require a given maximum.</td>
+                            </tr>
+                            <tr>
+                                <td> range</td>
+                                <td> Makes the element require a given value range.</td>
+                            </tr>
+                            <tr>
+                                <td> email</td>
+                                <td> Makes the element require a valid email</td>
+                            </tr>
+                            <tr>
+                                <td>  url</td>
+                                <td>  Makes the element require a valid url</td>
+                            </tr>
+                            <tr>
+                                <td>   date</td>
+                                <td> Makes the element require a date.</td>
+                            </tr>
+                            <tr>
+                                <td> dateISO</td>
+                                <td> Makes the element require an ISO date.</td>
+                            </tr>
+                            <tr>
+                                <td> number</td>
+                                <td> Makes the element require a decimal number.</td>
+                            </tr>
+                            <tr>
+                                <td> digits</td>
+                                <td>  Makes the element require digits only.</td>
+                            </tr>
+                            <tr>
+                                <td> creditcard</td>
+                                <td> Makes the element require a credit card number.</td>
+                            </tr>
+                            <tr>
+                                <td> equalTo</td>
+                                <td> Requires the element to be the same as another one</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</template>

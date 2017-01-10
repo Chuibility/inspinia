@@ -1,0 +1,84 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Wizard</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Forms</a>
+            </li>
+            <li class="active">
+                <strong>Wizard</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="jumbotron">
+                <h3>Angular Wizard</h3>
+
+                <p>It is example of simple wizard build with Angular plugin - ui-router based on diferent state view. You can use standard angular validation also with this form.</p>
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Angular wizard</h5>
+
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content wizard">
+                    <h2>
+                        Wizard
+                    </h2>
+
+                    <p>
+                        This example show how to use ui-router to create wizard like form.
+                        <br/>
+                        <strong>Data from ng-model.</strong><br/>
+                        <code>{{ formData}}</code>
+                    </p>
+
+                    <div class="steps clearfix">
+                        <ul>
+
+                            <li ui-sref-active="current">
+                                <a ui-sref=".step_one" class="btn-default"><span>1</span> Account information</a>
+                            </li>
+                            <li ui-sref-active="current">
+                                <a ui-sref=".step_two" class="btn-default"><span>2</span> Profile Information</a>
+                            </li>
+                            <li ui-sref-active="current">
+                                <a ui-sref=".step_three" class="btn-default"><span>3</span> Terms and Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wizard">
+                        <div class="content">
+
+                        <form name="signupForm" ng-submit="processForm()" class="p-lg">
+
+                            <!-- our nested state views will be injected here -->
+                            <div id="form-views" ui-view></div>
+                        </form>
+
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

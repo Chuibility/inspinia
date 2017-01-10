@@ -1,0 +1,91 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Notify service</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>UI Elements</a>
+            </li>
+            <li class="active">
+                <strong>Notify service</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeIn" ng-controller="notifyCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Notify styles</h5>
+
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        Minimalistic and extensible notification service for Angular.
+                    </p>
+
+                    <div class="text-center float-e-margins">
+                        <div class="font-bold m">Example with INSPINIA template</div>
+                        <button ng-click="inspiniaDemo1()" class="btn btn-primary btn-sm">Run example</button>
+                        <button ng-click="inspiniaDemo2()" class="btn btn-success btn-sm">Run example</button>
+                        <button ng-click="inspiniaDemo3()" class="btn btn-warning btn-sm">Run example</button>
+                        <button ng-click="inspiniaDemo4()" class="btn btn-danger btn-sm">Run example</button>
+                    </div>
+
+                    <div class="text-center font-bold m">Customize your notifycation</div>
+                    <form class="form-horizontal " role="form" ng-submit="demo()">
+                        <div class="form-group">
+                            <label for="msg" class="col-sm-4 control-label">Message</label>
+
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="msg" placeholder="Message" ng-model="msg">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="clz" class="col-sm-4 control-label">CSS Class</label>
+
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="clz" placeholder="CSS class names" ng-model="classes">
+                                <span class="help-block">Try Bootstrap alert classes like "alert-danger" or "alert-success".</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="template" class="col-sm-4 control-label">Template</label>
+
+                            <div class="col-sm-8">
+                                <select class="form-control" ng-model="template">
+                                    <option value="">(standard template)</option>
+                                    <option value="views/common/notify.html">INSPINIA template</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-8">
+                                <button type="submit" class="btn btn-primary">Demo</button>
+                                <button type="button" class="btn btn-white" ng-click="closeAll()">Close All</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="m-t-md">
+                        <p>
+                            You can easy add any notification in your controller by adding code like this:
+                        </p>
+                    <pre>
+notify({
+    message:'Hello! This is a sample message!',
+    classes: 'alert-info'
+}); </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

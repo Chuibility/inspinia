@@ -1,0 +1,196 @@
+<template name="toastrNotification">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Toastr notifications' category='Miscellaneous' }}
+
+    <div class="wrapper wrapper-content animated fadeIn">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Toastr examples</h5>
+                        {{>iboxTools}}
+                    </div>
+                    <div class="ibox-content">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input id="title" type="text" class="form-control" placeholder="Enter a title ..." />
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="3" placeholder="Enter a message ..."></textarea>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="closeButton" type="checkbox" value="checked" checked/>
+                                    <label for="closeButton"> Close Button</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="addBehaviorOnToastClick" type="checkbox" value="checked" />
+                                    <label for="addBehaviorOnToastClick"> Add behavior on toast click</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="debugInfo" type="checkbox" value="checked" />
+                                    <label for="debugInfo"> Debug</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="progressBar" type="checkbox" value="checked" checked/>
+                                    <label for="progressBar"> Progress Bar</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="preventDuplicates" type="checkbox"   />
+                                    <label for="preventDuplicates"> Prevent Duplicates</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="form-group" id="toastTypeGroup">
+                                    <label>Toast Type</label>
+                                    <div class="radio">
+                                        <input id="radio1" type="radio" name="toasts" value="success" checked />
+                                        <label for="radio1">
+                                            Success
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="radio2" type="radio" name="toasts" value="info" />
+                                        <label for="radio2">
+                                            Info
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="radio3" type="radio" name="toasts" value="warning" />
+                                        <label for="radio3">
+                                            Warning
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="radio4" type="radio" name="toasts" value="error" />
+                                        <label for="radio4">
+                                            Error
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="positionGroup">
+                                    <label>Position</label>
+                                    <div class="radio">
+                                        <input id="radio5" type="radio" name="positions" value="toast-top-right" checked />
+                                        <label for="radio5">
+                                            Top Right
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="radio6" type="radio" name="positions" value="toast-bottom-right" />
+                                        <label for="radio6">
+                                            Bottom Right
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="radio7" type="radio" name="positions" value="toast-bottom-left" />
+                                        <label for="radio7">
+                                            Bottom Left
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="radio8" type="radio" name="positions" value="toast-top-left" />
+                                        <label for="radio8">
+                                            Top Left
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="radio9" type="radio" name="positions" value="toast-top-full-width" />
+                                        <label for="radio9">
+                                            Top Full Width
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="radio10" type="radio" name="positions" value="toast-bottom-full-width" />
+                                        <label for="radio10">
+                                            Bottom Full Width
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="radio11" type="radio" name="positions" value="toast-top-center" />
+                                        <label for="radio11">
+                                            Top Center
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="radio12" type="radio" name="positions" value="toast-bottom-center" />
+                                        <label for="radio12">
+                                            Bottom Center
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="showEasing">Show Easing</label>
+                                    <input id="showEasing" type="text" placeholder="swing, linear" class="form-control" value="swing"/>
+                                </div>
+                                <div class="form-group">
+
+                                    <label for="hideEasing">Hide Easing</label>
+                                    <input id="hideEasing" type="text" placeholder="swing, linear" class="form-control" value="linear"/>
+                                </div>
+                                <div class="form-group">
+
+                                    <label for="showMethod">Show Method</label>
+                                    <input id="showMethod" type="text" placeholder="show, fadeIn, slideDown" class="form-control" value="fadeIn"/>
+                                </div>
+                                <div class="form-group">
+
+                                    <label for="hideMethod">Hide Method</label>
+                                    <input id="hideMethod" type="text" placeholder="hide, fadeOut, slideUp" class="form-control" value="fadeOut"/>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="showDuration">Show Duration</label>
+                                    <input id="showDuration" type="text" placeholder="ms" class="form-control" value="400" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="hideDuration">Hide Duration</label>
+                                    <input id="hideDuration" type="text" placeholder="ms" class="form-control" value="1000" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="timeOut">Time out</label>
+                                    <input id="timeOut" type="text" placeholder="ms" class="form-control" value="7000" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="extendedTimeOut">Extended time out</label>
+                                    <input id="extendedTimeOut" type="text" placeholder="ms" class="form-control" value="1000" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="button" class="btn btn-primary" id="showtoast">Show Toast</button>
+                                <button type="button" class="btn btn-white" id="cleartoasts">Clear Toasts</button>
+                                <button type="button" class="btn btn-white" id="showsimple">Show simple options</button>
+                            </div>
+                        </div>
+
+                        <div class="row m-t-lg">
+                            <div class="col-lg-12">
+                                <small>Toastr Options in JSON</small>
+                                <pre id="toastrOptions" class="p-m"></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

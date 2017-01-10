@@ -1,0 +1,1008 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA Admin Theme Documentation</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <style>
+
+        .documentation .jumbotron .row {
+            padding-top: 60px;
+        }
+
+        .anchor {
+            padding-top: 50px;
+        }
+
+    </style>
+</head>
+<body class="documentation">
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">INSPINIA - Documentation</a>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/meteor_logo.png" alt="angular_logo">
+
+                <h2>Inspinia Meteor</h2>
+                <small>
+                    Inspinia Meteor is full supported Meteor version of INSPINIA theme.
+                </small>
+                <br/>
+
+                <p>Thank you for purchasing INSPINIA admin theme. If you have any questions about the template, please feel free to contact us via email: <a href="mailto:support@webapplayers.com">support@webapplayers.com</a>.
+                </p>
+                <small>
+
+                    <strong>Documentation created:</strong> 10/05/2015<br/>
+                    <strong>Latest update:</strong> 06/01/2017<br/>
+                    <strong>By:</strong> WebAppLayers Team<br/>
+                    <strong>Theme version:</strong> 2.7<br/>
+
+                </small>
+                <br/>
+                <small>
+                    For HTML/CSS documentation go to: <a href="index.html">Static HTML/CSS documentation.</a><br/>
+                    For ASP.NET MVC documentation go to: <a href="asp.net.mvc.html">ASP.NET MVC documentation.</a><br/>
+                    For Ruby on Rails documentation go to: <a href="rails.html">RAILS documentation.</a><br/>
+                    For Angular documentation go to: <a href="angular.html">AngularJS documentation.</a>
+                </small>
+            </div>
+            <div class="col-md-6">
+                <img src="img/preview.png" alt="screen" class="img-responsive"/>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="alert alert-danger">
+                    Please note that since Inspinia 2.6 Meteor project has Flow router - before Iron router.
+                    This update required to change all routes in config.js file as well as all helper in navigation.html.
+                    If you need any help with migration feel free to contact with me on support email and I will help you.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+
+<div class="row">
+
+    <div class="col-lg-12">
+
+        <h2>
+            Table of Contents
+        </h2>
+
+        <ul>
+
+            <li><a href="#documentation">About documentation</a></li>
+            <li><a href="#folder_structure">Folder structure</a></li>
+            <li><a href="#layout_structure">Layout structure</a></li>
+            <li><a href="#route_config">Route config</a></li>
+            <li><a href="#options">Options</a>
+                <ul>
+                    <li><a href="#fixed_sidebar">Fixed sidebar</a></li>
+                    <li><a href="#fixed_navbar">Fixed navbar</a></li>
+                    <li><a href="#fixed_navbar2">Fixed navbar2</a></li>
+                    <li><a href="#fixed_footer">Fixed footer</a></li>
+                    <li><a href="#layout_2">Layout 2</a></li>
+                    <li><a href="#off_canvas_menu">Off canvas menu</a></li>
+                    <li><a href="#skins">Skins</a></li>
+                </ul>
+            </li>
+            <li><a href="#seed_project">Seed Project</a></li>
+            <li><a href="#change_log">Change log 2.6.2 > 2.7</a></li>
+            <li><a href="#change_log">Change log 2.6 > 2.6.2</a></li>
+            <li><a href="#change_log">Change log 2.5 > 2.6</a></li>
+            <li><a href="#change_log">Change log 2.4 > 2.5</a></li>
+            <li><a href="#change_log">Change log 2.3 > 2.4</a></li>
+            <li><a href="#change_log">Change log 2.2 > 2.3</a></li>
+            <li><a href="#change_log">Change log 2.1 > 2.2</a></li>
+            <li><a href="#contact">Contacts</a></li>
+
+
+        </ul>
+
+
+    </div>
+
+</div>
+
+
+<div class="row">
+<a name="documentation" class="anchor"></a>
+
+<div class="col-md-12">
+<h3>About the documentation</h3>
+
+<p>
+    This documentation is focused on Meteor version. It assumes a minimum knowledge of Meteor framework. It describe mainly files and structure in project.
+    Please note that this documentation is dedicated to the main element of the template. With each version, we will try to develop it. But if you have any questions going beyond what is described
+    here don't hesitate to write to us on support email. We would love to help.
+</p>
+
+    <h1>First run</h1>
+
+    <p>
+
+        To run Meteor Inspinia you will need Meteor package installed. Please go to Meteor website to install package for your system: https://www.meteor.com/install
+        <br/><strong>Before you run Inspinia please be sure that you can create and run sample Meteor app: https://www.meteor.com/try</strong> Please be sure that you don't have any error while runing sample Meteor app.
+    </p>
+    <p>
+        If everything work well please go to Meteor_Full_Version (Inspinia Meteor folder) and run meteor command
+    </p>
+<pre class="prettyprint linenums">
+
+meteor
+
+</pre>
+    <p>
+        Next open your web browser and go to.
+    </p>
+<pre class="prettyprint linenums">
+
+http://localhost:3000
+
+</pre>
+
+    <p>
+        And after that you will see the app running. If you have any problem on this stage feel free to write to us on support@webapplayers and we will try to help.
+    </p>
+
+<div>
+</div>
+<div class="row">
+    <a name="folder_structure" class="anchor"></a>
+    <div class="col-md-6">
+        <h3>Structure</h3>
+        <h4>Folders and files</h4>
+
+        <p>File pack containing INSPINIA Meteor template consists:</p>
+
+        <div><pre class="prettyprint linenums">
+<code>Meteor_Full_Version/
+    ├── <strong>.meteor/</strong>
+    ├── <strong>client/</strong>
+    ├──── <strong>config/</strong>
+    ├──── <strong>plugins/</strong>
+    ├──── <strong>startup/</strong>
+    ├──── <strong>stylesheets/</strong>
+    ├──── <strong>views/</strong>
+    ├── <strong>public/</strong>
+    ├── <strong>server/</strong>
+    ├── README.md</code></pre>
+        </div>
+
+    </div>
+    <div class="col-md-6">
+        <h3>Main HTML elements</h3>
+
+        <p>Main index file are created with few main elements:</p>
+        <ol>
+            <li><code>{{>navigation}}</code> left sidebar navigation.</li>
+            <li><code>{{>topNavbar}}</code> top navigation with second menu.</li>
+            <li><code>{{> yield}}</code> main container for page elements.</li>
+            <li><code>{{>footer}}</code> footer element.</li>
+        </ol>
+
+        <a target="_blank" href="img/page_meteor.png"><img class="img-responsive" src="img/page_meteor.png" alt="page structure"></a>
+    </div>
+</div>
+<div class="row">
+<a name="layout_structure" class="anchor"></a>
+<div class="col-lg-12">
+<h3>Layout structure</h3>
+
+<p>The main layout is a mainLayout.html file under <strong>client->views->layouts->main.html</strong>. Main layout is set in <strong>client->config->router.js</strong> as a layoutTemplate.
+So all views (templates in Meteor) are use this main layout.
+</p>
+            <pre class="prettyprint linenums">
+
+&lt;template name="mainLayout"&gt;
+
+    &lt;!-- Wrapper--&gt;
+    &lt;div id="wrapper"&gt;
+
+        &lt;!-- Navigation --&gt;
+        {{&gt; navigation }}
+
+        &lt;!-- Page wraper --&gt;
+        &lt;div id="page-wrapper" class="gray-bg"&gt;
+
+            &lt;!-- Page wrapper --&gt;
+            {{&gt; topNavbar }}
+
+            &lt;!-- Main view  --&gt;
+            {{&gt; yield}}
+
+            &lt;!-- Footer --&gt;
+            {{&gt; footer }}
+
+        &lt;/div&gt;
+        &lt;!-- End page wrapper--&gt;
+
+        &lt;!-- Right Sidebar --&gt;
+        {{&gt; rightSidebar }}
+
+    &lt;/div&gt;
+    &lt;!-- End wrapper--&gt;
+
+&lt;/template&gt;
+</pre>
+
+<hr>
+<h3>Common templates and pages</h3>
+
+<p>Main layout use common templates like navigation, top navbar, footer, right sidebar. All common templates you can find under <strong>client->views->common</strong></p>
+
+    <p>Each page in Meteor is a template. All pages/templates you can find at <strong>client->views->pages</strong> folder.</p>
+
+    <div><pre class="prettyprint linenums">
+<code>client->views->pages/
+    ├── <strong>appviews/</strong>
+    ├── <strong>cssanimations/</strong>
+    ├── <strong>dashboards/</strong>
+    ├── <strong>forms/</strong>
+    ├── <strong>gallery/</strong>
+    ├── <strong>graphs/</strong>
+    ├── <strong>gridoptions/</strong>
+    ├── <strong>layouts/</strong>
+    ├── <strong>mailbox/</strong>
+    ├── <strong>miscellaneous/</strong>
+    ├── <strong>otherpages/</strong>
+    ├── <strong>tables/</strong>
+    ├── <strong>uielements/</strong>
+    ├── <strong>widgets/</strong></code></pre>
+    </div>
+
+<p>Each page has also own pageHeading template - it is a heading bar with breadcrumb</p>
+    <p>It is added to view as a {{> pageHeading}}</p>
+
+    <div><pre class="prettyprint linenums">
+<!-- Page heading -->
+{{> pageHeading title='Advanced form elements' category='Forms' }}
+    </pre> </div>
+
+    <p>
+        And the structure of it is:
+    </p>
+
+    <div><pre class="prettyprint linenums">
+&lt;template name="pageHeading"&gt;
+    &lt;div class="row wrapper border-bottom white-bg page-heading"&gt;
+        &lt;div class="col-lg-12"&gt;
+            &lt;h2&gt;{{title}}&lt;/h2&gt;
+            &lt;ol class="breadcrumb"&gt;
+                &lt;li&gt;
+                    &lt;a href="{{pathFor route=home}}"&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                {{#if category}}
+                &lt;li&gt;
+                    &lt;a&gt;{{category}}&lt;/a&gt;
+                &lt;/li&gt;
+                {{/if}}
+                &lt;li class="active"&gt;
+                    &lt;strong&gt;{{title}}&lt;/strong&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+    </pre> </div>
+
+
+<hr>
+<h3>Page Script </h3>
+
+<p>
+    Meteor has own build and injection system. So you dont need to worry about adding a script. In <strong>client->plugins</strong> folder are all files for plugins.
+    Thay are automatically added by Meteor to your app.
+</p>
+
+<hr>
+<a name="route_config" class="anchor"></a>
+<h3>Route config</h3>
+
+<p>To manage all route we use great plugin iron-router https://github.com/iron-meteor/iron-router.
+    It allows you to organize the parts of your interface into a templates. <br/>
+    <br/>
+    Below you can see example of configuration routes. Configuration routing are in <strong>client->config->router.js</strong>
+</p>
+            <pre class="prettyprint linenums">
+
+//
+// Dashboards routes
+//
+
+Router.route('/dashboard1', function () {
+    this.render('dashboard1');
+});
+Router.route('/dashboard2', function () {
+    this.render('dashboard2');
+});
+Router.route('/dashboard3', function () {
+    this.render('dashboard3');
+});
+Router.route('/dashboard4', function () {
+    this.render('dashboard4');
+    this.layout('layout2');
+});
+Router.route('/dashboard4l', function () {
+    this.render('dashboard4l');
+});
+
+.....
+// Other routes
+
+
+</pre>
+
+<a name="options" class="anchor"></a>
+<h3>Options</h3>
+
+<p>Inspinia provide few option for you layout app. There are:
+
+<ul>
+    <li>Fixed sidebar</li>
+    <li>Fixed navbar</li>
+    <li>Fixed footer</li>
+    <li>Layout 2 (top navigation)</li>
+    <li>Off canvas menu</li>
+    <li>Skins</li>
+</ul>
+
+</p>
+
+<a name="fixed_sidebar" class="anchor"></a>
+<h4>Fixed sidebar</h4>
+
+<p>
+    Fixed sidebar is a sidebar that is sticked on screen.
+
+</p>
+<p>
+    To add fixed sidebar you  need to add .fixed-sidebar class to body and initialize slimScroll for it.
+    In <strong>client->views->layouts->main.js</strong> file you can see a comment // FIXED-SIDEBAR.<br/>
+    To add fixed sidebar you just need to uncomment this code:
+
+</p>
+
+<pre class="prettyprint linenums">
+
+     $('body').addClass('fixed-sidebar');
+     $('.sidebar-collapse').slimScroll({
+         height: '100%',
+         railOpacity: 0.9
+     });
+
+</pre>
+
+
+<p>
+    Be sure that you have slimScroll plugin in your project. (it is included in Full version as well as Seed project)
+</p>
+
+<a name="fixed_navbar" class="anchor"></a>
+<h4>Fixed navbar</h4>
+
+<p>
+    Fixed navbar is a top navbar that is sticked on screen.
+
+</p>
+<p>
+    In <strong>client->views->common->top-navbar.js</strong> file you can see a comment // FIXED TOP NAVBAR OPTION.<br/>
+    To add fixed navbar you just need to uncomment this code:
+</p>
+
+<pre class="prettyprint linenums">
+
+    $('body').addClass('fixed-nav');
+    $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+
+</pre>
+
+
+    <a name="fixed_navbar2" class="anchor"></a>
+    <h4>Fixed navbar 2</h4>
+
+    <p>
+        Fixed navbar 2 is a top navbar that is sticked on screen and it's width is the same as the width of wrapper
+
+    </p>
+    <p>
+        In <strong>client->views->common->top-navbar.js</strong> file you can see a comment // FIXED TOP NAVBAR OPTION.<br/>
+        To add fixed navbar 2 you just need to uncomment this code and replace with new one:
+    </p>
+
+<pre class="prettyprint linenums">
+
+     $('body').addClass('fixed-nav').addClass('fixed-nav-basic');
+     $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+
+</pre>
+
+    <p>
+        Fixed navbar 2 works only on primary layout
+
+    </p>
+
+
+<a name="fixed_footer" class="anchor"></a>
+<h4>Fixed footer</h4>
+
+<p>
+    Fixed footer is a bottom footer that is sticked on screen.
+
+</p>
+<p>
+    In <strong>client->views->common->footer.js</strong> file you can see a comment // FIXED FOOTER.<br/>
+    To add fixed footer you just need to uncomment this code:
+</p>
+
+<pre class="prettyprint linenums">
+
+$('.footer').addClass('fixed');
+
+</pre>
+
+
+<a name="layout_2" class="anchor"></a>
+<h4>Layout 2</h4>
+
+<p>
+    Layout 2 is a top navigation with centered content layout.
+
+</p>
+<p>
+    For layout 2 we prepared special examples files in <strong>client->views->layouts->layout2.html</strong>
+</p>
+
+<pre class="prettyprint linenums">
+
+&lt;template name="layout2"&gt;
+
+    &lt;!-- Wrapper--&gt;
+    &lt;div id="wrapper"&gt;
+
+        &lt;!-- Page wraper --&gt;
+        &lt;div id="page-wrapper" class="gray-bg"&gt;
+
+            &lt;!-- Navigation --&gt;
+            {{&gt; topNavigation }}
+
+            &lt;!-- Main view  --&gt;
+            {{&gt; yield}}
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/template&gt;
+
+</pre>
+
+<p>
+    To use layout 2 all you need to do is to specify it with your router.js: (example from dashbard 4).
+</p>
+
+    <pre class="prettyprint linenums">
+
+Router.route('/dashboard4', function () {
+    this.render('dashboard4');
+    this.layout('layout2');
+});
+
+</pre>
+
+
+
+
+
+<p>
+    And you will get a Layout 2.
+
+</p>
+
+<img class="img-responsive" src="img/Dashboard_4.png" alt="">
+
+<p>
+
+    You have to remember that now your menu is located in <strong>client->views->common->top-navigation.html</strong> file.
+</p>
+
+    <a name="off_canvas_menu" class="anchor"></a>
+    <h4>Off canvas menu</h4>
+
+    <p>
+        Off canvas menu is a menu that not change the width of main wrapper page. It appear on top of the page.
+
+    </p>
+    <p>
+        To use off canvas menu you just need to add <code>.canvas-menu</code> to body element and initialize slimScroll for it.
+        We add example page for offCanvas menu <strong>client->views->pages->appviews->offCanvas.html</strong>. And the js file for it:
+        <strong>client->views->pages->appviews->offCanvas.js</strong>.<br/>
+    To enable off canvas you just need to applay class and plugin in template rendered function
+
+    </p>
+    <pre class="prettyprint linenums">
+
+Template.offCanvas.rendered = function(){
+
+    // Add special class for off canvas menu layout
+    $('body').addClass('canvas-menu');
+
+    // Initialize slimScroll for left navigation
+    $('.sidebar-collapse').slimScroll({
+        height: '100%',
+        railOpacity: 0.9
+    });
+
+};
+        </pre>
+
+<a name="skins" class="anchor"></a>
+<h4>Skins</h4>
+
+<p>Inspinai theme has 3 diferent skins</p>
+
+<p><strong>To change skin you just have to add skin class to body element.</strong></p>
+
+In <strong>client->views->layouts->main.js</strong> file you can see a comment // SKIN OPTIONS.<br/>
+    To add skin class uncomment this code:
+        <pre class="prettyprint linenums">
+
+$('body').addClass('skin-1');
+            </pre>
+
+<p>In LESS files skins.less you can find style for the skin. Below is a representation of css classes demand color skin.</p>
+<ul>
+    <li><code>.skin-1</code> - Blue Light</li>
+    <li><code>.skin-2</code> - Inspinia Ultra {for support with Inspinai Ultra please contact with support@webapplayers.com}</li>
+    <li><code>.skin-3</code> - Yellow/purple</li>
+    <li><code>.md-skin</code> - Material Design Skin (In demo Inspinia Material Design version has also fixed sidebar and fixed navbar option)</li>
+    <li>Defaut skin does not need any class</li>
+</ul>
+
+<hr>
+<a name="seed_project" class="anchor"></a>
+<h3>Meteor Seed Project</h3>
+
+<p> It is an application skeleton for a typical Meteor web app. You can use it to quickly bootstrap your Meteor webapp projects. It has all necessary resources/files to help you started new project.
+    As your project will grow you will need to add new resources. Look at the full version to select the elements and resources you want to use.
+
+</p>
+        <p>
+            Seed Project you can run exactly the same as Full version by command <strong>meteor</strong>
+        </p>
+
+
+
+
+
+<a name="change_log" class="anchor"></a>
+
+
+
+
+    <h3>Change log 2.6.2 -> 2.7</h3>
+
+
+    <div class="alert alert-danger">
+        Please note that since Inspinia 2.7 Meteor project has been upgraded to Meteor 1.4.2.3.
+        This update required:
+        <ul>
+            <li>meteor update</li>
+            <li>npm init</li>
+            <li>meteor npm install --save babel-runtime</li>
+        </ul>
+    </div>
+
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> pages/appviews/activityStream.html </li>
+        <li> pages/miscellaneous/passwordMeter.html </li>
+        <li> pages/miscellaneous/spinnersUsage.html </li>
+        <li> pages/miscellaneous/textSpiners.html </li>
+
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/common/navigation.html - add new menu elements for new views</li>
+        <li> views/pages/forms/formAdvanced.html (js) - add new example for switchery control</li>
+        <li> views/pages/layouts/layouts.html  - correct typos in image names and descriptions</li>
+        <li> views/pages/dashboards/dashboard-3.html  - update css class of sidebar</li>
+        <li> views/pages/mailbox/emailView.html  - correct typos in css class</li>
+        <li> views/pages/uielements/helperClasses.html  - change css name in border examples</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> views/pages/appviews/fileManager.js</li>
+        <li> views/pages/miscellaneous/passwordMeter.js</li>
+        <li> views/pages/miscellaneous/spinnersUsage.js</li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> views/pages/common/ibox-tools.js - update collapse-link click functions</li>
+        <li> views/pages/dashboards/dashboard-3.js - create calcSidebarHeight() function for handle sidebar height</li>
+        <li> views/pages/forms/formAdvanced.js - add new example for switchery control</li>
+        <li> views/pages/landing/landing.js - add WOW intialise script</li>
+        <li> config/router.js - add new routes</li>
+        <li> plugins/steps </li>
+        <li> plugins/switchery </li>
+        <li> plugins/validate </li>
+        <li> plugins/dataTables </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> plugins/touchpunch</li>
+        <li> plugins/textSpinners</li>
+        <li> plugins/pwstrength</li>
+
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Fix jumping menu on landing page </li>
+        <li> Fix bg-colors </li>
+        <li> Remove rules for support old IE </li>
+        <li> Add styles for third level menu on md-skin </li>
+        <li> Improve select2 styles </li>
+        <li> Improve menu style </li>
+        <li> Clear overwrite native media-body classes </li>
+        <li> Improve few styles for IE </li>
+        <li> Improve style for summernote </li>
+        <li> Correct selected typo </li>
+        <li> Fix chat-avatar class rules </li>
+        <li> Fix typo in css preprocessor variables </li>
+
+    </ul>
+
+    <h3>Change log 2.6 -> 2.6.2</h3>
+
+    <ul>
+
+
+        <hr>
+        <strong>Updates</strong>
+        <li> Bootstrap to 3.3.7</li>
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Fix the issue with hidden href on mobile mini navbar</li>
+        <li> Fix the flickering menu</li>
+        <li> Fix Safari modal issue</li>
+        <li> Fix Summernote fullscreen mode</li>
+        <li> Fix css width helper classes</li>
+        <li> Improve content height on fixed navbar</li>
+        <li>  Improve landing page on mobile view</li>
+
+
+    </ul>
+
+    <h3>Change log 2.5 -> 2.6</h3>
+
+
+    <div class="alert alert-danger">
+        Please note that since Inspinia 2.6 Meteor project has Flow router - before Iron router.
+        This update required to change all routes in config.js file as well as all helper in navigation.html.
+        If you need any help with migration feel free to contact with me on support email and I will help you.
+    </div>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> pages/forms/autocomplete.html </li>
+        <li> pages/miscellaneous/datamaps.html </li>
+        <li> pages/miscellaneous/pdfViewer.html </li>
+        <li> pages/miscellaneous/socialButtons.html </li>
+        <li> pages/uielements/helperClasses.html </li>
+
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/common/navigation.html - add new menu elements for new views</li>
+        <li> views/forms/formAdvanced.html (js) - add new features, tag input, dual listbox</li>
+        <li> views/forms/fileUpload.html add new file input component</li>
+        <li> dashboard-1.js - update script for new Chartjs version</li>
+        <li> dashboard-2.js - update script for new Chartjs version</li>
+        <li> dashboard-3.js - update script for new Chartjs version</li>
+        <li> dashboard-4.js - update script for new Chartjs version</li>
+        <li> dashboard-4l.js - update script for new Chartjs version</li>
+        <li> chartjs.js - update script for new Chartjs version</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> public/pdf/example.pdf</li>
+        <li> public/api/typehead_collection.json</li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> plugins/dropzone </li>
+        <li> plugins/fullcalendar </li>
+        <li> plugins/chartJs </li>
+        <li> plugins/summernote </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> plugins/bootstrap-taginput</li>
+        <li> plugins/dualListbox</li>
+        <li> plugins/pdfjs</li>
+        <li> plugins/topojson</li>
+        <li> plugins/typehead</li>
+        <li> plugins/bootstrapSocial</li>
+
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Fix menu jumping issue</li>
+        <li> Improve print mode for Firefox</li>
+        <li> Improve chosen colors</li>
+        <li> Fix boxes layout with md-skin</li>
+        <li> Improve custom swithc style</li>
+        <li> Add few new css classes - helper classes</li>
+
+    </ul>
+
+    <h3>Change log 2.4 -> 2.5</h3>
+
+    <div class="alert alert-info">
+        2.5 version fully focused on update AngularJS projects.
+        <strong>New features and views will be added to separate 2.6 version.</strong>
+    </div>
+
+    <h3>Change log 2.3 -> 2.4</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> pages/graphs/c3charts.html </li>
+        <li> pages/ecommerce/shopingCart.html </li>
+        <li> pages/forms/markdown.html </li>
+        <li> pages/miscellaneous/clipboard.html </li>
+        <li> pages/miscellaneous/i18support.html </li>
+        <li> pages/miscellaneous/loadingButtons.html </li>
+        <li> pages/miscellaneous/tour.html </li>
+        <li> pages/miscellaneous/truncate.html </li>
+        <li> pages/uielements/resizeablePanels.html </li>
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/common/navigation.html - add new menu elements for new views</li>
+        <li> views/miscellaneous/agileBoard.html (js) - add example code for serialize list</li>
+        <li> views/forms/formAdvanced.html (js) - add new Touch spin control</li>
+        <li> views/landing/landing.js - update page-scroll click event to close menu on select in mobile</li>
+        <li> views/tables/table_data_tables.html (js) - replace old swf buttons with new button plugin (update datatables library)</li>
+        <li> views/uielements/video.js (js) - add script for handle full screen video option</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> public/locales/en.json</li>
+        <li> public/locales/es.json</li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> main.js.js - update mainLayout function </li>
+        <li> top-navbar.js - update topNavbar event </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> bootstrap - update to 3.3.6 </li>
+        <li> dataTables - create on compact datatables generate in official builder: https://datatables.net/download/index </li>
+        <li> pace - update to 1.0.2 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> plugins/c3 (with css files)</li>
+        <li> plugins/bootstrap-markdow (with css files)</li>
+        <li> plugins/d3 </li>
+        <li> plugins/clipboard </li>
+        <li> plugins/dotdotdot </li>
+        <li> plugins/i18next </li>
+        <li> plugins/ladda (with css files)</li>
+        <li> plugins/touchspin (with css files)</li>
+        <li> plugins/bootstrapTour (with css files)</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> imb/flags- Set of flags images</li>
+
+
+        <hr>
+        <strong>CSS/LESS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Fix buttons shadow on Chrome </li>
+        <li> Fix dropdown text colour on md-skin </li>
+        <li> Fix pace.js on fixed navbar option </li>
+        <li> Fix few glitch animation effect </li>
+        <li> Improve nav-tabs on mobile devices </li>
+        <li> Fix second level menu on md-skin </li>
+        <li> Improve RTL mode </li>
+        <li> Add new fixed navbar option </li>
+        <li> Ipmore print mode </li>
+
+    </ul>
+
+
+    <h3>Change log 2.2 -> 2.3</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> pages/appviews/contact2.html </li>
+        <li> pages/appviews/profile2.html </li>
+        <li> pages/appviews/voteList.html </li>
+        <li> pages/dashboards/dashboard-5.html </li>
+        <li> pages/ecommerce/payments.html </li>
+        <li> pages/ecommerce/productDetail.html </li>
+        <li> pages/gallery/slick.html </li>
+        <li> pages/miscellaneous/masonry.html </li>
+
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/common/navigation.html - add new menu elements for new views</li>
+        <li> views/pages/forms/formAdvanced.html - Add select2 examples</li>
+        <li> views/pages/uielements/tabsPanels.html - add example of fullscreen panel and slim scroll panel </li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> <span class="text-muted">No changed files</span>  </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> bootstrap - update to 3.3.5 </li>
+        <li> client/plugins/dataTables - update to 1.10.8 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> client/plugins/slick (with css files)</li>
+        <li> client/plugins/select2 (with css files)</li>
+        <li> client/plugins/masonry (with css files)</li>
+        <li> client/plugins/dataTables - table tools (with css files)</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> css/patterns- Add images for header in Material Design skin</li>
+
+        <hr>
+        <strong>CSS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Add new md-skin styles </li>
+        <li> Fix ibox-tools when title is large</li>
+        <li> Fix landing page menu on small devices</li>
+        <li> Fix modal open backdrop with animate.css effect</li>
+        <li> Fix dropdown orientation under ibox</li>
+        <li> Fix profile menu on fixed sidebar</li>
+
+    </ul>
+
+    <h3>Change log 2.1 -> 2.2</h3>
+
+    <ul>
+
+        <strong>New view files</strong>
+        <li> pages/graphs/chartist.html </li>
+        <li> pages/metrics/metrics.html</li>
+        <li> pages/app_views/social_feed.html</li>
+        <li> pages/miscellaneous/sweetAlert.html</li>
+        <li> pages/tables/fooTables.html</li>
+        <li> pages/uielements/tabs.html</li>
+        <li> pages/landing/landing.html (incorporate to admin)</li>
+        <li> pages/ecommerce/orders.html </li>
+        <li> pages/ecommerce/productEdit.html </li>
+        <li> pages/ecommerce/productsGrid.html </li>
+        <li> pages/ecommerce/productList.html </li>
+
+        <hr>
+        <strong>Changed views files</strong>
+        <li> views/common/navigation.html - add new menu elements for new views</li>
+        <li> views/common/navigation.html - added ".metismenu" class to nav element id="side-menu" (new version of metisMenu)</li>
+        <li> views/pages/appviews/article.html - Add example of comments section</li>
+        <li> views/pages/forms/formAdvanced.html - Add new new plugins</li>
+        <li> views/pages/uielements/tabsPanels.html - add example of footer to panel and initial collapsed panel </li>
+        <li> views/pages/miscellaneous/chatView.html - Add left/right class to chat panels </li>
+        <li> views/landing/landing.html - Add new sections: timeline and comments</li>
+
+        <hr>
+        <strong>New Inspinia js files</strong>
+        <li> <span class="text-muted">No new files</span> </li>
+
+        <hr>
+        <strong>Changed Inspinia js files</strong>
+        <li> views/layouts/mian.js - Update fix_height for handle height wrapper on fixed-nav  </li>
+
+        <hr>
+        <strong>Updates</strong>
+        <li> client/plugins/metisMenu - update to 2.0.2 </li>
+        <li> client/plugins/slimscrol - update to 1.3.6 </li>
+        <li> client/plugins/jvectormap - update to 2.0.2 </li>
+        <li> client/plugins/fullcalendar/moment.min.js - update to 2.9.0 </li>
+
+        <hr>
+        <strong>New plugins</strong>
+        <li> client/plugins/clockpicker (with css files)</li>
+        <li> client/plugins/daterangepicker (with css files)</li>
+        <li> client/plugins/footable (with css files)</li>
+        <li> client/plugins/sweetalert (with css files)</li>
+        <li> client/plugins/chartist</li>
+        <li> client/plugins/awesome-bootstrap-checkbox</li>
+
+        <hr>
+        <strong>New images</strong>
+        <li> public/img/landing - Full folder of images used in landing page</li>
+
+        <hr>
+        <strong>CSS/SCSS/SASS</strong>
+        <li> Add styles for new pages </li>
+        <li> Add new metisMenu style </li>
+        <li> Add landing page styles </li>
+        <li> Add chat-discussion left/right class</li>
+        <li> Fix z-index of modal-dialog</li>
+        <li> Fix margins on wrapper when fixed-nav is enabled</li>
+
+    </ul>
+
+    <h3>Change log 1.0</h3>
+
+    <ul>
+
+        <strong>Initial release</strong>
+
+    </ul>
+
+<a name="contact" class="anchor"></a>
+<h3>Contact</h3>
+<p>Contact as with email: <a href="mailto:support@webapplayers.com">support@webapplayers.com</a></p>
+<hr>
+</div>
+</div>
+</div>
+
+<footer>
+    <p>&copy; WebAppLayers 2015 | INSPINIA Admin Theme</p>
+</footer>
+</div>
+</div>
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/google-code-prettify/prettify.js"></script>
+
+<script>
+    $(function () {
+        window.prettyPrint && prettyPrint();
+    })
+</script>
+
+</body>
+</html>
