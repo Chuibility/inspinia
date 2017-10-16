@@ -74,7 +74,7 @@ $('#fixedsidebar').click(function () {
             localStorage.setItem("fixedsidebar", 'on');
         }
     } else {
-        $('.sidebar-collapse').slimscroll({ destroy: true });
+        $('.sidebar-collapse').slimScroll({ destroy: true });
         $('.sidebar-collapse').attr('style', '');
         $("body").removeClass('fixed-sidebar');
 

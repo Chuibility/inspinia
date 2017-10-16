@@ -1,7 +1,7 @@
 /*
  *
  *   INSPINIA - Responsive Admin Theme
- *   version 2.7
+ *   version 2.7.1
  *
  */
 
@@ -97,7 +97,8 @@ $(document).ready(function () {
     });
 
     // Minimalize menu
-    $('.navbar-minimalize').click(function () {
+    $('.navbar-minimalize').on('click', function (event) {
+        event.preventDefault();
         $("body").toggleClass("mini-navbar");
         SmoothlyMenu();
 
@@ -119,13 +120,13 @@ $(document).ready(function () {
         $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
 
         var navbarHeight = $('nav.navbar-default').height();
-        var wrapperHeigh = $('#page-wrapper').height();
+        var wrapperHeight = $('#page-wrapper').height();
 
-        if (navbarHeight > wrapperHeigh) {
+        if (navbarHeight > wrapperHeight) {
             $('#page-wrapper').css("min-height", navbarHeight + "px");
         }
 
-        if (navbarHeight < wrapperHeigh) {
+        if (navbarHeight < wrapperHeight) {
             $('#page-wrapper').css("min-height", $(window).height() + "px");
         }
 
@@ -290,5 +291,3 @@ function WinMove() {
         })
         .disableSelection();
 }
-
-

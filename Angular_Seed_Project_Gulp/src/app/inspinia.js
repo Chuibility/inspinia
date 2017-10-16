@@ -1,6 +1,6 @@
 /**
  * INSPINIA - Responsive Admin Theme
- * 2.7
+ * 2.7.1
  *
  * Custom scripts
  */
@@ -14,18 +14,18 @@ angular.element(document).ready(function ($timeout) {
     angular.element(".sidebar-panel").css("min-height", heightWithoutNavbar + "px");
 
     var navbarHeight = angular.element('nav.navbar-default').height();
-    var wrapperHeigh = angular.element('#page-wrapper').height();
+    var wrapperHeight = angular.element('#page-wrapper').height();
 
-    if(navbarHeight > wrapperHeigh){
+    if(navbarHeight > wrapperHeight){
       angular.element('#page-wrapper').css("min-height", navbarHeight + "px");
     }
 
-    if(navbarHeight < wrapperHeigh){
+    if(navbarHeight < wrapperHeight){
       angular.element('#page-wrapper').css("min-height", angular.element(window).height()  + "px");
     }
 
     if (angular.element('body').hasClass('fixed-nav')) {
-      if (navbarHeight > wrapperHeigh) {
+      if (navbarHeight > wrapperHeight) {
         angular.element('#page-wrapper').css("min-height", navbarHeight  + "px");
       } else {
         angular.element('#page-wrapper').css("min-height", angular.element(window).height() - 60 + "px");

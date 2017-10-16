@@ -1,7 +1,7 @@
 /*
  *
  *   INSPINIA - Responsive Admin Theme
- *   version 2.7
+ *   version 2.7.1
  *
  */
 
@@ -97,7 +97,8 @@ $(document).ready(function () {
     });
 
     // Minimalize menu
-    $('.navbar-minimalize').on('click', function () {
+    $('.navbar-minimalize').on('click', function (event) {
+        event.preventDefault();
         $("body").toggleClass("mini-navbar");
         SmoothlyMenu();
 

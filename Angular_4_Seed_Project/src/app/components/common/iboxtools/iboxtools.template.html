@@ -1,0 +1,17 @@
+<div class="ibox-tools" dropdown>
+  <a class="collapse-link" (click)="collapse($event)">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+  <a dropdownToggle>
+    <i class="fa fa-wrench"></i>
+  </a>
+  <ul class="dropdown-menu dropdown-user" *dropdownMenu>
+    <li><a href="#">Config option 1</a>
+    </li>
+    <li><a href="#">Config option 2</a>
+    </li>
+  </ul>
+  <a class="close-link" (click)="close($event)">
+    <i class="fa fa-times"></i>
+  </a>
+</div>

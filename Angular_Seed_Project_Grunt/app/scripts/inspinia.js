@@ -1,6 +1,6 @@
 /**
  * INSPINIA - Responsive Admin Theme
- * 2.7
+ * 2.7.1
  *
  * Custom scripts
  */
@@ -14,18 +14,18 @@ $(document).ready(function () {
         $(".sidebar-panel").css("min-height", heightWithoutNavbar + "px");
 
         var navbarHeight = $('nav.navbar-default').height();
-        var wrapperHeigh = $('#page-wrapper').height();
+        var wrapperHeight = $('#page-wrapper').height();
 
-        if(navbarHeight > wrapperHeigh){
+        if(navbarHeight > wrapperHeight){
             $('#page-wrapper').css("min-height", navbarHeight + "px");
         }
 
-        if(navbarHeight < wrapperHeigh){
+        if(navbarHeight < wrapperHeight){
             $('#page-wrapper').css("min-height", $(window).height()  + "px");
         }
 
         if ($('body').hasClass('fixed-nav')) {
-            if (navbarHeight > wrapperHeigh) {
+            if (navbarHeight > wrapperHeight) {
                 $('#page-wrapper').css("min-height", navbarHeight + "px");
             } else {
                 $('#page-wrapper').css("min-height", $(window).height() - 60 + "px");
@@ -64,4 +64,3 @@ $(window).bind("load resize", function () {
         $('body').removeClass('body-small')
     }
 });
-

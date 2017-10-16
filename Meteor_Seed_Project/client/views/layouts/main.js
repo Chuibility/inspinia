@@ -13,20 +13,20 @@ Template.mainLayout.rendered = function(){
     $(window).bind("load resize scroll", function() {
         if(!$("body").hasClass('body-small')) {
 
-            var navbarHeigh = $('nav.navbar-default').height();
-            var wrapperHeigh = $('#page-wrapper').height();
+            var navbarHeight = $('nav.navbar-default').height();
+            var wrapperHeight = $('#page-wrapper').height();
 
-            if(navbarHeigh > wrapperHeigh){
-                $('#page-wrapper').css("min-height", navbarHeigh + "px");
+            if(navbarHeight > wrapperHeight){
+                $('#page-wrapper').css("min-height", navbarHeight + "px");
             }
 
-            if(navbarHeigh < wrapperHeigh){
+            if(navbarHeight < wrapperHeight){
                 $('#page-wrapper').css("min-height", $(window).height()  + "px");
             }
 
             if ($('body').hasClass('fixed-nav')) {
-                if (navbarHeigh > wrapperHeigh) {
-                    $('#page-wrapper').css("min-height", navbarHeigh + "px");
+                if (navbarHeight > wrapperHeight) {
+                    $('#page-wrapper').css("min-height", navbarHeight  + "px");
                 } else {
                     $('#page-wrapper').css("min-height", $(window).height() - 60 + "px");
                 }

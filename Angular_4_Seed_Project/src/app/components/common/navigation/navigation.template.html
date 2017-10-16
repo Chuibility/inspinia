@@ -1,0 +1,42 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <ul class="nav metismenu" id="side-menu">
+      <li class="nav-header">
+        <div class="profile-element" dropdown>
+          <img alt="image" class="img-circle" src="assets/images/profile_small.jpg">
+          <a dropdownToggle>
+            <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong> </span>
+            <span class="text-muted text-xs block">Art Director <b class="caret"></b> </span>
+          </a>
+          <ul class="animated fadeInRight dropdown-menu" *dropdownMenu>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Mailbox</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+        <div class="logo-element">
+          IN+
+        </div>
+      </li>
+      <li [ngClass]="{active: activeRoute('starter')}">
+        <a [routerLink]="['/starterview']"><i class="fa fa-th-large"></i> <span class="nav-label">Starter view</span></a>
+      </li>
+      <li [ngClass]="{active: activeRoute('dashboards')}">
+        <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard examples</span> <span class="fa arrow"></span> </a>
+        <ul class="nav nav-second-level collapse" [ngClass]="{in: activeRoute('dashboards')}">
+          <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/dashboards/dashboard1']">Dashboard v.1</a></li>
+          <li [ngClass]="{active: activeRoute('dashboard2')}"><a [routerLink]="['/dashboards/dashboard2']">Dashboard v.2</a></li>
+          <li [ngClass]="{active: activeRoute('dashboard3')}"><a [routerLink]="['/dashboards/dashboard3']">Dashboard v.3</a></li>
+          <li [ngClass]="{active: activeRoute('dashboard4')}"><a [routerLink]="['/dashboards/dashboard4']">Dashboard v.4</a></li>
+          <li [ngClass]="{active: activeRoute('dashboard5')}"><a [routerLink]="['/dashboards/dashboard5']">Dashboard v.5</a></li>
+        </ul>
+      </li>
+      <li [ngClass]="{active: activeRoute('login')}">
+        <a [routerLink]="['/login']"><i class="fa fa-th-large"></i> <span class="nav-label">Login example</span></a>
+      </li>
+    </ul>
+
+  </div>
+</nav>

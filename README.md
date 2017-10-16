@@ -1,10 +1,10 @@
 # INSPINIA IN+ - WebApp Admin Theme
 
-Version v2.7
+Version v2.7.1
 
 [Origin Project](https://wrapbootstrap.com/theme/inspinia-responsive-admin-theme-WB0R5L90S)
 
-This is only a demo! If you want to use it, please purchase $18 for it on {wrap}Bootstrap
+This is only a demo! If you want to use it, please purchase $36 for it on {wrap}Bootstrap.
 
 ## Introduction
 

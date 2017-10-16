@@ -8,7 +8,7 @@ export function correctHeight() {
         pageWrapper.css("min-height", navbarHeight + "px");
     }
 
-    if (navbarHeight < wrapperHeigh) {
+    if (navbarHeight <= wrapperHeigh) {
         if (navbarHeight < $(window).height()) {
             pageWrapper.css("min-height", $(window).height() + "px");
         } else {

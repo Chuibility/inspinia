@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* INSPINIA - Responsive Admin Theme version 2.7 */
+/* INSPINIA - Responsive Admin Theme version 2.7.1 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
 h1, h2, h3, h4, h5, h6 {
@@ -499,7 +499,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   background: #fff;
   color: #1ab394; }
 
-.top-navigation .nav > li.active {
+.top-navigation .navbar .nav > li.active {
   background: #fff;
   border: none; }
 
@@ -824,10 +824,12 @@ button.dim:active:before {
   background-color: #D1DADE;
   color: #5E5E5E;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 10px;
   font-weight: 600;
   padding: 3px 8px;
   text-shadow: none; }
+
+.nav .label, .ibox .label {
+  font-size: 10px; }
 
 .badge {
   background-color: #D1DADE;
@@ -1609,8 +1611,7 @@ div.dt-button-info {
   display: block;
   padding: 6px 12px;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-  width: 100%;
-  font-size: 14px; }
+  width: 100%; }
 
 .form-control:focus, .single-line:focus {
   border-color: #1ab394 !important; }
@@ -3025,6 +3026,9 @@ body.tour-open .animated {
   color: inherit; }
 .sidebar-container .sidebar-message {
   padding: 15px 20px; }
+.sidebar-container .sidebar-message .media-body {
+  display: block;
+  width: auto; }
 .sidebar-container .sidebar-message .message-avatar {
   height: 38px;
   width: 38px;
@@ -7418,6 +7422,8 @@ body.md-skin {
 .md-skin.top-navigation .nav > li.active a {
   color: #1ab394;
   background: #ffffff; }
+.md-skin.fixed-nav #side-menu {
+  background-color: #fff; }
 .md-skin.fixed-nav #wrapper.top-navigation #page-wrapper {
   margin-top: 0; }
 .md-skin.fixed-sidebar.mini-navbar .navbar-static-side {
@@ -7442,7 +7448,7 @@ body.md-skin {
   #page-wrapper {
     position: inherit;
     margin: 0 0 0 220px;
-    min-height: 1200px; }
+    min-height: 100vh; }
 
   .navbar-static-side {
     z-index: 2001;
@@ -7457,7 +7463,7 @@ body.md-skin {
   #page-wrapper {
     position: inherit;
     margin: 0 0 0 0;
-    min-height: 1000px; }
+    min-height: 100vh; }
 
   .body-small .navbar-static-side {
     display: none;

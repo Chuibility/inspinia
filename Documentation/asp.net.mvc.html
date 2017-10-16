@@ -44,16 +44,16 @@
             <div class="col-md-6">
                 <img src="img/mvc_logo.png" alt="mvc_logo" style="width: 200px">
 
-                <h2>Inspinia ASP.NET MVC5 (MVC6 beta RC1)</h2>
+                <h2>Inspinia ASP.NET MVC5 / .NET Core 1.0</h2>
 
                 <p>Thank you for purchasing INSPINIA admin theme. If you have any questions about the template, please feel free to contact us via email: <a href="mailto:support@webapplayers.com">support@webapplayers.com</a>.<br/>
                     Thanks very much!</p>
                 <small>
 
                     <strong>Documentation created:</strong> 10/12/2014<br/>
-                    <strong>Latest update:</strong> 06/01/2017<br/>
+                    <strong>Latest update:</strong> 19/04/2017<br/>
                     <strong>By:</strong> WebAppLayers Team<br/>
-                    <strong>Theme version:</strong> 2.7<br/>
+                    <strong>Theme version:</strong> 2.7.1<br/>
 
                 </small>
                 <br/>
@@ -86,7 +86,6 @@
         <ul>
 
             <li><a href="#documentation">About documentation</a></li>
-            <li><a href="#mvc6">MVC6 Introduction</a></li>
             <li><a href="#folder_structure">Technology and structure</a></li>
             <li><a href="#layout_structure">Layout structure</a></li>
             <li><a href="#options">Options</a>
@@ -104,6 +103,7 @@
             </li>
             <li><a href="#scaffolding">CodeTemplates and Scaffolding</a></li>
             <li><a href="#seed_project">Seed Project</a></li>
+            <li><a href="#change_log">Change log v.2.6.7 -> v.2.7.1</a></li>
             <li><a href="#change_log">Change log v.2.6.2 -> v.2.7</a></li>
             <li><a href="#change_log">Change log v.2.6 -> v.2.6.2</a></li>
             <li><a href="#change_log">Change log v.2.5 -> v.2.6</a></li>
@@ -147,7 +147,7 @@
         <p><strong>Tool and Technologies used:</strong>
         <ul>
             <li>
-                Visual Studio 2013
+                Visual Studio 2015
             </li>
             <li>
                 .Net Framework 4.5.1.
@@ -210,28 +210,6 @@
     </div>
 </div>
 
-
-    <div class="row">
-        <div class="col-lg-12">
-            <a name="mvc6" class="anchor"></a>
-
-            <h3>MVC6 Introduction</h3>
-            <p>
-                Please note that Inspinia ASP.NET MVC6 is beta version. Once ASP.NET 5 will be released official then we will provide required changes and publish final version.
-
-            </p>
-            <div class="alert alert-danger">
-                To run new MVC6 project you need to have installed ASP.NET 5 RC - https://get.asp.net/
-            </div>
-            <p>
-                Full documentation for new project will be released once final version will be finished. File structure are the same as the MVC5.
-                Please note that new MVC6 not use bundle system. In This project we use Gulp for compile SCSS style files and minify js files.
-                Additional new project use bower to download most of the plugins. Those plugins are stored in wwwrooot/lib_bower. If some of the plugins
-                don't have
-                bower package or we use changed version then this plugins are stored in wwwroot/lib folder.
-            </p>
-        </div>
-    </div>
 
 
             <div class="row">
@@ -1001,6 +979,25 @@
 
 
 <a name="change_log" class="anchor"></a>
+
+<h3>Change log 2.7 -> 2.7.1</h3>
+
+<ul>
+
+  <strong>Changed Inspinia js files</strong>
+  <li> inspinia.js - correct typos in fix_height function</li>
+  <li> inspinia.js - update navbar-minimalize event handler</li>
+
+  <hr>
+  <strong>CSS/LESS/SCSS/SASS</strong>
+  <li>Fix media-body style on right sidebar</li>
+  <li>Fix form-control style to allow inout sizing</li>
+  <li>Fix min-height issue with small content</li>
+  <li>Fix background menu on md-skin</li>
+  <li>Fix tabs in top-navigation layout</li>
+  <li>Fix label style to release sizing option</li>
+
+  </ul>
 
 
     <h3>Change log 2.6.2 -> 2.7</h3>
