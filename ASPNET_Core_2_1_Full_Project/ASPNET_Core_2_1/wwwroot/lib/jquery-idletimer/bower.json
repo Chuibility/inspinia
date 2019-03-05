@@ -1,0 +1,25 @@
+{
+"name": "jquery-idletimer",
+"homepage": "http://thorst.github.io/jquery-idletimer",
+"authors": [
+"Todd Horst"
+],
+"description": "Provides you a way to monitor user activity with a page",
+"main": "src/idle-timer.js",
+"moduleType": [
+"globals"
+],
+"keywords": [
+"idle",
+"timer",
+"inactive"
+],
+"license": "MIT",
+"ignore": [
+"**/.*",
+"node_modules",
+"bower_components",
+"test",
+"tests"
+]
+}

@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -251,8 +252,7 @@
     <Content Include="Content\plugins\slick\slick.css" />
     <Content Include="Content\plugins\social-buttons\social-buttons.css" />
     <Content Include="Content\plugins\steps\jquery.steps.css" />
-    <Content Include="Content\plugins\summernote\summernote-bs3.css" />
-    <Content Include="Content\plugins\summernote\summernote.css" />
+    <Content Include="Content\plugins\summernote\summernote-bs4.css" />
     <Content Include="Content\plugins\sweetalert\sweetalert.css" />
     <Content Include="Content\plugins\switchery\switchery.css" />
     <Content Include="Content\plugins\textSpinners\spinners.css" />
@@ -1495,7 +1495,7 @@
     <Content Include="Scripts\plugins\ladda\ladda.min.js" />
     <Content Include="Scripts\plugins\ladda\spin.min.js" />
     <Content Include="Scripts\plugins\masonary\masonry.pkgd.min.js" />
-    <Content Include="Scripts\plugins\metisMenu\metisMenu.min.js" />
+    <Content Include="Scripts\plugins\metisMenu\jquery.metisMenu.js" />
     <Content Include="Scripts\plugins\morris\morris.js" />
     <Content Include="Scripts\plugins\morris\raphael-2.1.0.min.js" />
     <Content Include="Scripts\plugins\nestable\jquery.nestable.js" />
@@ -1514,7 +1514,7 @@
     <Content Include="Scripts\plugins\slimscroll\jquery.slimscroll.min.js" />
     <Content Include="Scripts\plugins\sparkline\jquery.sparkline.min.js" />
     <Content Include="Scripts\plugins\steps\jquery.steps.min.js" />
-    <Content Include="Scripts\plugins\summernote\summernote.min.js" />
+    <Content Include="Scripts\plugins\summernote\summernote-bs4.js" />
     <Content Include="Scripts\plugins\sweetalert\sweetalert.min.js" />
     <Content Include="Scripts\plugins\switchery\switchery.js" />
     <Content Include="Scripts\plugins\tinycon\tinycon.min.js" />
@@ -1528,6 +1528,7 @@
     <Content Include="Scripts\plugins\velocity\velocity.ui.min.js" />
     <Content Include="Scripts\plugins\video\responsible-video.js" />
     <Content Include="Scripts\plugins\wow\wow.min.js" />
+    <Content Include="Scripts\popper.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1680,6 +1681,8 @@
     <Content Include="Views\Miscellaneous\PasswordMeter.cshtml" />
     <Content Include="Views\Miscellaneous\SpinnersUsage.cshtml" />
     <Content Include="Views\AppViews\ActivityStream.cshtml" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

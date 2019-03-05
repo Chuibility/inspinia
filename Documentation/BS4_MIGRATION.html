@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA Admin Theme Documentation</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <style>
+
+        body {
+            font-size: 16px;
+        }
+
+        .documentation .jumbotron .row {
+            padding-top: 60px;
+        }
+
+        .anchor {
+            padding-top: 50px;
+        }
+
+    </style>
+</head>
+<body class="documentation">
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">INSPINIA - Documentation</a>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Migrating to Bootstrap v4 (Static HTML5 project)</h2>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" style="margin-bottom: 200px">
+
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="alert alert-danger">
+            <strong>Please note</strong><br/>
+            This instruction present migration path for Inspinia HTML5 project.
+            In any step of migration you need to have in mind your own changes in theme. We don't know how your project look like and what custom code you have,
+            so please keep that in mind that we can only provide migration for Inspinia code, not for custom code.
+            This instruction was created based on clear Inspinia 2.7.1 project.
+            <br/> <br/>
+            Please also note that migration to BS4 is not an easy task and take some time. It require some global find and replace as well as some local replace and upgrades. If you will have any problems do not hesitate and contact with us.
+            This migration is created only for basic Left to Right orientation. There is no support for RTL layout yet.
+            <br/>
+            If you find any issue or bug in the migration or in the new version, please send instruction how to reproduce it on <a href="mailto:support@webapplayers.com?subject=Migration to BS4 - ISSUE">support@webapplayers.com.</a>
+
+        </p>
+        <h4>Upgrade Bootstrap library</h4>
+        <small>*All new resource you can get form the HTML5_BS4_Version folder.</small>
+        <p>
+            Replace all bootstrap resource:
+        <ul>
+            <li> css/bootstrap.css</li>
+            <li> css/bootstrap.css.map</li>
+            <li> css/bootstrap.min.css</li>
+            <li> css/bootstrap.min.css.map</li>
+        <li> js/bootstrap.js</li>
+        <li> js/bootstrap.js.map</li>
+        <li> js/bootstrap.min.js</li>
+        <li> js/bootstrap.min.js.map</li>
+        </ul>
+
+        <h4>Upgrade Inspinia core style and script</h4>
+        <p>
+            Replace all Inspinia resource:
+        <ul>
+            <li> css/style.css</li>
+
+            <li> js/inspinia.js</li>
+        </ul>
+        </p>
+
+        <h4>New popper file</h4>
+        <p>
+            Bootstrap 4 require https://popper.js.org/ library. Add new popper.min.js file to your js folder.
+        </p>
+        <ul>
+        <li> js/popper.min.js</li>
+        </ul>
+        <p>
+            You need to also include the popper.min.js file in your html script section before bootstrap:
+        </p>
+        <pre>
+&lt;script src="js/popper.min.js"&gt;&lt;/script&gt;</pre>
+
+        <h3> Bootstrap key changes by component</h3>
+        <div class="alert alert-warning">*Full list of changes you can find in official Bootstrap documentation: <a href="https://getbootstrap.com/docs/4.1/migration/#by-component" target="_blank">https://getbootstrap.com/docs/4.1/migration/#by-component</a> . Here we listed the most important in reference to upgrade Inspinia theme.  </div>
+        <h4> Typography </h4>
+        <ul>
+            <li><code>.dl-horizontal</code> has been dropped. Instead, use <code>.row</code> on <code>&lt;dl&gt;</code> and use grid column classes (or mixins) on its <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> children.</li>
+            <li><code>.list-inline</code> now requires that its children list items have the new <code>.list-inline-item</code> class applied to them.</li>
+            <li>Dropped <code>.page-header</code> as, aside from the border, all its styles can be applied via utilities.</li>
+        </ul>
+
+        <h4> Images </h4>
+        <ul>
+            <li>Renamed <code>.img-responsive</code> to <code>.img-fluid</code>.</li>
+            <li>Renamed <code>.img-rounded</code> to <code>.rounded</code></li>
+            <li>Renamed <code>.img-circle</code> to <code>.rounded-circle</code></li>
+        </ul>
+
+        <h4> Tables </h4>
+        <ul>
+            <li>Responsive tables no longer require a wrapping element. Instead, just put the <code>.table-responsive</code> right on the <code>&lt;table&gt;</code>.</li>
+            <li>Renamed <code>.table-condensed</code> to <code>.table-sm</code> for consistency.</li>
+        </ul>
+
+        <h4> Forms </h4>
+
+        <ul>
+            <li>Renamed <code>.control-label</code> to <code>.col-form-label</code>.</li>
+            <li>Renamed <code>.input-lg</code> and <code>.input-sm</code> to <code>.form-control-lg</code> and <code>.form-control-sm</code>, respectively.</li>
+            <li>Dropped <code>.form-group-*</code> classes for simplicity’s sake. Use <code>.form-control-*</code> classes instead now.</li>
+            <li>Dropped <code>.help-block</code> and replaced it with <code>.form-text</code> for block-level help text. For inline help text and other flexible options, use utility classes like <code>.text-muted</code>.</li>
+            <li>Dropped <code>.radio-inline</code> and <code>.checkbox-inline</code>.</li>
+            <li>Consolidated <code>.checkbox</code> and <code>.radio</code> into <code>.form-check</code> and the various <code>.form-check-*</code> classes.</li>
+            <li>Horizontal forms overhauled:
+                <ul>
+                    <li>Dropped the <code>.form-horizontal</code> class requirement.</li>
+                    <li><code>.form-group</code> no longer applies styles from the <code>.row</code> via mixin, so <code>.row</code> is now required for horizontal grid layouts (e.g., <code>&lt;div class="form-group row"&gt;</code>).</li>
+                </ul>
+            </li>
+            <li>Replaced <code>.has-error</code>, <code>.has-warning</code>, and <code>.has-success</code> classes with HTML5 form validation via CSS’s <code>:invalid</code> and <code>:valid</code> pseudo-classes.</li>
+            <li>Renamed <code>.form-control-static</code> to <code>.form-control-plaintext</code>.</li>
+        </ul>
+
+        <h4> Buttons </h4>
+
+        <ul>
+            <li>Renamed <code>.btn-default</code> to <code>.btn-secondary</code>. <strong>(Inspinia left btn-default class)</strong></li>
+            <li>Dropped the <code>.btn-xs</code> class entirely as <code>.btn-sm</code> is proportionally much smaller than v3’s. <strong>(Inspinia left btn-xs class)</strong></li>
+        </ul>
+
+        <h4>Button group</h4>
+
+        <ul>
+            <li>Rewrote component with flexbox.</li>
+            <li>Removed <code>.btn-group-justified</code>. As a replacement you can use <code>&lt;div class="btn-group d-flex" role="group"&gt;&lt;/div&gt;</code> as a wrapper around elements with <code>.w-100</code>.</li>
+            <li>Removed explicit spacing between button groups in button toolbars; use margin utilities now.</li>
+        </ul>
+
+        <h4>Dropdowns</h4>
+
+        <ul>
+            <li>Dropdowns can be built with <code>&lt;div&gt;</code>s or <code>&lt;ul&gt;</code>s now.</li>
+            <li>Rebuilt dropdown styles and markup to provide easy, built-in support for <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> based dropdown items.</li>
+            <li>Renamed <code>.divider</code> to <code>.dropdown-divider</code>.</li>
+            <li>Dropdown items now require <code>.dropdown-item</code>.</li>
+            <li>Dropdown toggles no longer require an explicit <code>&lt;span class="caret"&gt;&lt;/span&gt;</code>; this is now provided automatically via CSS’s <code>::after</code> on <code>.dropdown-toggle</code>.</li>
+        </ul>
+
+        <h4>Grid system</h4>
+
+        <ul>
+            <li>Added a new <code>576px</code> grid breakpoint as <code>sm</code>, meaning there are now five total tiers (<code>xs</code>, <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code>).</li>
+            <li>Renamed the responsive grid modifier classes from <code>.col-{breakpoint}-{modifier}-{size}</code> to <code>.{modifier}-{breakpoint}-{size}</code> for simpler grid classes.</li>
+            <li>Dropped push and pull modifier classes for the new flexbox-powered <code>order</code> classes. For example, instead of <code>.col-8.push-4</code> and <code>.col-4.pull-8</code>, you’d use <code>.col-8.order-2</code> and <code>.col-4.order-1</code>.</li>
+            <li><strong>Updated grid class names and a new grid tier.</strong>
+                <ul>
+                    <li>Added a new <code>sm</code> grid tier below <code>768px</code> for more granular control. We now have <code>xs</code>, <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code>. This also means every tier has been bumped up one level (so <code>.col-md-6</code> in v3 is now <code>.col-lg-6</code> in v4).</li>
+                    <li><code>xs</code> grid classes have been modified to not require the infix to more accurately represent that they start applying styles at <code>min-width: 0</code> and not a set pixel value. Instead of <code>.col-xs-6</code>, it’s now <code>.col-6</code>. All other grid tiers require the infix (e.g., <code>sm</code>).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>List groups</h4>
+
+        <ul>
+            <li>Replaced <code>a.list-group-item</code> with an explicit class, <code>.list-group-item-action</code>, for styling link and button versions of list group items.</li>
+        </ul>
+
+        <h4>Modal</h4>
+
+        <ul>
+            <li>The <code>remote</code> option (which could be used to automatically load and inject external content into a modal) and the corresponding <code>loaded.bs.modal</code> event were removed. We recommend instead using client-side templating or a data binding framework, or calling <a href="https://api.jquery.com/load/">jQuery.load</a> yourself.</li>
+        </ul>
+
+        <h4>Navs</h4>
+
+        <ul>
+            <li>Dropped nearly all <code>&gt;</code> selectors for simpler styling via un-nested classes.</li>
+            <li>Instead of HTML-specific selectors like <code>.nav &gt; li &gt; a</code>, we use separate classes for <code>.nav</code>s, <code>.nav-item</code>s, and <code>.nav-link</code>s. This makes your HTML more flexible while bringing along increased extensibility.</li>
+        </ul>
+
+        <h4>Navbar</h4>
+
+        <ul>
+            <li><code>.navbar-toggle</code> is now <code>.navbar-toggler</code> and has different styles and inner markup (no more three <code>&lt;span&gt;</code>s).</li>
+            <li>Dropped the <code>.navbar-form</code> class entirely. It’s no longer necessary; instead, just use <code>.form-inline</code> and apply margin utilities as necessary.</li>
+            <li>Navbars no longer include <code>margin-bottom</code> or <code>border-radius</code> by default. Use utilities as necessary.</li>
+        </ul>
+
+        <h4>Pagination</h4>
+        <ul>
+            <li>Explicit classes (<code>.page-item</code>, <code>.page-link</code>) are now required on the descendants of <code>.pagination</code>s</li>
+            <li>Dropped the <code>.pager</code> component entirely as it was little more than customized outline buttons.</li>
+        </ul>
+
+        <h4>Breadcrumb</h4>
+        <ul>
+            <li>An explicit class, <code>.breadcrumb-item</code>, is now required on the descendants of <code>.breadcrumb</code>s</li>
+        </ul>
+
+        <h4>Labels and budges</h4>
+
+        <ul>
+            <li>Consolidated <code>.label</code> and <code>.badge</code> to disambiguate from the <code>&lt;label&gt;</code> element and simplify related components.</li>
+            <li>Badges are no longer floated automatically in list groups and other components. Utility classes are now required for that.</li>
+            <li><code>.badge-default</code> has been dropped and <code>.badge-secondary</code> added to match component modifier classes used elsewhere.</li>
+        </ul>
+
+        <h4>
+            Panels
+        </h4>
+
+        <div class="alert alert-info small">
+            Panels in Bootstrap 4 was dropped entirely for the new card component. But in Inspinia from the beginning were used custom panels <code>.ibox</code>
+            So all Inspinia panels have not been changed. We also left basic support for old panels components. Additional you have new card components form BS4.
+        </div>
+
+        <h4>Tabs</h4>
+        <ul>
+            <li>
+                Upgrade <code>&lt;a&gt;</code> element by adding <code>.nav-link</code> class.
+            </li>
+            <li>
+                Move <code>.active</code> from <code>&lt;li&gt;</code> to <code>&lt;a&gt;</code> element.
+            </li>
+        </ul>
+        <h4>Progress</h4>
+
+        <ul>
+            <li>Replaced contextual <code>.progress-bar-*</code> classes with <code>.bg-*</code> utilities. For example, <code>class="progress-bar progress-bar-danger"</code> becomes <code>class="progress-bar bg-danger"</code>.</li>
+            <li>Replaced <code>.active</code> for animated progress bars with <code>.progress-bar-animated</code>.</li>
+        </ul>
+
+        <h4>Carousel</h4>
+
+        <ul>
+            <li>All CSS has been un-nested and renamed, ensuring each class is prefixed with <code>.carousel-</code>.
+                <ul>
+                    <li>For carousel items, <code>.next</code>, <code>.prev</code>, <code>.left</code>, and <code>.right</code> are now <code>.carousel-item-next</code>, <code>.carousel-item-prev</code>, <code>.carousel-item-left</code>, and <code>.carousel-item-right</code>.</li>
+                    <li><code>.item</code> is also now <code>.carousel-item</code>.</li>
+                    <li>For prev/next controls, <code>.carousel-control.right</code> and <code>.carousel-control.left</code> are now <code>.carousel-control-next</code> and <code>.carousel-control-prev</code>, meaning they no longer require a specific base class.</li>
+                </ul>
+            </li>
+            <li>Removed all responsive styling, deferring to utilities (e.g., showing captions on certain viewports) and custom styles as needed.</li>
+            <li>Removed image overrides for images in carousel items, deferring to utilities.</li>
+        </ul>
+
+        <h4>Utilities</h4>
+
+        <ul>
+            <li><strong>Display, hidden, and more:</strong>
+                <ul>
+                    <li>Made display utilities responsive (e.g., <code>.d-none</code> and <code>d-{sm,md,lg,xl}-none</code>).</li>
+                    <li>Dropped the bulk of <code>.hidden-*</code> utilities for new <a href="https://getbootstrap.com/docs/4.1/utilities/display/">display utilities</a>. For example, instead of <code>.hidden-sm-up</code>, use <code>.d-sm-none</code>. Renamed the <code>.hidden-print</code> utilities to use the display utility naming scheme. <a href="https://getbootstrap.com/docs/4.1/migration/#responsive-utilities">More info under the Responsive utilities section of this page.</a></li>
+                    <li>Added <code>.float-{sm,md,lg,xl}-{left,right,none}</code> classes for responsive floats and removed <code>.pull-left</code> and <code>.pull-right</code> since they’re redundant to <code>.float-left</code> and <code>.float-right</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Type:</strong>
+                <ul>
+                    <li>Added responsive variations to our text alignment classes <code>.text-{sm,md,lg,xl}-{left,center,right}</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Alignment and spacing:</strong>
+                <ul>
+                    <li>Dropped <code>.center-block</code> for the new <code>.mx-auto</code> class.</li>
+                </ul>
+            </li>
+            <li>Clearfix updated to drop support for older browser versions.</li>
+        </ul>
+
+        <h3>Inspinia cleanups</h3>
+        <ul>
+            <li>Add href propertie to all links (<code>&lt;a&gt;</code> elements).</li>
+            <li>Clean <code>.float-e-margins</code> class in theme. It was only needed in buttons example page.</li>
+            <li>Upgrade Summernote library - js and css files.</li>
+            <li>Upgrade Tour library - js and css files</li>
+            <li>Add DataTables support for Bootstrap 4 - <strong>dataTables.bootstrap4.min.js </strong></li>
+            <li>Upgrade pdf.js files</li>
+            <li>Upgrade metisMenu library</li>
+            <li>Upgrade incorrect class structure</li>
+            <li>Fix <code>.footer</code> position and place place at the end of <code>#page-wrapper</code> in several views </li>
+            <li>Fix several bugs and issues in styles</li>
+        </ul>
+
+        <div class="alert alert-info">
+            If you find any issue after upgrade and migration please take a look at the original new version and compare your files. If you still have some issues or bugs please contact with me on support email <a href="mailto:support@webapplayers.com">support@webapplayers.com</a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

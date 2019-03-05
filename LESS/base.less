@@ -1,6 +1,6 @@
 body {
   font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #2f4050;
+  background-color: @nav-bg;
   font-size: 13px;
   color: @text-color;
   overflow-x: hidden;
@@ -26,7 +26,7 @@ body.boxed-layout {
 }
 
 body.boxed-layout #wrapper {
-  background-color: #2f4050;
+  background-color: @nav-bg;
   max-width: @boxed-width;
   margin: 0 auto;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
@@ -118,8 +118,13 @@ video {
   //min-height: 300px;
 }
 
-.note-editor.fullscreen { z-index: 2050; }
-.note-editor.note-frame.fullscreen { z-index: 2020; }
+.note-editor.fullscreen {
+  z-index: 2050;
+}
+
+.note-editor.note-frame.fullscreen {
+  z-index: 2020;
+}
 
 .note-editor.note-frame .note-editing-area .note-editable {
   color: @text-color;
@@ -160,6 +165,7 @@ video {
 .inmodal .modal-header {
   padding: 30px 15px;
   text-align: center;
+  display: block;
 }
 
 .animated.modal.fade .modal-dialog {
@@ -287,6 +293,10 @@ body.body-small .footer.fixed {
 
 /* PANELS */
 
+.panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+  color: inherit;
+}
+
 .page-heading {
   border-top: 0;
   padding: 0 10px 20px 10px;
@@ -296,7 +306,57 @@ body.body-small .footer.fixed {
   margin-bottom: 5px;
 }
 
+.panel-body {
+  padding: 15px;
+}
+
+/* Bootstrap 3.3.x panels */
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.panel-heading {
+  color: white;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-footer {
+  padding: 10px 15px;
+  border-top: 1px solid @border-color;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: @border-color;
+}
+
+.panel-default {
+  border-color: @border-color;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 5px;
+}
+
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+
 /* TABLES */
+
+.table > caption + thead > tr:first-child > td, .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > td, .table > thead:first-child > tr:first-child > th {
+  border-top: 0;
+}
 
 .table-bordered {
   border: 1px solid #EBEBEB;
@@ -341,7 +401,6 @@ body.body-small .footer.fixed {
 }
 
 .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
-  background-color: #e6e6e6;
   color: @text-color;
 }
 
@@ -540,8 +599,10 @@ code {
   border-width: 2px 0 0;
   color: inherit;
   margin-bottom: 0;
-  padding: 15px 15px 7px;
+  padding: 15px 90px 8px 15px;
   min-height: 48px;
+  position: relative;
+  clear: both;
 }
 
 .ibox-content {
@@ -613,19 +674,26 @@ table.table-mail tr td {
   margin: 0 0 7px;
   padding: 0;
   text-overflow: ellipsis;
-  float: left;
+  float: none;
 }
 
 .ibox-title .label {
-  float: left;
   margin-left: 4px;
+}
+
+.ibox-title .pull-right {
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 
 .ibox-tools {
   display: block;
   float: none;
   margin-top: 0;
-  position: relative;
+  position: absolute;
+  top: 15px;
+  right: 15px;
   padding: 0;
   text-align: right;
 }
@@ -633,21 +701,35 @@ table.table-mail tr td {
 .ibox-tools a {
   cursor: pointer;
   margin-left: 5px;
-  color: #c4c4c4;
+  color: #c4c4c4 !important;
 }
 
 .ibox-tools a.btn-primary {
-  color: #fff;
+  color: #fff !important;
 }
 
 .ibox-tools .dropdown-menu > li > a {
   padding: 4px 10px;
   font-size: 12px;
+  color: @text-color !important;
 }
 
 .ibox .ibox-tools.open > .dropdown-menu {
   left: auto;
   right: 0;
+}
+
+.ibox-tools .dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-item {
+  width: auto;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: inherit;
+  color: inherit;
 }
 
 /* BACKGROUNDS */
@@ -661,27 +743,27 @@ table.table-mail tr td {
 }
 
 .blue-bg, .bg-success {
-  background-color: @blue;
+  background-color: @blue !important;
   color: #ffffff;
 }
 
 .navy-bg, .bg-primary {
-  background-color: @navy;
+  background-color: @navy !important;;
   color: #ffffff;
 }
 
 .lazur-bg, .bg-info {
-  background-color: @lazur;
+  background-color: @lazur !important;;
   color: #ffffff;
 }
 
 .yellow-bg, .bg-warning {
-  background-color: @yellow;
+  background-color: @yellow !important;;
   color: #ffffff;
 }
 
 .red-bg, .bg-danger {
-  background-color: @red;
+  background-color: @red !important;;
   color: #ffffff;
 }
 
@@ -791,31 +873,31 @@ table.table-mail tr td {
 /* COLORS */
 
 .text-navy {
-  color: @navy;
+  color: @navy !important;
 }
 
 .text-primary {
-  color: inherit;
+  color: inherit !important;;
 }
 
 .text-success {
-  color: @blue;
+  color: @blue !important;;
 }
 
 .text-info {
-  color: @lazur;
+  color: @lazur !important;;
 }
 
 .text-warning {
-  color: @yellow;
+  color: @yellow !important;;
 }
 
 .text-danger {
-  color: @red;
+  color: @red !important;;
 }
 
 .text-muted {
-  color: #888888;
+  color: #888888 !important;;
 }
 
 .text-white {
@@ -1383,7 +1465,7 @@ body.modal-open {
 }
 
 // Fix modal in Safari browser
-body.modal-open .wrapper-content.animated {
+_::-webkit-full-page-media, _:future, :root body.modal-open .wrapper-content.animated {
   -webkit-animation: none;
   -ms-animation-nam: none;
   animation: none;
@@ -1412,4 +1494,16 @@ body.mini-navbar.fixed-sidebar .logo-element {
 
 .fullscreen-video .animated {
   animation: none;
+}
+
+.list-inline > li {
+  display: inline-block;
+}
+
+.custom-file-label {
+  padding: .5rem .75rem;
+
+  &::after {
+    padding: .5rem .75rem;
+  }
 }

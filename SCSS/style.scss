@@ -1,58 +1,79 @@
 /*
  *
  *   INSPINIA - Responsive Admin Theme
- *   version 2.7.1
+ *   version 2.8
  *
 */
+
 // Google Fonts
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 
+// Glyphicons from Bootstrap 3.3.7
+@import "glyphicons.scss";
+
+
+
 // Variables, Mixins
-@import "variables";
-@import "mixins";
+@import "variables.scss";
+@import "mixins.scss";
 
 // INSPINIA Theme Elements
-@import "typography";
-@import "navigation";
-@import "top_navigation";
-@import "buttons";
-@import "badges_labels";
-@import "elements";
-@import "sidebar";
-@import "base";
-@import "pages";
-@import "chat";
-@import "metismenu";
-@import "spinners";
+@import "typography.scss";
+@import "navigation.scss";
+@import "top_navigation.scss";
+@import "buttons.scss";
+@import "badges_labels.scss";
+@import "elements.scss";
+@import "sidebar.scss";
+@import "base.scss";
+@import "pages.scss";
+@import "chat.scss";
+@import "metismenu.scss";
+@import "spinners.scss";
 
 // Landing page styles
-@import "landing";
+@import "landing.scss";
 
 // RTL Support
-@import "rtl";
+@import "rtl.scss";
 
 // For demo only - config box style
-@import "theme-config";
+@import "theme-config.scss";
 
 // INSPINIA Skins
-@import "skins";
-@import "md-skin";
+@import "skins.scss";
+@import "md-skin.scss";
 
 // Media query style
-@import "media";
+@import "media.scss";
 
 // Custom style
 // Your custom style to override base style
-@import "custom";
+@import "custom.scss";
 
 // Clear layout on print mode
 @media print {
   nav.navbar-static-side {
     display: none;
   }
+
   body { overflow: visible !important; }
 
   #page-wrapper {
     margin: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

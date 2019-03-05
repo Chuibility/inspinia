@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jquery-idletimer : provides you a way to monitor user activity with a page." />
+    <title>Jquery-idletimer</title>
+
+    <!-- jQuery and idleTimer -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../src/idle-timer.js"></script>
+
+    <!-- Bootstrap/respond (ie8) and moment -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.js"></script>
+
+    <!-- Respond.js proxy on external server -->
+    <link href="//netdna.bootstrapcdn.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <script src="respond.proxy.js"></script>
+    <style>
+        body {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 5px 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Jquery-idletimer</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Main Demo</a></li>
+                    <li><a href="autologout.html">Auto Logout</a></li>
+                    <li><a href="https://github.com/thorst/jquery-idletimer">Documentation</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/thorst/jquery-idletimer/zipball/master">Zip</a></li>
+                    <li><a href="https://github.com/thorst/jquery-idletimer/tarball/master">Tar</a></li>
+                    <li><a href="https://github.com/thorst/jquery-idletimer">Github</a></li>
+                </ul>
+            </div> <!--/.nav-collapse  -->
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2>Concept</h2>
+        <p>Here we use default bindings. Instead of explicitly telling idleTimer which element to bind to, it assumes document.</p>
+        <p>Some previous versions had issues mixing default binding with explicit calling on document.</p>
+        <p>This should no longer be the case. To test I've added 2 sets of buttons to show that they can be mixed.</p>
+        <p>The background color changes to show that it is returning a jQuery object</p>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Document <small><span id="docTimeout"></span> second timeout</small></h3>
+                <h4>default binding</h4>
+                <div class="btn-group">
+                    <a href="#" id="btDefaultPause" class="btn btn-default btn-sm">Pause</a>
+                    <a href="#" id="btDefaultResume" class="btn btn-default btn-sm">Resume</a>
+                    <a href="#" id="btDefaultElapsed" class="btn btn-default btn-sm">Elapsed</a>
+                    <a href="#" id="btDefaultInit" class="btn btn-default btn-sm">Init</a>
+                    <a href="#" id="btDefaultDestroy" class="btn btn-default btn-sm">Destroy</a>
+
+                    <a href="#" id="btDefaultReset" class="btn btn-default btn-sm">Reset</a>
+                    <a href="#" id="btDefaultLastActive" class="btn btn-default btn-sm">Last Active</a>
+                    <a href="#" id="btDefaultRemaining" class="btn btn-default btn-sm">Remaining</a>
+                    <a href="#" id="btDefaultState" class="btn btn-default btn-sm">State</a>
+                </div>
+                <h4>explicit binding</h4>
+                <div class="btn-group">
+                    <a href="#" id="btExplicitPause" class="btn btn-default btn-sm">Pause</a>
+                    <a href="#" id="btExplicitResume" class="btn btn-default btn-sm">Resume</a>
+                    <a href="#" id="btExplicitElapsed" class="btn btn-default btn-sm">Elapsed</a>
+                    <a href="#" id="btExplicitInit" class="btn btn-default btn-sm">Init</a>
+                    <a href="#" id="btExplicitDestroy" class="btn btn-default btn-sm">Destroy</a>
+
+                    <a href="#" id="btExplicitReset" class="btn btn-default btn-sm">Reset</a>
+                    <a href="#" id="btExplicitLastActive" class="btn btn-default btn-sm">Last Active</a>
+                    <a href="#" id="btExplicitRemaining" class="btn btn-default btn-sm">Remaining</a>
+                    <a href="#" id="btExplicitState" class="btn btn-default btn-sm">State</a>
+                </div>
+                <textarea rows="10" cols="30" id="docStatus" class="form-control"></textarea><br />
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+        /*
+        scrollToBottom plugin, chainable
+        */
+        $.fn.scrollToBottom = function () {
+            this.scrollTop(this[0].scrollHeight);
+            return this;
+        };
+        var rndColor = function () {
+            return '#' + Math.floor(Math.random() * 16777215).toString(16);
+        }
+        var
+               docTimeout = 5000
+        ;
+    </script>
+
+    <script>
+        /*
+        Code for document idle timer
+        */
+        (function ($) {
+        
+            // Display the actual timeout on the page
+            $('#docTimeout').text(docTimeout / 1000);
+
+            //Clear old statuses
+            $('#docStatus').val('');
+
+            //Handle idle event
+            $(document).on("idle.idleTimer", function () {
+                $("#docStatus")
+                    .val(function (i, v) {
+                        return v + "Idle @ " + new Date() + " \n";
+                    })
+                    .removeClass("alert-success")
+                    .addClass("alert-warning")
+                    .scrollToBottom();
+            });
+
+            //Handle active event
+            $(document).on("active.idleTimer", function () {
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Active @ " + new Date() + " \n";
+                    })
+                    .addClass("alert-success")
+                    .removeClass("alert-warning")
+                    .scrollToBottom();
+            });
+
+            //Start timeout, passing no options
+            //Same as $(document).idleTimer(docTimeout);
+            $.idleTimer(docTimeout);
+
+            //For demo purposes, get initial state and style accordingly
+            if ($.idleTimer("isIdle")) {
+                $("#docStatus")
+                  .val(function (i, v) {
+                      return v + "Initial Idle @ " + new Date() + " \n";
+                  })
+                  .removeClass("alert-success")
+                  .addClass("alert-warning")
+                  .scrollToBottom();
+            } else {
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Initial Active @ " + new Date() + " \n";
+                    })
+                    .addClass("alert-success")
+                    .removeClass("alert-warning")
+                    .scrollToBottom();
+            }
+
+        })(jQuery);
+
+    </script>
+
+    <script>
+        (function ($) {
+
+           /*
+           Handle button events
+           */
+            $("#btDefaultPause").click(function () {
+                //pause
+                $.idleTimer("pause").find("h2").css({ "background-color": rndColor() });
+
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Paused @ " + new Date() + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btDefaultResume").click(function () {
+                //resume
+                $.idleTimer("resume").find("h2").css({ "background-color": rndColor() });
+
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Resumed @ " + new Date() + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btDefaultElapsed").click(function () {
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Elapsed: " + $.idleTimer("getElapsedTime") + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btDefaultInit").click(function () {
+                // for demo purposes show init with just object
+                $.idleTimer({ timeout: docTimeout }).find("h2").css({ "background-color": rndColor() });
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Init: @ " + moment().format() + " \n";
+                    })
+                    .scrollToBottom();
+
+                //Apply classes for default state
+                if ($.idleTimer("isIdle")) {
+                    $('#docStatus')
+                        .removeClass("alert-success")
+                        .addClass("alert-warning");
+                } else {
+                    $('#docStatus')
+                        .addClass("alert-success")
+                        .removeClass("alert-warning");
+                }
+                $(this).blur();
+                return false;
+            });
+            $("#btDefaultDestroy").click(function () {
+              //  console.log($.idleTimer("destroy"));
+               $.idleTimer("destroy").find("h2").css({ "background-color": rndColor() });
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Destroyed: @ " + moment().format() + " \n";
+                    })
+                    .removeClass("alert-success")
+                    .removeClass("alert-warning")
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btDefaultReset").click(function () {
+
+                //Reset
+                var s = $.idleTimer("reset").find("h2").css({ "background-color": rndColor() });
+
+                //Output
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Reset @ " + new Date() + " \n";
+                    })
+                    .scrollToBottom();
+
+                //Apply classes for default state
+                var idle = $.idleTimer("isIdle");
+                if (idle) {
+                    $('#docStatus')
+                        .removeClass("alert-success")
+                        .addClass("alert-warning");
+                } else {
+                    $('#docStatus')
+                        .addClass("alert-success")
+                        .removeClass("alert-warning");
+                }
+
+                $(this).blur();
+                return false;
+            });
+            $("#btDefaultLastActive").click(function () {
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Last Active: " + $.idleTimer("getLastActiveTime") + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btDefaultRemaining").click(function () {
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Remaining: " + $.idleTimer("getRemainingTime") + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btDefaultState").click(function () {
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "State: " + ($.idleTimer("isIdle") ? "idle" : "active") + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+
+        })(jQuery);
+
+    </script>
+
+    <script>
+        (function ($) {
+
+            /*
+            Handle button events
+            */
+            $("#btExplicitPause").click(function () {
+                //pause
+                $(document).idleTimer("pause").find("h2").css({ "background-color": rndColor() });
+
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Paused @ " + new Date() + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btExplicitResume").click(function () {
+                //resume
+                $(document).idleTimer("resume").find("h2").css({ "background-color": rndColor() });
+
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Resumed @ " + new Date() + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btExplicitElapsed").click(function () {
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Elapsed: " + $(document).idleTimer("getElapsedTime") + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btExplicitInit").click(function () {
+                // for demo purposes show init with just object
+                $.idleTimer({ timeout: docTimeout }).find("h2").css({ "background-color": rndColor() });
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Init: @ " + moment().format() + " \n";
+                    })
+                    .scrollToBottom();
+
+                //Apply classes for default state
+                if ($(document).idleTimer("isIdle")) {
+                    $('#docStatus')
+                        .removeClass("alert-success")
+                        .addClass("alert-warning");
+                } else {
+                    $('#docStatus')
+                        .addClass("alert-success")
+                        .removeClass("alert-warning");
+                }
+                $(this).blur();
+                return false;
+            });
+            $("#btExplicitDestroy").click(function () {
+                
+                $(document).idleTimer("destroy").find("h2").css({ "background-color": rndColor() });
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Destroyed: @ " + moment().format() + " \n";
+                    })
+                    .removeClass("alert-success")
+                    .removeClass("alert-warning")
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btExplicitReset").click(function () {
+
+                //Reset
+                var s = $(document).idleTimer("reset").find("h2").css({ "background-color": rndColor() });
+
+                //Output
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Reset @ " + new Date() + " \n";
+                    })
+                    .scrollToBottom();
+
+                //Apply classes for default state
+                var idle = $(document).idleTimer("isIdle");
+                if (idle) {
+                    $('#docStatus')
+                        .removeClass("alert-success")
+                        .addClass("alert-warning");
+                } else {
+                    $('#docStatus')
+                        .addClass("alert-success")
+                        .removeClass("alert-warning");
+                }
+
+                $(this).blur();
+                return false;
+            });
+            $("#btExplicitLastActive").click(function () {
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Last Active: " + $(document).idleTimer("getLastActiveTime") + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btExplicitRemaining").click(function () {
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "Remaining: " + $(document).idleTimer("getRemainingTime") + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+            $("#btExplicitState").click(function () {
+                $('#docStatus')
+                    .val(function (i, v) {
+                        return v + "State: " + ($(document).idleTimer("isIdle") ? "idle" : "active") + " \n";
+                    })
+                    .scrollToBottom();
+                $(this).blur();
+                return false;
+            });
+        })(jQuery);
+
+    </script>
+
+</body>
+
+</html>

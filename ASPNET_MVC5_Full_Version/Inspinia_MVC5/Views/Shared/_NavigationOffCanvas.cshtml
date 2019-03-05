@@ -1,11 +1,11 @@
 ﻿<nav class="navbar-default navbar-static-side" role="navigation">
     <div class="sidebar-collapse">
         <a class="close-canvas-menu"><i class="fa fa-times"></i></a>
-        <ul class="nav" id="side-menu">
+        <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
                 <div class="dropdown profile-element">
                     <span>
-                        <img alt="image" class="img-circle" src="~/Images/profile_small.jpg" />
+                        <img alt="image" class="rounded-circle" src="~/Images/profile_small.jpg" />
                     </span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear">
@@ -15,11 +15,11 @@
                         </span>
                     </a>
                     <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                        <li><a href="@Url.Action("Profile", "AppViews")">Profile</a></li>
-                        <li><a href="@Url.Action("Contacts", "AppViews")">Contacts</a></li>
-                        <li><a href="@Url.Action("Inbox", "Mailbox")">Mailbox</a></li>
-                        <li class="divider"></li>
-                        <li><a href="@Url.Action("Login", "Pages")">Logout</a></li>
+                        <li><a class="dropdown-item" href="@Url.Action("Profile", "AppViews")">Profile</a></li>
+                        <li><a class="dropdown-item" href="@Url.Action("Contacts", "AppViews")">Contacts</a></li>
+                        <li><a class="dropdown-item" href="@Url.Action("Inbox", "Mailbox")">Mailbox</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="@Url.Action("Login", "Pages")">Logout</a></li>
                     </ul>
                 </div>
                 <div class="logo-element">
@@ -36,7 +36,7 @@
                 </ul>
             </li>
             <li class="@Html.IsSelected(controller: "Layouts")">
-                <a href="@Url.Action("Index", "Layouts")"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span> <span class="label label-primary pull-right">NEW</span></a>
+                <a href="@Url.Action("Index", "Layouts")"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span> <span class="label label-primary float-right">NEW</span></a>
             </li>
             <li class="@Html.IsSelected(controller: "Graphs")">
                 <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
@@ -50,7 +50,7 @@
                 </ul>
             </li>
             <li class="@Html.IsSelected(controller: "Mailbox")">
-                <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
+                <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning float-right">16/24</span></a>
                 <ul class="nav nav-second-level">
                     <li class="@Html.IsSelected(action: "Inbox")"><a href="@Url.Action("Inbox", "Mailbox")">Inbox</a></li>
                     <li class="@Html.IsSelected(action: "EmailView")"><a href="@Url.Action("EmailView", "Mailbox")">Email view</a></li>
@@ -72,7 +72,7 @@
                 </ul>
             </li>
             <li class="@Html.IsSelected(controller: "AppViews")">
-                <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
+                <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="float-right label label-primary">SPECIAL</span></a>
                 <ul class="nav nav-second-level">
                     <li class="@Html.IsSelected(action: "Contacts")"><a href="@Url.Action("Contacts", "AppViews")">Contacts</a></li>
                     <li class="@Html.IsSelected(action: "Profile")"><a href="@Url.Action("Profile", "AppViews")">Profile</a></li>
@@ -107,7 +107,7 @@
                 </ul>
             </li>
             <li class="@Html.IsSelected(controller: "Miscellaneous")">
-                <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span class="label label-info pull-right">NEW</span></a>
+                <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span class="label label-info float-right">NEW</span></a>
                 <ul class="nav nav-second-level">
                     <li class="@Html.IsSelected(action: "Notification")"><a href="@Url.Action("Notification", "Miscellaneous")">Notification</a></li>
                     <li class="@Html.IsSelected(action: "NestableList")"><a href="@Url.Action("NestableList", "Miscellaneous")">Nestable list</a></li>
@@ -186,10 +186,7 @@
                 </ul>
             </li>
             <li class="@Html.IsSelected(controller: "CSSAnimations")">
-                <a href="@Url.Action("Index", "CSSAnimations")"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
-            </li>
-            <li class="special_link @Html.IsSelected(controller: " Scaffolding")">
-                <a href="@Url.Action("Index", "Scaffolding")"><i class="fa fa-database"></i> <span class="nav-label">Scaffolding Example</span></a>
+                <a href="@Url.Action("Index", "CSSAnimations")"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info float-right">62</span></a>
             </li>
             <li class="special_link @Html.IsSelected(controller: " Json")">
                 <a href="@Url.Action("Index", "Json")"><i class="fa fa-plug"></i> <span class="nav-label">JSON Examples</span></a>

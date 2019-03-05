@@ -7,13 +7,13 @@
     <div class="col-lg-10">
         <h2>Outlook view</h2>
         <ol class="breadcrumb">
-            <li>
-                <a href="index.html">Home</a>
+            <li class="breadcrumb-item">
+                <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 <a>Layouts</a>
             </li>
-            <li class="active">
+            <li class="active breadcrumb-item">
                 <strong>Outlook view</strong>
             </li>
         </ol>
@@ -29,8 +29,8 @@
         <div class="full-height-scroll">
             <ul class="list-group elements-list">
                 <li class="list-group-item">
-                    <a data-toggle="tab" href="#tab-1">
-                        <small class="pull-right text-muted"> 16.02.2015</small>
+                    <a class="nav-link" data-toggle="tab" href="#tab-1">
+                        <small class="float-right text-muted"> 16.02.2015</small>
                         <strong>Ann Smith</strong>
                         <div class="small m-t-xs">
                             <p>
@@ -42,9 +42,9 @@
                         </div>
                     </a>
                 </li>
-                <li class="list-group-item active">
-                    <a data-toggle="tab" href="#tab-2">
-                        <small class="pull-right text-muted"> 11.10.2015</small>
+                <li class="list-group-item ">
+                    <a class="nav-link active" data-toggle="tab" href="#tab-2">
+                        <small class="float-right text-muted"> 11.10.2015</small>
                         <strong>Paul Morgan</strong>
                         <div class="small m-t-xs">
                             <p class="m-b-xs">
@@ -53,15 +53,15 @@
                             </p>
                             <p class="m-b-none">
 
-                                <span class="label pull-right label-primary">SPECIAL</span>
+                                <span class="label float-right label-primary">SPECIAL</span>
                                 <i class="fa fa-map-marker"></i> California 10F/32
                             </p>
                         </div>
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a data-toggle="tab" href="#tab-3">
-                        <small class="pull-right text-muted"> 08.04.2015</small>
+                    <a class="nav-link" data-toggle="tab" href="#tab-3">
+                        <small class="float-right text-muted"> 08.04.2015</small>
                         <strong>Michael Jackson</strong>
                         <div class="small m-t-xs">
                             <p class="m-b-xs">
@@ -74,8 +74,8 @@
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a data-toggle="tab" href="#tab-4">
-                        <small class="pull-right text-muted"> 16.02.2015</small>
+                    <a class="nav-link" data-toggle="tab" href="#tab-4">
+                        <small class="float-right text-muted"> 16.02.2015</small>
                         <strong>Mark Smith</strong>
                         <div class="small m-t-xs">
                             <p class="m-b-xs">
@@ -88,8 +88,8 @@
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a data-toggle="tab" href="#tab-1">
-                        <small class="pull-right text-muted"> 21.04.2015</small>
+                    <a class="nav-link" data-toggle="tab" href="#tab-1">
+                        <small class="float-right text-muted"> 21.04.2015</small>
                         <strong>Monica Novak</strong>
                         <div class="small m-t-xs">
                             <p class="m-b-xs">
@@ -102,8 +102,8 @@
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a data-toggle="tab" href="#tab-2">
-                        <small class="pull-right text-muted"> 03.12.2015</small>
+                    <a class="nav-link" data-toggle="tab" href="#tab-2">
+                        <small class="float-right text-muted"> 03.12.2015</small>
                         <strong>Jack Smith</strong>
                         <div class="small m-t-xs">
                             <p class="m-b-xs">
@@ -116,8 +116,8 @@
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a data-toggle="tab" href="#tab-3">
-                        <small class="pull-right text-muted"> 08.04.2015</small>
+                    <a class="nav-link" data-toggle="tab" href="#tab-3">
+                        <small class="float-right text-muted"> 08.04.2015</small>
                         <strong>Michael Jackson</strong>
                         <div class="small m-t-xs">
                             <p class="m-b-xs">
@@ -130,8 +130,8 @@
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a data-toggle="tab" href="#tab-4">
-                        <small class="pull-right text-muted"> 16.02.2015</small>
+                    <a class="nav-link" data-toggle="tab" href="#tab-4">
+                        <small class="float-right text-muted"> 16.02.2015</small>
                         <strong>Mark Smith</strong>
                         <div class="small m-t-xs">
                             <p class="m-b-xs">
@@ -144,8 +144,8 @@
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a data-toggle="tab" href="#tab-1">
-                        <small class="pull-right text-muted"> 21.04.2015</small>
+                    <a class="nav-link" data-toggle="tab" href="#tab-1">
+                        <small class="float-right text-muted"> 21.04.2015</small>
                         <strong>Monica Novak</strong>
                         <div class="small m-t-xs">
                             <p class="m-b-xs">
@@ -172,7 +172,7 @@
                 <div class="tab-content">
                     <div id="tab-1" class="tab-pane">
 
-                        <div class="pull-right">
+                        <div class="float-right">
                             <div class="tooltip-demo">
                                 <button class="btn btn-white btn-xs" data-toggle="tooltip" data-placement="left" title="Plug this message"><i class="fa fa-plug"></i> Plug it</button>
                                 <button class="btn btn-white btn-xs" data-toggle="tooltip" data-placement="top" title="Mark as read"><i class="fa fa-eye"></i> </button>
@@ -275,7 +275,7 @@
                     </div>
 
                     <div id="tab-2" class="tab-pane active">
-                        <div class="pull-right">
+                        <div class="float-right">
                             <div class="tooltip-demo">
                                 <button class="btn btn-white btn-xs" data-toggle="tooltip" data-placement="left" title="Plug this message"><i class="fa fa-plug"></i> Plug it</button>
                                 <button class="btn btn-white btn-xs" data-toggle="tooltip" data-placement="top" title="Mark as read"><i class="fa fa-eye"></i> </button>
@@ -368,7 +368,7 @@
                     </div>
 
                     <div id="tab-3" class="tab-pane">
-                        <div class="pull-right">
+                        <div class="float-right">
                             <div class="tooltip-demo">
                                 <button class="btn btn-white btn-xs" data-toggle="tooltip" data-placement="left" title="Plug this message"><i class="fa fa-plug"></i> Plug it</button>
                                 <button class="btn btn-white btn-xs" data-toggle="tooltip" data-placement="top" title="Mark as read"><i class="fa fa-eye"></i> </button>
@@ -457,7 +457,7 @@
                         </div>
                     </div>
                     <div id="tab-4" class="tab-pane">
-                        <div class="pull-right">
+                        <div class="float-right">
                             <div class="tooltip-demo">
                                 <button class="btn btn-white btn-xs" data-toggle="tooltip" data-placement="left" title="Plug this message"><i class="fa fa-plug"></i> Plug it</button>
                                 <button class="btn btn-white btn-xs" data-toggle="tooltip" data-placement="top" title="Mark as read"><i class="fa fa-eye"></i> </button>

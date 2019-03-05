@@ -7,13 +7,13 @@
     <div class="col-lg-9">
         <h2>Masonry</h2>
         <ol class="breadcrumb">
-            <li>
-                <a href="index.html">Home</a>
+            <li class="breadcrumb-item">
+                <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 Miscellaneous
             </li>
-            <li class="active">
+            <li class="active breadcrumb-item">
                 <strong>Masonry</strong>
             </li>
         </ol>
@@ -198,15 +198,14 @@
     @Scripts.Render("~/plugins/masonry")
 
     <script type="text/javascript">
-        $(window).load(function () {
-
+        $(window).on('load', function () {
             $('.grid').masonry({
                 // options
                 itemSelector: '.grid-item',
                 columnWidth: 300,
                 gutter: 25
             });
-
         });
+
     </script>
 }

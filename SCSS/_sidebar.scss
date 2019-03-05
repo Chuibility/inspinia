@@ -6,7 +6,7 @@
   right: 0;
 }
 
-.sidebar-panel .feed-element img.img-circle {
+.sidebar-panel .feed-element img.rounded-circle {
   width: 32px;
   height: 32px;
 }
@@ -163,7 +163,7 @@
 
   }
 
-  .sidebar-message > a > .pull-left {
+  .sidebar-message > a > .float-left {
     margin-right: 10px;
   }
 
@@ -181,6 +181,10 @@
     width: auto;
   }
 
+  .sidebar-message:hover {
+    //    background: #f9f9f9;
+  }
+
   .sidebar-message .message-avatar {
     height: 38px;
     width: 38px;
@@ -193,3 +197,4 @@
   }
 
 }
+

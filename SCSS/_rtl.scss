@@ -2,7 +2,7 @@
 body.rtls {
 
   #page-wrapper {
-    margin: 0 220px 0 0;
+    margin: 0 $sidebar-width 0 0;
   }
 
   .nav-second-level li a {
@@ -128,7 +128,7 @@ body.rtls {
 
   /* Theme config */
   .theme-config-box {
-    margin-left: -220px;
+    margin-left: -$sidebar-width;
     margin-right: 0;
   }
 
@@ -152,7 +152,7 @@ body.rtls {
   }
 
   .footer.fixed {
-    margin-right: 220px;
+    margin-right: $sidebar-width;
     margin-left: 0;
   }
 

@@ -542,11 +542,11 @@ a.compose-mail {
   overflow: hidden;
 }
 
-.feed-element > .pull-left {
+.feed-element > a img {
   margin-right: 10px;
 }
 
-.feed-element img.img-circle, .dropdown-messages-box img.img-circle {
+.feed-element img.rounded-circle, .dropdown-messages-box img.rounded-circle {
   width: 38px;
   height: 38px;
 }
@@ -568,6 +568,10 @@ a.compose-mail {
 .feed-element .photos {
   margin: 10px 0;
 
+}
+
+.dropdown-messages-box .dropdown-item:focus, .dropdown-messages-box .dropdown-item:hover {
+  background-color: inherit;
 }
 
 .feed-photo {
@@ -954,7 +958,7 @@ dd.project-people {
 .article h1 {
   font-size: 48px;
   font-weight: 700;
-  color: #2F4050;
+  color: $nav-bg;
 }
 
 .article p {
@@ -1000,7 +1004,7 @@ table.issue-tracker tbody tr td {
   margin: 10px 0;
 }
 
-.team-members img.img-circle {
+.team-members img.rounded-circle {
   width: 42px;
   height: 42px;
   margin-bottom: 5px;

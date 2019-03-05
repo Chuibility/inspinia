@@ -176,7 +176,7 @@ body.md-skin {
   }
 
   .nav-header .text-muted {
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   .navbar-form-custom .form-control {
@@ -343,6 +343,10 @@ body.md-skin {
     padding-left: 0;
   }
 
+  &.mini-navbar.fixed-sidebar .nav-second-level li a {
+    padding-left: 52px;
+  }
+
   &.top-navigation .nav.navbar-right > li > a {
     padding: 15px 20px;
     color: $text-color;
@@ -399,3 +403,6 @@ body.md-skin {
   }
 
 }
+
+
+

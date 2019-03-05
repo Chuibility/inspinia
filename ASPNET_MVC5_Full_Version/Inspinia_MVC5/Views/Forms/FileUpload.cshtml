@@ -7,13 +7,13 @@
     <div class="col-lg-10">
         <h2>File upload</h2>
         <ol class="breadcrumb">
-            <li>
+            <li class="breadcrumb-item">
                 <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 <a>Forms</a>
             </li>
-            <li class="active">
+            <li class="active breadcrumb-item">
                 <strong>File upload</strong>
             </li>
         </ol>
@@ -25,7 +25,7 @@
 <div class="wrapper wrapper-content animated fadeIn">
     <div class="row">
         <div class="col-lg-12">
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-title">
                     <h5>File inputs example</h5>
                 </div>
@@ -37,7 +37,7 @@
     </div>
     <div class="row">
         <div class="col-lg-6">
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-title">
                     <h5>Input group example</h5>
                     <div class="ibox-tools">
@@ -49,10 +49,10 @@
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li>
-                                <a href="#">Config option 1</a>
+                                <a href="#" class="dropdown-item">Config option 1</a>
                             </li>
                             <li>
-                                <a href="#">Config option 2</a>
+                                <a href="#" class="dropdown-item">Config option 2</a>
                             </li>
                         </ul>
                         <a class="close-link">
@@ -61,33 +61,32 @@
                     </div>
                 </div>
                 <div class="ibox-content">
-                    <div class="fileinput fileinput-new input-group" data-provides="fileinput">
-                        <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
-                        <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
-                        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                    <div class="custom-file">
+                        <input id="logo" type="file" class="custom-file-input">
+                        <label for="logo" class="custom-file-label">Choose file...</label>
                     </div>
-                    <p>
+
+                    <p class="m-t-sm">
                         HTML markup code for abowe example:
                     </p>
-                    <textarea id="code1">
-&lt;div class="fileinput fileinput-new input-group" data-provides="fileinput"&gt;
-    &lt;div class="form-control" data-trigger="fileinput"&gt;
-        &lt;i class="glyphicon glyphicon-file fileinput-exists">&lt;/i&gt;
-    &lt;span class="fileinput-filename"&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;span class="input-group-addon btn btn-default btn-file"&gt;
-        &lt;span class="fileinput-new"&gt;Select file&lt;/span&gt;
-        &lt;span class="fileinput-exists"&gt;Change&lt;/span&gt;
-        &lt;input type="file" name="..."/&gt;
-    &lt;/span&gt;
-    &lt;a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove&lt;/a&gt;
-&lt;/div&gt;
-                    </textarea>
+<textarea id="code1">
+&lt;div class="custom-file"&gt;
+    &lt;input id="logo" type="file" class="custom-file-input"&gt;
+    &lt;label for="logo" class="custom-file-label">Choose file...&lt;/label&gt;
+&lt;/div&gt; </textarea>
+                    <p class="m-t-sm">
+                        Javascript code for abowe example:
+                    </p>
+<textarea id="code2">
+$('.custom-file-input').on('change', function() {
+   let fileName = $(this).val().split('\\').pop();
+   $(this).next('.custom-file-label').addClass("selected").html(fileName);
+}); </textarea>
                 </div>
             </div>
         </div>
         <div class="col-lg-6">
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-title">
                     <h5>Button example</h5>
                     <div class="ibox-tools">
@@ -99,10 +98,10 @@
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li>
-                                <a href="#">Config option 1</a>
+                                <a href="#" class="dropdown-item">Config option 1</a>
                             </li>
                             <li>
-                                <a href="#">Config option 2</a>
+                                <a href="#" class="dropdown-item">Config option 2</a>
                             </li>
                         </ul>
                         <a class="close-link">
@@ -119,14 +118,13 @@
                     <p>
                         HTML markup code for abowe example:
                     </p>
-                    <textarea id="code2">
+<textarea id="code3">
 &lt;div class="fileinput fileinput-new" data-provides="fileinput"&gt;
     &lt;span class="btn btn-default btn-file"&gt;&lt;span class="fileinput-new"&gt;Select file&lt;/span&gt;
     &lt;span class="fileinput-exists"&gt;Change&lt;/span&gt;&lt;input type="file" name="..."/&gt;&lt;/span&gt;
     &lt;span class="fileinput-filename"&gt;&lt;/span&gt;
     &lt;a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;&lt;/a&gt;
-&lt;/div&gt;
-                    </textarea>
+&lt;/div&gt; </textarea>
                 </div>
             </div>
         </div>
@@ -149,7 +147,7 @@
                     <p class="m-t-xs">
                         HTML markup code for abowe example:
                     </p>
-                    <textarea id="code3">
+                    <textarea id="code4">
 &lt;form action="#" class="dropzone" id="dropzoneForm"&gt;
     &lt;div class="fallback"&gt;
         &lt;input name="file" type="file" multiple /&gt;
@@ -196,10 +194,20 @@
                 matchBrackets: true
             });
 
-            var editor_two = CodeMirror.fromTextArea(document.getElementById("code3"), {
+            var editor_three = CodeMirror.fromTextArea(document.getElementById("code3"), {
                 lineNumbers: true,
                 matchBrackets: true
             });
+
+            var editor_four = CodeMirror.fromTextArea(document.getElementById("code4"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+            $('.custom-file-input').on('change', function () {
+                let fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            }); 
 
         });
     </script>

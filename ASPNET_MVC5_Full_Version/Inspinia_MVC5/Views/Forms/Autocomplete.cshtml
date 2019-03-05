@@ -7,13 +7,13 @@
     <div class="col-lg-10">
         <h2>Autocomplete</h2>
         <ol class="breadcrumb">
-            <li>
+            <li class="breadcrumb-item">
                 <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 <a>Forms</a>
             </li>
-            <li class="active">
+            <li class="active breadcrumb-item">
                 <strong>Autocomplete</strong>
             </li>
         </ol>
@@ -24,7 +24,7 @@
 <div class="wrapper wrapper-content animated fadeIn">
     <div class="row">
         <div class="col-lg-12">
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-title">
                     <h5>Autocomplete - Bootstrap Typehead</h5>
                     <div class="ibox-tools">
@@ -36,10 +36,10 @@
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li>
-                                <a href="#">Config option 1</a>
+                                <a href="#" class="dropdown-item">Config option 1</a>
                             </li>
                             <li>
-                                <a href="#">Config option 2</a>
+                                <a href="#" class="dropdown-item">Config option 2</a>
                             </li>
                         </ul>
                         <a class="close-link">
@@ -56,7 +56,7 @@
     </div>
     <div class="row">
         <div class="col-lg-6">
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-title">
                     <h5>Basic example - data-*</h5>
                 </div>
@@ -73,7 +73,7 @@ placeholder="item..."
 class="form-control" /&gt;</pre>
                 </div>
             </div>
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-title">
                     <h5>Loading collection</h5>
                 </div>
@@ -90,7 +90,7 @@ $.get('js/api/typehead_collection.json', function(data){
             </div>
         </div>
         <div class="col-lg-6">
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-title">
                     <h5>Basic example - javascript</h5>
                 </div>
@@ -105,7 +105,7 @@ $('.typeahead_1').typeahead({
 }); </pre>
                 </div>
             </div>
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-title">
                     <h5>Loading more complex object</h5>
                 </div>
@@ -129,7 +129,7 @@ $('.typeahead_3').typeahead({
     </div>
     <div class="row">
         <div class="col-lg-12">
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-title">
                     <h5>Options</h5>
                 </div>
@@ -237,7 +237,7 @@ $('.typeahead_3').typeahead({
         </div>
     </div>
     <div class="footer">
-        <div class="pull-right">
+        <div class="float-right">
             10GB of <strong>250GB</strong> Free.
         </div>
         <div>

@@ -1,0 +1,55 @@
+{
+  "name": "cropper",
+  "description": "A simple jQuery image cropping plugin.",
+  "main": [
+    "dist/cropper.js",
+    "dist/cropper.css"
+  ],
+  "keywords": [
+    "image",
+    "crop",
+    "cropper",
+    "cropping",
+    "move",
+    "zoom",
+    "rotate",
+    "scale",
+    "jquery",
+    "plugin",
+    "html",
+    "css",
+    "javascript",
+    "front-end",
+    "web",
+    "development"
+  ],
+  "homepage": "https://github.com/fengyuanchen/cropper",
+  "authors": [
+    "Fengyuan Chen"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "test",
+    "examples",
+    "assets",
+    "demo",
+    "docs",
+    "gulpfile.js",
+    "CONTRIBUTING.md",
+    "ISSUE_TEMPLATE.md"
+  ],
+  "version": "2.2.5",
+  "_release": "2.2.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.2.5",
+    "commit": "d6613559c179a1a87130ddbc3a7d439576f37480"
+  },
+  "_source": "https://github.com/fengyuanchen/cropper.git",
+  "_target": "~2.2.1",
+  "_originalSource": "cropper"
+}

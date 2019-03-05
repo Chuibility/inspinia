@@ -1,0 +1,223 @@
+﻿
+@{
+    ViewData["Title"] = "FileUpload";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>File upload</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Forms</a>
+            </li>
+            <li class="active breadcrumb-item">
+                <strong>File upload</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeIn">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>File inputs example</h5>
+                </div>
+                <div class="ibox-content">
+                    The file input feature by Jasny allows you to create a visually appealing file or image input widgets based on the Bootstrap style. Additional dropzone.js library gives you drag’n’drop file uploads option.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Input group example</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#" class="dropdown-item">Config option 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="custom-file">
+                        <input id="logo" type="file" class="custom-file-input">
+                        <label for="logo" class="custom-file-label">Choose file...</label>
+                    </div>
+
+                    <p class="m-t-sm">
+                        HTML markup code for abowe example:
+                    </p>
+<textarea id="code1">
+&lt;div class="custom-file"&gt;
+    &lt;input id="logo" type="file" class="custom-file-input"&gt;
+    &lt;label for="logo" class="custom-file-label">Choose file...&lt;/label&gt;
+&lt;/div&gt; </textarea>
+                    <p class="m-t-sm">
+                        Javascript code for abowe example:
+                    </p>
+<textarea id="code2">
+$('.custom-file-input').on('change', function() {
+   let fileName = $(this).val().split('\\').pop();
+   $(this).next('.custom-file-label').addClass("selected").html(fileName);
+}); </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Button example</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#" class="dropdown-item">Config option 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                        <span class="btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                        <span class="fileinput-filename"></span>
+                        <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                    </div>
+                    <p>
+                        HTML markup code for abowe example:
+                    </p>
+<textarea id="code3">
+&lt;div class="fileinput fileinput-new" data-provides="fileinput"&gt;
+    &lt;span class="btn btn-default btn-file"&gt;&lt;span class="fileinput-new"&gt;Select file&lt;/span&gt;
+    &lt;span class="fileinput-exists"&gt;Change&lt;/span&gt;&lt;input type="file" name="..."/&gt;&lt;/span&gt;
+    &lt;span class="fileinput-filename"&gt;&lt;/span&gt;
+    &lt;a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;&lt;/a&gt;
+&lt;/div&gt; </textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Dropzone.js</h5>
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        <strong>Dropzone.js</strong> is a light weight JavaScript library that turns an HTML element into a dropzone. This means that a user can drag and drop a file onto it, and the file gets uploaded to the server via AJAX.
+                    </p>
+                    <form action="#" class="dropzone" id="dropzoneForm">
+                        <div class="fallback">
+                            <input name="file" type="file" multiple />
+                        </div>
+                    </form>
+                    <p class="m-t-xs">
+                        HTML markup code for abowe example:
+                    </p>
+                    <textarea id="code4">
+&lt;form action="#" class="dropzone" id="dropzoneForm"&gt;
+    &lt;div class="fallback"&gt;
+        &lt;input name="file" type="file" multiple /&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+                    </textarea>
+                    <p class="m-t-xs">All avalible options and full documentation you can find: <a href="http://www.dropzonejs.com/#configuration-options">http://www.dropzonejs.com/#configuration-options</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+@section Styles {
+    <environment names="Development,Staging,Productio">
+        <link rel="stylesheet" href="~/lib/dropzone/basic.css" />
+        <link rel="stylesheet" href="~/lib/dropzone/dropzone.css" />
+        <link rel="stylesheet" href="~/lib/codemirror/lib/codemirror.css" />
+        <link rel="stylesheet" href="~/lib/codemirror/theme/ambiance.css" />
+        <link rel="stylesheet" href="~/lib/jasny-bootstrap/dist/css/jasny-bootstrap.css" />
+    </environment>
+
+}
+
+@section Scripts {
+    <environment names="Development,Staging,Productio">
+        <script src="~/lib/dropzone/dropzone.js"></script>
+        <script src="~/lib/jasny-bootstrap/dist/js/jasny-bootstrap.js"></script>
+        <script src="~/lib/codemirror/lib/codemirror.js"></script>
+        <script src="~/lib/codemirror/mode/javascript/javascript.js"></script>
+    </environment>
+
+
+    <script type="text/javascript">
+        Dropzone.options.dropzoneForm = {
+            paramName: "file", // The name that will be used to transfer the file
+            maxFilesize: 2, // MB
+            dictDefaultMessage: "<strong>Drop files here or click to upload. </strong></br> (This is just a demo dropzone. Selected files are not actually uploaded.)"
+        };
+
+        $(document).ready(function () {
+
+            var editor_one = CodeMirror.fromTextArea(document.getElementById("code1"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+            var editor_two = CodeMirror.fromTextArea(document.getElementById("code2"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+            var editor_three = CodeMirror.fromTextArea(document.getElementById("code3"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+            var editor_four = CodeMirror.fromTextArea(document.getElementById("code4"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+            $('.custom-file-input').on('change', function () {
+                let fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            }); 
+
+        });
+    </script>
+}

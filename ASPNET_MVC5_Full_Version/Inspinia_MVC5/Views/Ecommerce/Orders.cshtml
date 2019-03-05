@@ -7,13 +7,13 @@
     <div class="col-lg-10">
         <h2>E-commerce orders</h2>
         <ol class="breadcrumb">
-            <li>
+            <li class="breadcrumb-item">
                 <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 <a>E-commerce</a>
             </li>
-            <li class="active">
+            <li class="active breadcrumb-item">
                 <strong>Orders</strong>
             </li>
         </ol>
@@ -29,19 +29,19 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="form-group">
-                    <label class="control-label" for="order_id">Order ID</label>
+                    <label class="col-form-labe" for="order_id">Order ID</label>
                     <input type="text" id="order_id" name="order_id" value="" placeholder="Order ID" class="form-control">
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
-                    <label class="control-label" for="status">Order status</label>
+                    <label class="col-form-labe" for="status">Order status</label>
                     <input type="text" id="status" name="status" value="" placeholder="Status" class="form-control">
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
-                    <label class="control-label" for="customer">Customer</label>
+                    <label class="col-form-labe" for="customer">Customer</label>
                     <input type="text" id="customer" name="customer" value="" placeholder="Customer" class="form-control">
                 </div>
             </div>
@@ -49,7 +49,7 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="form-group">
-                    <label class="control-label" for="date_added">Date added</label>
+                    <label class="col-form-labe" for="date_added">Date added</label>
                     <div class="input-group date">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input id="date_added" type="text" class="form-control" value="03/04/2014">
                     </div>
@@ -57,7 +57,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
-                    <label class="control-label" for="date_modified">Date modified</label>
+                    <label class="col-form-labe" for="date_modified">Date modified</label>
                     <div class="input-group date">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input id="date_modified" type="text" class="form-control" value="03/06/2014">
                     </div>
@@ -65,7 +65,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
-                    <label class="control-label" for="amount">Amount</label>
+                    <label class="col-form-labe" for="amount">Amount</label>
                     <input type="text" id="amount" name="amount" value="" placeholder="Amount" class="form-control">
                 </div>
             </div>
@@ -1018,7 +1018,7 @@
                         <tfoot>
                             <tr>
                                 <td colspan="7">
-                                    <ul class="pagination pull-right"></ul>
+                                    <ul class="pagination float-right"></ul>
                                 </td>
                             </tr>
                         </tfoot>

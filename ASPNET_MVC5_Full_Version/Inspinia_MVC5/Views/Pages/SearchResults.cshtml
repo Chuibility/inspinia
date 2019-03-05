@@ -7,13 +7,13 @@
     <div class="col-lg-9">
         <h2>	Search Page</h2>
         <ol class="breadcrumb">
-            <li>
+            <li class="breadcrumb-item">
                 <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 Extra Pages
             </li>
-            <li class="active">
+            <li class="active breadcrumb-item">
                 <strong>	Search Page</strong>
             </li>
         </ol>
@@ -22,7 +22,7 @@
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
         <div class="col-lg-12">
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-content">
                     <h2>
                         2,160 results found for: <span class="text-navy">“Admin Theme”</span>
@@ -32,7 +32,7 @@
                     <div class="search-form">
                         <form action="@Url.Action("Dashboard_1", "Dashboards")" method="get">
                             <div class="input-group">
-                                <input type="text" placeholder="Admin Theme" name="search" class="form-control input-lg">
+                                <input type="text" placeholder="Admin Theme" name="search" class="form-control form-control-lg">
                                 <div class="input-group-btn">
                                     <button class="btn btn-lg btn-primary" type="submit">
                                         Search

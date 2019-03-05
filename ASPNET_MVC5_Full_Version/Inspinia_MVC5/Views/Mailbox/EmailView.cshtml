@@ -6,17 +6,17 @@
 <div class="wrapper wrapper-content">
     <div class="row">
         <div class="col-lg-3">
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-content mailbox-content">
                     <div class="file-manager">
                         <a class="btn btn-block btn-primary compose-mail" href="@Url.Action("ComposeEmail", "Mailbox")">Compose Mail</a>
                         <div class="space-25"></div>
                         <h5>Folders</h5>
                         <ul class="folder-list m-b-md" style="padding: 0">
-                            <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-inbox "></i> Inbox <span class="label label-warning pull-right">16</span> </a></li>
+                            <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-inbox "></i> Inbox <span class="label label-warning float-right">16</span> </a></li>
                             <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-envelope-o"></i> Send Mail</a></li>
                             <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-certificate"></i> Important</a></li>
-                            <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-file-text-o"></i> Drafts <span class="label label-danger pull-right">2</span></a></li>
+                            <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-file-text-o"></i> Drafts <span class="label label-danger float-right">2</span></a></li>
                             <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-trash-o"></i> Trash</a></li>
                         </ul>
                         <h5>Categories</h5>
@@ -46,7 +46,7 @@
         </div>
         <div class="col-lg-9 animated fadeInRight">
             <div class="mail-box-header">
-                <div class="pull-right tooltip-demo">
+                <div class="float-right tooltip-demo">
                     <a href="@Url.Action("ComposeEmail", "Mailbox")" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Reply"><i class="fa fa-reply"></i> Reply</a>
                     <a href="#" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Print email"><i class="fa fa-print"></i> </a>
                     <a href="@Url.Action("Inbox", "Mailbox")" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Move to trash"><i class="fa fa-trash-o"></i> </a>
@@ -61,7 +61,7 @@
                         <span class="font-normal">Subject: </span>Aldus PageMaker including versions of Lorem Ipsum.
                     </h3>
                     <h5>
-                        <span class="pull-right font-normal">10:15AM 02 FEB 2014</span>
+                        <span class="float-right font-normal">10:15AM 02 FEB 2014</span>
                         <span class="font-normal">From: </span>alex.smith@corporation.com
                     </h5>
                 </div>
@@ -118,7 +118,7 @@
                                     <span class="corner"></span>
 
                                     <div class="image">
-                                        <img alt="image" class="img-responsive" src="~/Images/p1.jpg">
+                                        <img alt="image" class="img-fluid" src="~/Images/p1.jpg">
                                     </div>
                                     <div class="file-name">
                                         Italy street.jpg
@@ -135,7 +135,7 @@
                                     <span class="corner"></span>
 
                                     <div class="image">
-                                        <img alt="image" class="img-responsive" src="~/Images/p2.jpg">
+                                        <img alt="image" class="img-fluid" src="~/Images/p2.jpg">
                                     </div>
                                     <div class="file-name">
                                         My feel.png

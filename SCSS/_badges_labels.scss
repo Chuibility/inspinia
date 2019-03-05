@@ -6,6 +6,9 @@
   font-weight: 600;
   padding: 3px 8px;
   text-shadow: none;
+  border-radius: 0.25em;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .nav .label, .ibox .label {
@@ -22,6 +25,7 @@
   padding-left: 6px;
   padding-right: 6px;
   text-shadow: none;
+  white-space: nowrap;
 }
 
 .label-primary, .badge-primary {

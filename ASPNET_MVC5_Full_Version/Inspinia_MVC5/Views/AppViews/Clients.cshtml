@@ -7,13 +7,13 @@
     <div class="col-lg-10">
         <h2>Clients</h2>
         <ol class="breadcrumb">
-            <li>
-                <a href="index.html">Home</a>
+            <li class="breadcrumb-item">
+                <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 <a>App Views</a>
             </li>
-            <li class="active">
+            <li class="active breadcrumb-item">
                 <strong>Clients</strong>
             </li>
         </ol>
@@ -28,7 +28,7 @@
         <div class="col-sm-8">
             <div class="ibox">
                 <div class="ibox-content">
-                    <span class="text-muted small pull-right">Last modification: <i class="fa fa-clock-o"></i> 2:10 pm - 12.06.2014</span>
+                    <span class="text-muted small float-right">Last modification: <i class="fa fa-clock-o"></i> 2:10 pm - 12.06.2014</span>
                     <h2>Clients</h2>
                     <p>
                         All clients need to be verified before you can send email and set a project.
@@ -40,10 +40,10 @@
                         </span>
                     </div>
                     <div class="clients-list">
+                        <span class="float-right small text-muted">1406 Elements</span>
                         <ul class="nav nav-tabs">
-                            <span class="pull-right small text-muted">1406 Elements</span>
-                            <li class="active"><a data-toggle="tab" href="#tab-1"><i class="fa fa-user"></i> Contacts</a></li>
-                            <li class=""><a data-toggle="tab" href="#tab-2"><i class="fa fa-briefcase"></i> Companies</a></li>
+                            <li><a class="nav-link active" data-toggle="tab" href="#tab-1"><i class="fa fa-user"></i> Contacts</a></li>
+                            <li><a class="nav-link" data-toggle="tab" href="#tab-2"><i class="fa fa-briefcase"></i> Companies</a></li>
                         </ul>
                         <div class="tab-content">
                             <div id="tab-1" class="tab-pane active">
@@ -53,7 +53,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="client-avatar"><img alt="image" src="~/Images/a2.jpg"> </td>
-                                                    <td><a data-toggle="tab" href="#contact-1" class="client-link">Anthony Jackson</a></td>
+                                                    <td><a href="#contact-1" class="client-link">Anthony Jackson</a></td>
                                                     <td> Tellus Institute</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> gravida@rbisit.com</td>
@@ -61,7 +61,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><img alt="image" src="~/Images/a3.jpg"> </td>
-                                                    <td><a data-toggle="tab" href="#contact-2" class="client-link">Rooney Lindsay</a></td>
+                                                    <td><a href="#contact-2" class="client-link">Rooney Lindsay</a></td>
                                                     <td>Proin Limited</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> rooney@proin.com</td>
@@ -69,7 +69,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><img alt="image" src="~/Images/a4.jpg"> </td>
-                                                    <td><a data-toggle="tab" href="#contact-3" class="client-link">Lionel Mcmillan</a></td>
+                                                    <td><a href="#contact-3" class="client-link">Lionel Mcmillan</a></td>
                                                     <td>Et Industries</td>
                                                     <td class="contact-type"><i class="fa fa-phone"> </i></td>
                                                     <td> +432 955 908</td>
@@ -77,7 +77,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a5.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-4" class="client-link">Edan Randall</a></td>
+                                                    <td><a href="#contact-4" class="client-link">Edan Randall</a></td>
                                                     <td>Integer Sem Corp.</td>
                                                     <td class="contact-type"><i class="fa fa-phone"> </i></td>
                                                     <td> +422 600 213</td>
@@ -85,7 +85,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a6.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-2" class="client-link">Jasper Carson</a></td>
+                                                    <td><a href="#contact-2" class="client-link">Jasper Carson</a></td>
                                                     <td>Mone Industries</td>
                                                     <td class="contact-type"><i class="fa fa-phone"> </i></td>
                                                     <td> +400 468 921</td>
@@ -93,7 +93,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a7.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-3" class="client-link">Reuben Pacheco</a></td>
+                                                    <td><a href="#contact-3" class="client-link">Reuben Pacheco</a></td>
                                                     <td>Magna Associates</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> pacheco@manga.com</td>
@@ -101,7 +101,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a1.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-1" class="client-link">Simon Carson</a></td>
+                                                    <td><a href="#contact-1" class="client-link">Simon Carson</a></td>
                                                     <td>Erat Corp.</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> Simon@erta.com</td>
@@ -109,7 +109,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a3.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-2" class="client-link">Rooney Lindsay</a></td>
+                                                    <td><a href="#contact-2" class="client-link">Rooney Lindsay</a></td>
                                                     <td>Proin Limited</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> rooney@proin.com</td>
@@ -117,7 +117,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a4.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-3" class="client-link">Lionel Mcmillan</a></td>
+                                                    <td><a  href="#contact-3" class="client-link">Lionel Mcmillan</a></td>
                                                     <td>Et Industries</td>
                                                     <td class="contact-type"><i class="fa fa-phone"> </i></td>
                                                     <td> +432 955 908</td>
@@ -125,7 +125,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a5.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-4" class="client-link">Edan Randall</a></td>
+                                                    <td><a href="#contact-4" class="client-link">Edan Randall</a></td>
                                                     <td>Integer Sem Corp.</td>
                                                     <td class="contact-type"><i class="fa fa-phone"> </i></td>
                                                     <td> +422 600 213</td>
@@ -133,7 +133,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a2.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-1" class="client-link">Anthony Jackson</a></td>
+                                                    <td><a href="#contact-1" class="client-link">Anthony Jackson</a></td>
                                                     <td> Tellus Institute</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> gravida@rbisit.com</td>
@@ -141,7 +141,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a7.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-2" class="client-link">Reuben Pacheco</a></td>
+                                                    <td><a href="#contact-2" class="client-link">Reuben Pacheco</a></td>
                                                     <td>Magna Associates</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> pacheco@manga.com</td>
@@ -149,7 +149,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a5.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-3" class="client-link">Edan Randall</a></td>
+                                                    <td><a href="#contact-3" class="client-link">Edan Randall</a></td>
                                                     <td>Integer Sem Corp.</td>
                                                     <td class="contact-type"><i class="fa fa-phone"> </i></td>
                                                     <td> +422 600 213</td>
@@ -157,7 +157,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a6.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-4" class="client-link">Jasper Carson</a></td>
+                                                    <td><a href="#contact-4" class="client-link">Jasper Carson</a></td>
                                                     <td>Mone Industries</td>
                                                     <td class="contact-type"><i class="fa fa-phone"> </i></td>
                                                     <td> +400 468 921</td>
@@ -165,7 +165,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a7.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-2" class="client-link">Reuben Pacheco</a></td>
+                                                    <td><a href="#contact-2" class="client-link">Reuben Pacheco</a></td>
                                                     <td>Magna Associates</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> pacheco@manga.com</td>
@@ -173,7 +173,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a1.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-1" class="client-link">Simon Carson</a></td>
+                                                    <td><a  href="#contact-1" class="client-link">Simon Carson</a></td>
                                                     <td>Erat Corp.</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> Simon@erta.com</td>
@@ -181,7 +181,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a3.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-3" class="client-link">Rooney Lindsay</a></td>
+                                                    <td><a href="#contact-3" class="client-link">Rooney Lindsay</a></td>
                                                     <td>Proin Limited</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> rooney@proin.com</td>
@@ -189,7 +189,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a4.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-4" class="client-link">Lionel Mcmillan</a></td>
+                                                    <td><a href="#contact-4" class="client-link">Lionel Mcmillan</a></td>
                                                     <td>Et Industries</td>
                                                     <td class="contact-type"><i class="fa fa-phone"> </i></td>
                                                     <td> +432 955 908</td>
@@ -197,7 +197,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a5.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-1" class="client-link">Edan Randall</a></td>
+                                                    <td><a href="#contact-1" class="client-link">Edan Randall</a></td>
                                                     <td>Integer Sem Corp.</td>
                                                     <td class="contact-type"><i class="fa fa-phone"> </i></td>
                                                     <td> +422 600 213</td>
@@ -205,7 +205,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a2.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-2" class="client-link">Anthony Jackson</a></td>
+                                                    <td><a href="#contact-2" class="client-link">Anthony Jackson</a></td>
                                                     <td> Tellus Institute</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> gravida@rbisit.com</td>
@@ -213,7 +213,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="client-avatar"><a href=""><img alt="image" src="~/Images/a7.jpg"></a> </td>
-                                                    <td><a data-toggle="tab" href="#contact-4" class="client-link">Reuben Pacheco</a></td>
+                                                    <td><a href="#contact-4" class="client-link">Reuben Pacheco</a></td>
                                                     <td>Magna Associates</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> pacheco@manga.com</td>
@@ -230,127 +230,127 @@
                                         <table class="table table-striped table-hover">
                                             <tbody>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-1" class="client-link">Tellus Institute</a></td>
+                                                    <td><a href="#company-1" class="client-link">Tellus Institute</a></td>
                                                     <td>Rexton</td>
                                                     <td><i class="fa fa-flag"></i> Angola</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-2" class="client-link">Velit Industries</a></td>
+                                                    <td><a href="#company-2" class="client-link">Velit Industries</a></td>
                                                     <td>Maglie</td>
                                                     <td><i class="fa fa-flag"></i> Luxembourg</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-3" class="client-link">Art Limited</a></td>
+                                                    <td><a href="#company-3" class="client-link">Art Limited</a></td>
                                                     <td>Sooke</td>
                                                     <td><i class="fa fa-flag"></i> Philippines</td>
                                                     <td class="client-status"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-1" class="client-link">Tempor Arcu Corp.</a></td>
+                                                    <td><a href="#company-1" class="client-link">Tempor Arcu Corp.</a></td>
                                                     <td>Eisden</td>
                                                     <td><i class="fa fa-flag"></i> Korea, North</td>
                                                     <td class="client-status"><span class="label label-warning">Waiting</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-2" class="client-link">Penatibus Consulting</a></td>
+                                                    <td><a href="#company-2" class="client-link">Penatibus Consulting</a></td>
                                                     <td>Tribogna</td>
                                                     <td><i class="fa fa-flag"></i> Montserrat</td>
                                                     <td class="client-status"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-3" class="client-link"> Ultrices Incorporated</a></td>
+                                                    <td><a href="#company-3" class="client-link"> Ultrices Incorporated</a></td>
                                                     <td>Basingstoke</td>
                                                     <td><i class="fa fa-flag"></i> Tunisia</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-2" class="client-link">Et Arcu Inc.</a></td>
+                                                    <td><a href="#company-2" class="client-link">Et Arcu Inc.</a></td>
                                                     <td>Sioux City</td>
                                                     <td><i class="fa fa-flag"></i> Burundi</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-1" class="client-link">Tellus Institute</a></td>
+                                                    <td><a href="#company-1" class="client-link">Tellus Institute</a></td>
                                                     <td>Rexton</td>
                                                     <td><i class="fa fa-flag"></i> Angola</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-2" class="client-link">Velit Industries</a></td>
+                                                    <td><a  href="#company-2" class="client-link">Velit Industries</a></td>
                                                     <td>Maglie</td>
                                                     <td><i class="fa fa-flag"></i> Luxembourg</td>
                                                     <td class="client-status"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-3" class="client-link">Art Limited</a></td>
+                                                    <td><a href="#company-3" class="client-link">Art Limited</a></td>
                                                     <td>Sooke</td>
                                                     <td><i class="fa fa-flag"></i> Philippines</td>
                                                     <td class="client-status"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-1" class="client-link">Tempor Arcu Corp.</a></td>
+                                                    <td><a href="#company-1" class="client-link">Tempor Arcu Corp.</a></td>
                                                     <td>Eisden</td>
                                                     <td><i class="fa fa-flag"></i> Korea, North</td>
                                                     <td class="client-status"><span class="label label-warning">Waiting</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-2" class="client-link">Penatibus Consulting</a></td>
+                                                    <td><a href="#company-2" class="client-link">Penatibus Consulting</a></td>
                                                     <td>Tribogna</td>
                                                     <td><i class="fa fa-flag"></i> Montserrat</td>
                                                     <td class="client-status"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-3" class="client-link"> Ultrices Incorporated</a></td>
+                                                    <td><a href="#company-3" class="client-link"> Ultrices Incorporated</a></td>
                                                     <td>Basingstoke</td>
                                                     <td><i class="fa fa-flag"></i> Tunisia</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-2" class="client-link">Et Arcu Inc.</a></td>
+                                                    <td><a href="#company-2" class="client-link">Et Arcu Inc.</a></td>
                                                     <td>Sioux City</td>
                                                     <td><i class="fa fa-flag"></i> Burundi</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-1" class="client-link">Tellus Institute</a></td>
+                                                    <td><a href="#company-1" class="client-link">Tellus Institute</a></td>
                                                     <td>Rexton</td>
                                                     <td><i class="fa fa-flag"></i> Angola</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-2" class="client-link">Velit Industries</a></td>
+                                                    <td><a href="#company-2" class="client-link">Velit Industries</a></td>
                                                     <td>Maglie</td>
                                                     <td><i class="fa fa-flag"></i> Luxembourg</td>
                                                     <td class="client-status"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-3" class="client-link">Art Limited</a></td>
+                                                    <td><a href="#company-3" class="client-link">Art Limited</a></td>
                                                     <td>Sooke</td>
                                                     <td><i class="fa fa-flag"></i> Philippines</td>
                                                     <td class="client-status"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-1" class="client-link">Tempor Arcu Corp.</a></td>
+                                                    <td><a href="#company-1" class="client-link">Tempor Arcu Corp.</a></td>
                                                     <td>Eisden</td>
                                                     <td><i class="fa fa-flag"></i> Korea, North</td>
                                                     <td class="client-status"><span class="label label-warning">Waiting</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-2" class="client-link">Penatibus Consulting</a></td>
+                                                    <td><a href="#company-2" class="client-link">Penatibus Consulting</a></td>
                                                     <td>Tribogna</td>
                                                     <td><i class="fa fa-flag"></i> Montserrat</td>
                                                     <td class="client-status"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-3" class="client-link"> Ultrices Incorporated</a></td>
+                                                    <td><a href="#company-3" class="client-link"> Ultrices Incorporated</a></td>
                                                     <td>Basingstoke</td>
                                                     <td><i class="fa fa-flag"></i> Tunisia</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a data-toggle="tab" href="#company-2" class="client-link">Et Arcu Inc.</a></td>
+                                                    <td><a href="#company-2" class="client-link">Et Arcu Inc.</a></td>
                                                     <td>Sioux City</td>
                                                     <td><i class="fa fa-flag"></i> Burundi</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
@@ -367,7 +367,7 @@
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="ibox ">
+            <div class="ibox selected">
 
                 <div class="ibox-content">
                     <div class="tab-content">
@@ -377,7 +377,7 @@
                                     <h2>Nicki Smith</h2>
 
                                     <div class="m-b-sm">
-                                        <img alt="image" class="img-circle" src="~/Images/a2.jpg"
+                                        <img alt="image" class="rounded-circle" src="~/Images/a2.jpg"
                                              style="width: 62px">
                                     </div>
                                 </div>
@@ -402,23 +402,23 @@
 
                                     <ul class="list-group clear-list">
                                         <li class="list-group-item fist-item">
-                                            <span class="pull-right"> 09:00 pm </span>
+                                            <span class="float-right"> 09:00 pm </span>
                                             Please contact me
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 10:16 am </span>
+                                            <span class="float-right"> 10:16 am </span>
                                             Sign a contract
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 08:22 pm </span>
+                                            <span class="float-right"> 08:22 pm </span>
                                             Open new shop
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 11:06 pm </span>
+                                            <span class="float-right"> 11:06 pm </span>
                                             Call back to Sylvia
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 12:00 am </span>
+                                            <span class="float-right"> 12:00 am </span>
                                             Write a letter to Sandra
                                         </li>
                                     </ul>
@@ -506,7 +506,7 @@
                                     <h2>Edan Randall</h2>
 
                                     <div class="m-b-sm">
-                                        <img alt="image" class="img-circle" src="~/Images/a3.jpg"
+                                        <img alt="image" class="rounded-circle" src="~/Images/a3.jpg"
                                              style="width: 62px">
                                     </div>
                                 </div>
@@ -530,23 +530,23 @@
 
                                     <ul class="list-group clear-list">
                                         <li class="list-group-item fist-item">
-                                            <span class="pull-right"> 09:00 pm </span>
+                                            <span class="float-right"> 09:00 pm </span>
                                             Lorem Ipsum available
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 10:16 am </span>
+                                            <span class="float-right"> 10:16 am </span>
                                             Latin words, combined
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 08:22 pm </span>
+                                            <span class="float-right"> 08:22 pm </span>
                                             Open new shop
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 11:06 pm </span>
+                                            <span class="float-right"> 11:06 pm </span>
                                             The generated Lorem Ipsum
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 12:00 am </span>
+                                            <span class="float-right"> 12:00 am </span>
                                             Content here, content here
                                         </li>
                                     </ul>
@@ -622,7 +622,7 @@
                                     <h2>Jasper Carson</h2>
 
                                     <div class="m-b-sm">
-                                        <img alt="image" class="img-circle" src="~/Images/a4.jpg"
+                                        <img alt="image" class="rounded-circle" src="~/Images/a4.jpg"
                                              style="width: 62px">
                                     </div>
                                 </div>
@@ -646,23 +646,23 @@
 
                                     <ul class="list-group clear-list">
                                         <li class="list-group-item fist-item">
-                                            <span class="pull-right"> 09:00 pm </span>
+                                            <span class="float-right"> 09:00 pm </span>
                                             Aldus PageMaker including
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 10:16 am </span>
+                                            <span class="float-right"> 10:16 am </span>
                                             Finibus Bonorum et Malorum
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 08:22 pm </span>
+                                            <span class="float-right"> 08:22 pm </span>
                                             Write a letter to Sandra
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 11:06 pm </span>
+                                            <span class="float-right"> 11:06 pm </span>
                                             Standard chunk of Lorem
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 12:00 am </span>
+                                            <span class="float-right"> 12:00 am </span>
                                             Open new shop
                                         </li>
                                     </ul>
@@ -749,7 +749,7 @@
                                     <h2>Reuben Pacheco</h2>
 
                                     <div class="m-b-sm">
-                                        <img alt="image" class="img-circle" src="~/Images/a5.jpg"
+                                        <img alt="image" class="rounded-circle" src="~/Images/a5.jpg"
                                              style="width: 62px">
                                     </div>
                                 </div>
@@ -773,23 +773,23 @@
 
                                     <ul class="list-group clear-list">
                                         <li class="list-group-item fist-item">
-                                            <span class="pull-right"> 09:00 pm </span>
+                                            <span class="float-right"> 09:00 pm </span>
                                             The point of using
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 10:16 am </span>
+                                            <span class="float-right"> 10:16 am </span>
                                             Lorem Ipsum is that it has
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 08:22 pm </span>
+                                            <span class="float-right"> 08:22 pm </span>
                                             Text, and a search for 'lorem ipsum'
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 11:06 pm </span>
+                                            <span class="float-right"> 11:06 pm </span>
                                             Passages of Lorem Ipsum
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> 12:00 am </span>
+                                            <span class="float-right"> 12:00 am </span>
                                             If you are going
                                         </li>
                                     </ul>
@@ -891,15 +891,15 @@
 
                                     <ul class="list-group clear-list">
                                         <li class="list-group-item fist-item">
-                                            <span class="pull-right"> <span class="label label-primary">NEW</span> </span>
+                                            <span class="float-right"> <span class="label label-primary">NEW</span> </span>
                                             The point of using
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> <span class="label label-warning">WAITING</span></span>
+                                            <span class="float-right"> <span class="label label-warning">WAITING</span></span>
                                             Lorem Ipsum is that it has
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> <span class="label label-danger">BLOCKED</span> </span>
+                                            <span class="float-right"> <span class="label label-danger">BLOCKED</span> </span>
                                             If you are going
                                         </li>
                                     </ul>
@@ -1001,15 +1001,15 @@
 
                                     <ul class="list-group clear-list">
                                         <li class="list-group-item fist-item">
-                                            <span class="pull-right"> <span class="label label-warning">WAITING</span> </span>
+                                            <span class="float-right"> <span class="label label-warning">WAITING</span> </span>
                                             Aldus PageMaker
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"><span class="label label-primary">NEW</span> </span>
+                                            <span class="float-right"><span class="label label-primary">NEW</span> </span>
                                             Lorem Ipsum, you need to be sure
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"> <span class="label label-danger">BLOCKED</span> </span>
+                                            <span class="float-right"> <span class="label label-danger">BLOCKED</span> </span>
                                             The generated Lorem Ipsum
                                         </li>
                                     </ul>
@@ -1111,15 +1111,15 @@
 
                                     <ul class="list-group clear-list">
                                         <li class="list-group-item fist-item">
-                                            <span class="pull-right"> <span class="label label-danger">BLOCKED</span> </span>
+                                            <span class="float-right"> <span class="label label-danger">BLOCKED</span> </span>
                                             Hidden in the middle of text
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right"><span class="label label-primary">NEW</span> </span>
+                                            <span class="float-right"><span class="label label-primary">NEW</span> </span>
                                             Non-characteristic words etc.
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="pull-right">  <span class="label label-warning">WAITING</span> </span>
+                                            <span class="float-right">  <span class="label label-warning">WAITING</span> </span>
                                             Bonorum et Malorum
                                         </li>
                                     </ul>
@@ -1196,3 +1196,14 @@
     </div>
 </div>
 
+@section Scripts {
+    <script type="text/javascript">
+
+            $(document.body).on("click", ".client-link", function (e) {
+                e.preventDefault()
+                $(".selected .tab-pane").removeClass('active');
+                $($(this).attr('href')).addClass("active");
+            });
+
+    </script>
+}

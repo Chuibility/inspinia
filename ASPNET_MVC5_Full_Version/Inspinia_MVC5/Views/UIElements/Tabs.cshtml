@@ -7,13 +7,13 @@
     <div class="col-lg-10">
         <h2>Tabs</h2>
         <ol class="breadcrumb">
-            <li>
-                <a href="index.html">Home</a>
+            <li class="breadcrumb-item">
+                <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 <a>UI Elements</a>
             </li>
-            <li class="active">
+            <li class="active breadcrumb-item">
                 <strong>Tabs</strong>
             </li>
         </ol>
@@ -29,8 +29,8 @@
         <div class="col-lg-6">
             <div class="tabs-container">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#tab-1"> This is tab</a></li>
-                    <li class=""><a data-toggle="tab" href="#tab-2">This is second tab</a></li>
+                    <li><a class="nav-link active" data-toggle="tab" href="#tab-1"> This is tab</a></li>
+                    <li><a class="nav-link" data-toggle="tab" href="#tab-2">This is second tab</a></li>
                 </ul>
                 <div class="tab-content">
                     <div id="tab-1" class="tab-pane active">
@@ -71,9 +71,9 @@
         <div class="col-lg-6">
             <div class="tabs-container">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#tab-3"> <i class="fa fa-laptop"></i></a></li>
-                    <li class=""><a data-toggle="tab" href="#tab-4"><i class="fa fa-desktop"></i></a></li>
-                    <li class=""><a data-toggle="tab" href="#tab-5"><i class="fa fa-database"></i></a></li>
+                    <li><a class="nav-link active" data-toggle="tab" href="#tab-3"> <i class="fa fa-laptop"></i></a></li>
+                    <li><a class="nav-link" data-toggle="tab" href="#tab-4"><i class="fa fa-desktop"></i></a></li>
+                    <li><a class="nav-link" data-toggle="tab" href="#tab-5"><i class="fa fa-database"></i></a></li>
                 </ul>
                 <div class="tab-content">
                     <div id="tab-3" class="tab-pane active">
@@ -132,8 +132,8 @@
 
                 <div class="tabs-left">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#tab-6"> This is tab</a></li>
-                        <li class=""><a data-toggle="tab" href="#tab-7">This is second tab</a></li>
+                        <li><a class="nav-link active" data-toggle="tab" href="#tab-6"> This is tab</a></li>
+                        <li><a class="nav-link" data-toggle="tab" href="#tab-7">This is second tab</a></li>
                     </ul>
                     <div class="tab-content ">
                         <div id="tab-6" class="tab-pane active">
@@ -176,8 +176,8 @@
             <div class="tabs-container">
                 <div class="tabs-right">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#tab-8"> This is tab</a></li>
-                        <li class=""><a data-toggle="tab" href="#tab-9">This is second tab</a></li>
+                        <li><a class="nav-link active" data-toggle="tab" href="#tab-8"> This is tab</a></li>
+                        <li><a class="nav-link" data-toggle="tab" href="#tab-9">This is second tab</a></li>
                     </ul>
                     <div class="tab-content ">
                         <div id="tab-8" class="tab-pane active">
@@ -221,8 +221,8 @@
         <div class="col-lg-12">
             <div class="tabs-container">
                 <ul class="nav nav-tabs">
-                    <li class="active">
-                        <a data-toggle="tab" href="#tab-10">
+                    <li>
+                        <a class="nav-link active" data-toggle="tab" href="#tab-10">
                             This is tab
                             <span class="label label-warning">NEW</span>
                         </a>

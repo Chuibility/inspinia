@@ -7,13 +7,13 @@
     <div class="col-lg-10">
         <h2>E-commerce payments</h2>
         <ol class="breadcrumb">
-            <li>
-                <a href="index.html">Home</a>
+            <li class="breadcrumb-item">
+                <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 <a>E-commerce payments</a>
             </li>
-            <li class="active">
+            <li class="active breadcrumb-item">
                 <strong>Payments</strong>
             </li>
         </ol>
@@ -126,10 +126,10 @@
 
                                             </p>
 
-                                            <a class="btn btn-success">
+                                            <a class="btn btn-success" href="">
                                                 <i class="fa fa-cc-paypal">
-                                                    Purchase via PayPal
                                                 </i>
+                                                Purchase via PayPal
                                             </a>
 
                                         </div>
@@ -177,7 +177,7 @@
 
                                             <form role="form" id="payment-form">
                                                 <div class="row">
-                                                    <div class="col-xs-12">
+                                                    <div class="col-12">
                                                         <div class="form-group">
                                                             <label>CARD NUMBER</label>
                                                             <div class="input-group">
@@ -188,13 +188,13 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-xs-7 col-md-7">
+                                                    <div class="col-7 col-md-7">
                                                         <div class="form-group">
                                                             <label>EXPIRATION DATE</label>
                                                             <input type="text" class="form-control" name="Expiry" placeholder="MM / YY" required />
                                                         </div>
                                                     </div>
-                                                    <div class="col-xs-5 col-md-5 pull-right">
+                                                    <div class="col-5 col-md-5 pull-right">
                                                         <div class="form-group">
                                                             <label>CV CODE</label>
                                                             <input type="text" class="form-control" name="CVC" placeholder="CVC" required />
@@ -202,7 +202,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-xs-12">
+                                                    <div class="col-12">
                                                         <div class="form-group">
                                                             <label>NAME OF CARD</label>
                                                             <input type="text" class="form-control" name="nameCard" placeholder="NAME AND SURNAME" />
@@ -210,7 +210,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-xs-12">
+                                                    <div class="col-12">
                                                         <button class="btn btn-primary" type="submit">Make a payment!</button>
                                                     </div>
                                                 </div>

@@ -33,11 +33,12 @@ namespace Inspinia_MVC5
 
             // Bootstrap
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/popper.min.js",
                       "~/Scripts/bootstrap.min.js"));
 
             // Inspinia script
             bundles.Add(new ScriptBundle("~/bundles/inspinia").Include(
-                      "~/Scripts/plugins/metisMenu/metisMenu.min.js",
+                      "~/Scripts/plugins/metisMenu/jquery.metisMenu.js",
                       "~/Scripts/plugins/pace/pace.min.js",
                       "~/Scripts/app/inspinia.js"));
 
@@ -110,7 +111,8 @@ namespace Inspinia_MVC5
 
             // dataTables 
             bundles.Add(new ScriptBundle("~/plugins/dataTables").Include(
-                      "~/Scripts/plugins/dataTables/datatables.min.js"));
+                      "~/Scripts/plugins/dataTables/datatables.min.js",
+                      "~/Scripts/plugins/dataTables/dataTables.bootstrap4.min.js"));
 
             // jeditable 
             bundles.Add(new ScriptBundle("~/plugins/jeditable").Include(
@@ -229,12 +231,11 @@ namespace Inspinia_MVC5
 
             // summernote styles
             bundles.Add(new StyleBundle("~/plugins/summernoteStyles").Include(
-                      "~/Content/plugins/summernote/summernote.css",
-                      "~/Content/plugins/summernote/summernote-bs3.css"));
+                      "~/Content/plugins/summernote/summernote-bs4.css"));
 
             // summernote 
             bundles.Add(new ScriptBundle("~/plugins/summernote").Include(
-                      "~/Scripts/plugins/summernote/summernote.min.js"));
+                      "~/Scripts/plugins/summernote/summernote-bs4.js"));
 
             // toastr notification 
             bundles.Add(new ScriptBundle("~/plugins/toastr").Include(

@@ -6,17 +6,17 @@
 <div class="wrapper wrapper-content">
     <div class="row">
         <div class="col-lg-3">
-            <div class="ibox float-e-margins">
+            <div class="ibox ">
                 <div class="ibox-content mailbox-content">
                     <div class="file-manager">
                         <a class="btn btn-block btn-primary compose-mail" href="@Url.Action("ComposeEmail", "Mailbox")">Compose Mail</a>
                         <div class="space-25"></div>
                         <h5>Folders</h5>
                         <ul class="folder-list m-b-md" style="padding: 0">
-                            <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-inbox "></i> Inbox <span class="label label-warning pull-right">16</span> </a></li>
+                            <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-inbox "></i> Inbox <span class="label label-warning float-right">16</span> </a></li>
                             <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-envelope-o"></i> Send Mail</a></li>
                             <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-certificate"></i> Important</a></li>
-                            <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-file-text-o"></i> Drafts <span class="label label-danger pull-right">2</span></a></li>
+                            <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-file-text-o"></i> Drafts <span class="label label-danger float-right">2</span></a></li>
                             <li><a href="@Url.Action("Inbox", "Mailbox")"> <i class="fa fa-trash-o"></i> Trash</a></li>
                         </ul>
                         <h5>Categories</h5>
@@ -47,9 +47,9 @@
         <div class="col-lg-9 animated fadeInRight">
             <div class="mail-box-header">
 
-                <form method="get" action="#" class="pull-right mail-search">
+                <form method="get" action="#" class="float-right mail-search">
                     <div class="input-group">
-                        <input type="text" class="form-control input-sm" name="search" placeholder="Search email">
+                        <input type="text" class="form-control form-control-sm" name="search" placeholder="Search email">
                         <div class="input-group-btn">
                             <button type="submit" class="btn btn-sm btn-primary">
                                 Search
@@ -61,7 +61,7 @@
                     Inbox (16)
                 </h2>
                 <div class="mail-tools tooltip-demo m-t-md">
-                    <div class="btn-group pull-right">
+                    <div class="btn-group float-right">
                         <button class="btn btn-white btn-sm"><i class="fa fa-arrow-left"></i></button>
                         <button class="btn btn-white btn-sm"><i class="fa fa-arrow-right"></i></button>
 
@@ -99,7 +99,7 @@
                             <td class="check-mail">
                                 <input type="checkbox" class="i-checks">
                             </td>
-                            <td class="mail-ontact"><a href="@Url.Action("EmailView", "Mailbox")">Facebook</a> <span class="label label-warning pull-right">Clients</span> </td>
+                            <td class="mail-ontact"><a href="@Url.Action("EmailView", "Mailbox")">Facebook</a> <span class="label label-warning float-right">Clients</span> </td>
                             <td class="mail-subject"><a href="@Url.Action("EmailView", "Mailbox")">Many desktop publishing packages and web page editors.</a></td>
                             <td class=""></td>
                             <td class="text-right mail-date">Jan 16</td>
@@ -117,7 +117,7 @@
                             <td class="check-mail">
                                 <input type="checkbox" class="i-checks">
                             </td>
-                            <td class="mail-ontact"><a href="@Url.Action("EmailView", "Mailbox")">Alex T.</a> <span class="label label-danger pull-right">Documents</span></td>
+                            <td class="mail-ontact"><a href="@Url.Action("EmailView", "Mailbox")">Alex T.</a> <span class="label label-danger float-right">Documents</span></td>
                             <td class="mail-subject"><a href="@Url.Action("EmailView", "Mailbox")">Lorem ipsum dolor noretek imit set.</a></td>
                             <td class=""><i class="fa fa-paperclip"></i></td>
                             <td class="text-right mail-date">December 22</td>
@@ -144,7 +144,7 @@
                             <td class="check-mail">
                                 <input type="checkbox" class="i-checks">
                             </td>
-                            <td class="mail-ontact"><a href="@Url.Action("EmailView", "Mailbox")">Patrick Pertners</a> <span class="label label-info pull-right">Adv</span></td>
+                            <td class="mail-ontact"><a href="@Url.Action("EmailView", "Mailbox")">Patrick Pertners</a> <span class="label label-info float-right">Adv</span></td>
                             <td class="mail-subject"><a href="@Url.Action("EmailView", "Mailbox")">If you are going to use a passage of Lorem </a></td>
                             <td class=""></td>
                             <td class="text-right mail-date">May 28</td>
@@ -198,7 +198,7 @@
                             <td class="check-mail">
                                 <input type="checkbox" class="i-checks">
                             </td>
-                            <td class="mail-ontact"><a href="@Url.Action("EmailView", "Mailbox")">Alex T.</a> <span class="label label-warning pull-right">Clients</span></td>
+                            <td class="mail-ontact"><a href="@Url.Action("EmailView", "Mailbox")">Alex T.</a> <span class="label label-warning float-right">Clients</span></td>
                             <td class="mail-subject"><a href="@Url.Action("EmailView", "Mailbox")">Lorem ipsum dolor noretek imit set.</a></td>
                             <td class=""><i class="fa fa-paperclip"></i></td>
                             <td class="text-right mail-date">December 22</td>

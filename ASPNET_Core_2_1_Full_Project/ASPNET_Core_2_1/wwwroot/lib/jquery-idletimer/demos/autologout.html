@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jquery-idletimer : provides you a way to monitor user activity with a page." />
+    <title>Jquery-idletimer</title>
+
+    <!-- jQuery and idleTimer -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../src/idle-timer.js"></script>
+
+    <!-- Bootstrap/respond (ie8) and moment -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.js"></script>
+
+    <!-- Respond.js proxy on external server -->
+    <link href="//netdna.bootstrapcdn.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <script src="respond.proxy.js"></script>
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+
+        body {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Jquery-idletimer</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Main Demo</a></li>
+                    <li><a href="defaultbinding.html">Default Binding</a></li>
+                    <li><a href="https://github.com/thorst/jquery-idletimer">Documentation</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/thorst/jquery-idletimer/zipball/master">Zip</a></li>
+                    <li><a href="https://github.com/thorst/jquery-idletimer/tarball/master">Tar</a></li>
+                    <li><a href="https://github.com/thorst/jquery-idletimer">Github</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse  -->
+        </div>
+    </div>
+    <div class="container">
+        <h2>Concept</h2>
+        <p>
+            Wait 10 seconds, you will see a expiring warning. Wait 10 more seconds and you will see that you have been logged out.
+        </p>
+        <p>
+            In the real world I forward them to the logout url, which intern fowards them to login screen, instead of showing the 2nd dialog.
+            You can modify the session.logout function.
+        </p>
+        <p>
+            We could use the active.idleTimer event to clearTimeout, however I prefer the user to explicitly say they want to keep the
+            session open by clicking ok, not just moving the mouse on the screen.
+        </p>
+        <p>
+            This demo takes into account when a mobile device closes the browser, and after the idle timeout expires, launches the browser again. Instead
+            of displaying the warning, it will jump straight to the logged out dialog.
+        </p>
+        <p>
+            For the sake of complete demo, I've included the code needed to call a keepalive url to keep the server side session valid.
+        </p>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Session Expiration Warning</h4>
+                </div>
+                <div class="modal-body">
+                    <p>You've been inactive for a while. For your security, we'll log you out automatically. Click "Stay Online" to continue your session. </p>
+                    <p>Your session will expire in <span class="bold" id="sessionSecondsRemaining">120</span> seconds.</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="extendSession" type="button" class="btn btn-default btn-success" data-dismiss="modal">Stay Online</button>
+                    <button id="logoutSession" type="button" class="btn btn-default" data-dismiss="modal">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mdlLoggedOut" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">You have been logged out</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Your session has expired.</p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function ($) {
+            var
+                session = {
+                    //Logout Settings
+                    inactiveTimeout: 10000,     //(ms) The time until we display a warning message
+                    warningTimeout: 10000,      //(ms) The time until we log them out
+                    minWarning: 5000,           //(ms) If they come back to page (on mobile), The minumum amount, before we just log them out
+                    warningStart: null,         //Date time the warning was started
+                    warningTimer: null,         //Timer running every second to countdown to logout
+                    logout: function () {       //Logout function once warningTimeout has expired
+                        //window.location = settings.autologout.logouturl;
+                        $("#mdlLoggedOut").modal("show");
+                    },
+
+                    //Keepalive Settings
+                    keepaliveTimer: null,
+                    keepaliveUrl: "",
+                    keepaliveInterval: 5000,     //(ms) the interval to call said url
+                    keepAlive: function () {
+                        $.ajax({ url: session.keepaliveUrl });
+                    }
+                }
+            ;
+
+
+            $(document).on("idle.idleTimer", function (event, elem, obj) {
+                //Get time when user was last active
+                var
+                    diff = (+new Date()) - obj.lastActive - obj.timeout,
+                    warning = (+new Date()) - diff
+                ;
+                
+                //On mobile js is paused, so see if this was triggered while we were sleeping
+                if (diff >= session.warningTimeout || warning <= session.minWarning) {
+                    $("#mdlLoggedOut").modal("show");
+                } else {
+                    //Show dialog, and note the time
+                    $('#sessionSecondsRemaining').html(Math.round((session.warningTimeout - diff) / 1000));
+                    $("#myModal").modal("show");
+                    session.warningStart = (+new Date()) - diff;
+
+                    //Update counter downer every second
+                    session.warningTimer = setInterval(function () {
+                        var remaining = Math.round((session.warningTimeout / 1000) - (((+new Date()) - session.warningStart) / 1000));
+                        if (remaining >= 0) {
+                            $('#sessionSecondsRemaining').html(remaining);
+                        } else {
+                            session.logout();
+                        }
+                    }, 1000)
+                }
+            });
+
+            // create a timer to keep server session alive, independent of idle timer
+            session.keepaliveTimer = setInterval(function () {
+                session.keepAlive();
+            }, session.keepaliveInterval);
+
+            //User clicked ok to extend session
+            $("#extendSession").click(function () {
+                clearTimeout(session.warningTimer);
+            });
+            //User clicked logout
+            $("#logoutSession").click(function () {
+                session.logout();
+            });
+
+            //Set up the timer, if inactive for 10 seconds log them out
+            $(document).idleTimer(session.inactiveTimeout);
+        })(jQuery);
+    </script>
+</body>
+</html>

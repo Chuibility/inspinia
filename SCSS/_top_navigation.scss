@@ -57,6 +57,9 @@
   background: $navy;
   color: #fff;
   padding: 15px 25px;
+  font-size: 18px;
+  line-height: 20px;
+  //margin: 8px;
 }
 
 .top-navigation .navbar-top-links li:last-child {
@@ -87,11 +90,12 @@
   padding: 40px 0 40px 0;
 }
 
-.navbar-toggle {
+.navbar-toggler {
   background-color: $navy;
   color: #fff;
   padding: 6px 12px;
   font-size: 14px;
+  margin: 8px;
 }
 
 .top-navigation .navbar-nav .open .dropdown-menu > li > a, .top-navigation .navbar-nav .open .dropdown-menu .dropdown-header {

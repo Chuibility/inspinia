@@ -995,11 +995,17 @@
   }
 }
 
-.ibox-content > .sk-spinner { display: none; }
-.ibox-content.sk-loading { position: relative; }
+.ibox-content > .sk-spinner {
+  display: none;
+}
+
+.ibox-content.sk-loading {
+  position: relative;
+}
+
 .ibox-content.sk-loading:after {
   content: '';
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -1007,6 +1013,7 @@
   bottom: 0;
 
 }
+
 .ibox-content.sk-loading > .sk-spinner {
   display: block;
   position: absolute;
@@ -1015,4 +1022,3 @@
   right: 0;
   z-index: 2000;
 }
-
