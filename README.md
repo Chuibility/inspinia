@@ -43,31 +43,6 @@ INSPINIA Admin Theme is a premium admin dashboard template with flat design conc
 + LESS, SASS, SCSS
 + PSD Files (more than 50 main views and components full layered)
 
-+ Static Full Version
-+ Static Seed Project
-+ MVC5 Full Version
-+ MVC5 Seed Project
-+ .NET Core 1.0 Full Version
-+ .NET Core 1.0 Seed Project
-+ ReactJS Seed Project
-+ Ruby on Rails Full Version
-+ Ruby on Rails Seed Project
-+ Meteor Full Version
-+ Meteor Seed Project
-+ Angular2 Seed Project
-+ Angular Full Version
-+ Angular Seed Project
-+ Angular Seed Project Grunt
-+ Angular Seed Project Gulp
-+ Angular Seed Project MEANJS
-+ Laravel5 Seed Project
-+ Documentation
-+ Landing Page
-+ LESS
-+ SASS
-+ SCSS
-+ PSD Files (more than 50 main views and components full layered)
-
 ## Static version, AngularJS, ASP.NET MVC5/MVC6/.NET Core 1.0, Meteor and Ruby on Rails version
 
 Inspinia theme includes six versions. One with all static html/css/js files that is great for any php, java or other programming language application. AngularJS 1.5 version that contains a number of controllers and directives written specifically to support angular 1.5 framework. ASP.NET MVC5 and .NET core 2.1 projects for Visual Studio, Meteor 1.4.2.3 version for node.js developers and Ruby on Rails 4.2.3 version.
